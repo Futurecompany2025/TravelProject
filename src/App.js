@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 
 import './assets/css/bootstrap.min.css';
 import './assets/css/owl.carousel.min.css';
@@ -12,6 +12,15 @@ import './assets/css/slick.css';
 import './assets/css/nice-select.css';
 import './assets/css/style.css';
 
+import service1 from './assets/img/service/services1.jpg';
+import service2 from './assets/img/service/services2.jpg';
+import service3 from './assets/img/service/services3.jpg';
+import service4 from './assets/img/service/services4.jpg';
+import service5 from './assets/img/service/services5.jpg';
+import service6 from './assets/img/service/services6.jpg';
+import hero1 from './assets/img/hero/h1_hero.jpg';
+import logo from './assets/img/logo/logo.png'; 
+ 
 
 
 
@@ -65,7 +74,7 @@ function App() {
                             {/* <!-- Logo --> */}
                             <div className="col-xl-2 col-lg-2 col-md-1">
                                 <div className="logo">
-                                  <a href="index.html"><img src="assets/img/logo/logo.png" alt=""/></a>
+                                  <a href="index.html"><img src={logo} alt=""/></a>
                                 </div>
                             </div>
                             <div className="col-xl-10 col-lg-10 col-md-10">
@@ -211,7 +220,9 @@ function App() {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="single-place mb-30">
                             <div className="place-img">
-                                <img src="assets/img/service/services1.jpg" alt=""/>
+                                
+                                
+                                <img src={service1} alt="service"/>
                             </div>
                             <div className="place-cap">
                                 <div className="place-cap-top">
@@ -231,7 +242,7 @@ function App() {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="single-place mb-30">
                             <div className="place-img">
-                                <img src="assets/img/service/services2.jpg" alt=""/>
+                                <img src={service2} alt=""/>
                             </div>
                             <div className="place-cap">
                                 <div className="place-cap-top">
@@ -251,7 +262,7 @@ function App() {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="single-place mb-30">
                             <div className="place-img">
-                                <img src="assets/img/service/services3.jpg" alt=""/>
+                                <img src={service3} alt=""/>
                             </div>
                             <div className="place-cap">
                                 <div className="place-cap-top">
@@ -271,7 +282,7 @@ function App() {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="single-place mb-30">
                             <div className="place-img">
-                                <img src="assets/img/service/services4.jpg" alt=""/>
+                                <img src={service4} alt=""/>
                             </div>
                             <div className="place-cap">
                                 <div className="place-cap-top">
@@ -291,7 +302,7 @@ function App() {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="single-place mb-30">
                             <div className="place-img">
-                                <img src="assets/img/service/services5.jpg" alt=""/>
+                                <img src={service5} alt=""/>
                             </div>
                             <div className="place-cap">
                                 <div className="place-cap-top">
@@ -311,7 +322,7 @@ function App() {
                     <div className="col-xl-4 col-lg-4 col-md-6">
                         <div className="single-place mb-30">
                             <div className="place-img">
-                                <img src="assets/img/service/services6.jpg" alt=""/>
+                                <img src={service6} alt=""/>
                             </div>
                             <div className="place-cap">
                                 <div className="place-cap-top">

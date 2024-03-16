@@ -158,11 +158,11 @@ p {
 
 .bg-img-1 {
   
-    /* background-image: url(../img/slider/slider-img-1.jpg) */
+    background-image: url(../img/banner/dog.png);
 }
 
 .bg-img-2 {
-    /* background-image: url(../img/background-img/bg-img-2.jpg) */
+    background-image: url(../img/elements/f3.jpg)
 }
 
 .cta-bg-1 {
