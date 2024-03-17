@@ -1,13 +1,11 @@
 // Footer.js
 import React from 'react';
-
 const Footer = () => {
     return (
         <footer>
             <div className="footer-area footer-padding footer-bg" data-background="assets/img/service/footer_bg.jpg">
                 <div className="container">
                 <footer>
-      
       <div className="footer-area footer-padding footer-bg" data-background="assets/img/service/footer_bg.jpg">
           <div className="container">
               <div className="row d-flex justify-content-between">

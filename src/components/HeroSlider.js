@@ -1,9 +1,10 @@
 import React from 'react';
+import backgroundImage from '../assets/img/hero/h1_hero.jpg';
 function HeroSlider() {
   return (
     <div className="slider-area">
       <div className="slider-active">
-        <div className="single-slider hero-overly slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.jpg">
+      <div className="single-slider hero-overly slider-height d-flex align-items-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="container">
             <div className="row">
               <div className="col-xl-9 col-lg-9 col-md-9">
