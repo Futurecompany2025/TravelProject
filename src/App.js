@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './components/header';
 import './assets/css/style.css';
 import './assets/css/animate.min.css';
 import './assets/css/bootstrap.min.css';
@@ -20,6 +19,7 @@ import VideoArea from './components/VideoArea';
 import SupportCompanyArea from './components/SupportCompanyArea';
 import TestimonialArea from './components/TestimonialArea';
 import HomeBlogArea from './components/HomeBlogArea';
+import Header from './components/header';
 function App() {
   return (
     <div className="App">
@@ -27,15 +27,15 @@ function App() {
       {/* Main Content */}
       <main>
         {/* Include other components here */}
-        <HeroSlider />
-        <OurServices />
-        <FavouritePlaces />
-        <VideoArea />
-        <SupportCompanyArea />
-        <TestimonialArea />
-        <HomeBlogArea />
+        <HeroSlider/>
+        <OurServices/>
+        <FavouritePlaces/>
+        <VideoArea/>
+        <SupportCompanyArea/>
+        <TestimonialArea/>
+        <HomeBlogArea/>
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
