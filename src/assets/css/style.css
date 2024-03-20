@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Satisfy&display=swap");
-
 .white-bg {
     background: #ffffff
 }
-
 .gray-bg {
     background: #f5f5f5
 }
-
 .gray-bg {
     background: #f7f7fd
 }
@@ -35,7 +32,7 @@
 .white-color {
     color: #fff
 }
-
+    
 .black-color {
     color: #16161a
 }
@@ -74,7 +71,6 @@
 .boxed-btn.large-width {
     width: 220px
 }
-
 [data-overlay] {
     position: relative;
     background-size: cover;
@@ -226,7 +222,7 @@ a:hover,
 
 a,
 button {
-    color: #fff;
+    color: blue;
     outline: medium none
 }
 
@@ -6100,7 +6096,6 @@ form.search-box .search-form a {
 .team-profile {
     background: #f6f9fe
 }
-
 .team-profile .single-profile .single-profile-front {
     position: relative;
     top: 0;
@@ -6108,11 +6103,9 @@ form.search-box .search-form a {
     transition: transform 0.5s linear;
     transform: perspective(600px) rotateY(0deg)
 }
-
 .team-profile .single-profile .single-profile-front .profile-img {
     overflow: hidden
 }
-
 .team-profile .single-profile .single-profile-front .profile-img img {
     width: 100%;
     margin-bottom: 30px;

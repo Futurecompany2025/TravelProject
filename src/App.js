@@ -19,11 +19,12 @@ import VideoArea from './components/VideoArea';
 import SupportCompanyArea from './components/SupportCompanyArea';
 import TestimonialArea from './components/TestimonialArea';
 import HomeBlogArea from './components/HomeBlogArea';
-import Header from './components/header';
+// import Header from './components/header';
+import Navbar  from './components/navbar';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
       {/* Main Content */}
       <main>
         {/* Include other components here */}
@@ -34,6 +35,7 @@ function App() {
         <SupportCompanyArea/>
         <TestimonialArea/>
         <HomeBlogArea/>
+        <Navbar/>
       </main>
       <Footer/>
     </div>

@@ -1,34 +1,22 @@
 import React from 'react';
-
 function SupportCompanyArea() {
   return (
     <div className="support-company-area support-padding fix">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6">
-            <div className="support-location-img mb-50">
-              <img src="assets/img/service/support-img.jpg" alt=""/>
-              <div className="support-img-cap">
-                <span>Since 1992</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-6 col-lg-6">
             <div className="right-caption">
               <div className="section-tittle section-tittle2">
-                <span>About Our Company</span>
-                <h2>We are Go Trip <br/>Travels Support Company</h2>
+                <h2>About Us</h2>
               </div>
               <div className="support-caption">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                <div className="select-suport-items">
-                  <label className="single-items">Lorem ipsum dolor sit amet
-                    <input type="checkbox" checked="checked active"/>
-                    <span className="checkmark"></span>
-                  </label>
-                  {/* Add more support items here */}
-                </div>
-                <a href="#" className="btn border-btn">About us</a>
+                <p>
+                  J1 Trekking Pvt. Ltd. is a team of experienced and passionate people. We have started our career from the root level so we know what we are offering to our valued clients. We can help you plan hassle-free Trekking packages, Peak Climbing, Expeditions, Cultural Tours, Biking Tours, Yoga and meditation, Jungle Safari Tours, Rafting Tours, and Helicopter Tours with the best prices and value for your upcoming trip to the Himalayas.
+                </p>
+                <p>
+                  With the experience of 23 years, we are ready to help you design your package as per your requirements. Every one of our packages is truly tailor-made, and our expert team has designed it for all ages, groups, families, and even solo travelers. We let you choose your package and leave you freedom.
+                </p>
+                <a href="#" className="btn border-btn">Learn More</a>
               </div>
             </div>
           </div>
@@ -37,5 +25,4 @@ function SupportCompanyArea() {
     </div>
   );
 }
-
 export default SupportCompanyArea;

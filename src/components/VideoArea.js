@@ -20,5 +20,4 @@ function VideoArea() {
     </div>
   );
 }
-
 export default VideoArea;

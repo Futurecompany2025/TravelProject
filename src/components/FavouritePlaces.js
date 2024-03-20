@@ -21,8 +21,8 @@ function FavouritePlaces() {
               <div className="place-cap">
                 <div className="place-cap-top">
                   <span><i className="fas fa-star"></i><span>8.0 Superb</span></span>
-                  <h3><a href="#">The Dark Forest Adventure</a></h3>
-                  <p className="dolor">$1870 <span>/ Per Person</span></p>
+                  <h3><a href="#">T</a></h3>
+                  <p className="dolor">$1870 <span>/ Per Person </span></p>
                 </div>
                 <div className="place-cap-bottom">
                   <ul>
@@ -81,5 +81,4 @@ function FavouritePlaces() {
     </div>
   );
 }
-
 export default FavouritePlaces;

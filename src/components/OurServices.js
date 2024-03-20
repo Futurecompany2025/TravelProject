@@ -1,5 +1,4 @@
 import React from 'react';
-
 function OurServices() {
   return (
     <div className="our-services servic-padding">
@@ -54,5 +53,4 @@ function OurServices() {
     </div>
   );
 }
-
 export default OurServices;

@@ -40,7 +40,6 @@
 ::before {
     box-sizing: border-box
 }
-
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -49,11 +48,9 @@ html {
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent
 }
-
 @-ms-viewport {
     width: device-width
 }
-
 article,
 aside,
 figcaption,
@@ -75,19 +72,16 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color: white
 }
-
 [tabindex="-1"]:focus {
     outline: 0 !important
 }
-
 hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible
 }
-
 h1,
 h2,
 h3,
@@ -97,12 +91,10 @@ h6 {
     margin-top: 0;
     margin-bottom: .5rem
 }
-
 p {
     margin-top: 0;
     margin-bottom: 1rem
 }
-
 abbr[data-original-title],
 abbr[title] {
     text-decoration: underline;
@@ -111,40 +103,33 @@ abbr[title] {
     cursor: help;
     border-bottom: 0
 }
-
 address {
     margin-bottom: 1rem;
     font-style: normal;
     line-height: inherit
 }
-
 dl,
 ol,
 ul {
     margin-top: 0;
     margin-bottom: 1rem
 }
-
 ol ol,
 ol ul,
 ul ol,
 ul ul {
     margin-bottom: 0
 }
-
 dt {
     font-weight: 700
 }
-
 dd {
     margin-bottom: .5rem;
     margin-left: 0
 }
-
 blockquote {
     margin: 0 0 1rem
 }
-
 dfn {
     font-style: italic
 }
@@ -468,14 +453,12 @@ small {
 .mark,
 mark {
     padding: .2em;
-    background-color: #fcf8e3
+    background-color: yellow
 }
-
 .list-unstyled {
     padding-left: 0;
     list-style: none
 }
-
 .list-inline {
     padding-left: 0;
     list-style: none

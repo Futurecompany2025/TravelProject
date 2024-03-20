@@ -2,10 +2,8 @@
 .slick-slider
 {
     position: relative;
-
     display: block;
     box-sizing: border-box;
-
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -15,7 +13,7 @@
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;  
 }
 
 .slick-list

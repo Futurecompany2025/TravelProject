@@ -1,14 +1,11 @@
  import './navbar.css';
  import logo from '../assets/img/logo/logo.png'; 
-
  function navbar(){
     return(
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
           <div className="logo">
@@ -26,8 +23,6 @@
                 <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Tibet  <i class="fas fa-chevron-right"></i></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item d-flex justify-content-between align-items-center" href="#"> India <i class="fas fa-chevron-right"></i></a>
-
-              
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -41,8 +36,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Annapurna base camp </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">helicopter tour</a>
-              
+              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">helicopter tour</a> 
               </div>
             </li>
             <li class="nav-item dropdown">

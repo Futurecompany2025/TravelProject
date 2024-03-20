@@ -1,5 +1,4 @@
 import React from 'react';
-
 function TestimonialArea() {
   return (
     <div className="testimonial-area testimonial-padding" data-background="assets/img/testmonial/testimonial_bg.jpg">
@@ -11,7 +10,7 @@ function TestimonialArea() {
                 <div className="testimonial-caption">
                   <div className="testimonial-top-cap">
                     <img src="assets/img/icon/testimonial.png" alt=""/>
-                    <p>Logisti Group is a representative logistics operator providing a full range of services of customs clearance and transportation worldwide.</p>
+                    <p></p>
                   </div>
                   <div className="testimonial-founder d-flex align-items-center justify-content-center">
                     <div className="founder-img">

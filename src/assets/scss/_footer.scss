@@ -1,5 +1,6 @@
 .footer-area{
-    background: #f8fafe;
+    background: blue;
+    color:yellow;
     &.footer-bg{
         background-size: cover;
         background-repeat: no-repeat;
@@ -9,7 +10,7 @@
     }
     .footer-pera{
         & p{
-            color:#ced9e1;
+            color:blue;
             font-size: 16px;
             margin-bottom: 50px;
             line-height: 1.8;
@@ -20,7 +21,7 @@
     }
     .footer-tittle{
         & h4{
-            color: #FFF;
+            color: blue;
             font-size: 20px;
             margin-bottom: 35px;
             font-weight: 500;
@@ -28,10 +29,10 @@
         }
         & ul{
             & li{
-                color: #ffff;
+                color: blue($color: #000000);
                 margin-bottom: 15px;
                 & a{
-                    color: #ced9e1;
+                    color: blue($color: #000000);
                     font-weight: 300;
                     &:hover{
                         color: #ffa801;
@@ -69,7 +70,7 @@
         }
     }
     .info.error {
-        color:  $theme-color;
+        color:  yellow;
     }
 
 }

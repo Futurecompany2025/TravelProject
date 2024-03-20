@@ -9,8 +9,8 @@ function HeroSlider() {
             <div className="row">
               <div className="col-xl-9 col-lg-9 col-md-9">
                 <div className="hero__caption">
-                  <h1>Find your <span>Next tour!</span></h1>
-                  <p>Where would you like to go?</p>
+                <h1 style={{ whiteSpace: 'nowrap' }}>Welcome To J1 Trekking </h1>
+                <p style={{ color: 'yellow', fontWeight: 'bold' }}>Plan Your Next Tour! Where would you like to go?</p>
                 </div>
               </div>
             </div>
@@ -43,5 +43,4 @@ function HeroSlider() {
     </div>
   );
 }
-
 export default HeroSlider;

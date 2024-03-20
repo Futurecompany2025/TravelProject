@@ -59,6 +59,7 @@ const Footer = () => {
                                 <h4>We Accept</h4>
                                 <p>Online Payment Methods</p>
                                 <button>Pay Now</button>
+                                <button></button>
                             </div>
                         </div>
                     </div>
