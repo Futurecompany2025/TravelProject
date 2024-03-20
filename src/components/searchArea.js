@@ -25,7 +25,7 @@ function SearchArea(){
                         <input type="text" placeholder="Type your keywords ?"/>
                     </div>
 
-                    <div className="search-form mb-30 mr-50 pl-0 ml-0 ">
+                    <div className="search-form mb-30 mr-50 pl-0 ml-75 ">
                         <a href="#">Search</a>
                     </div>	
                     {/* <div className="select-form mb-30">
