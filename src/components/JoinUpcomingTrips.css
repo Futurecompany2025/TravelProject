@@ -1,21 +1,44 @@
 .trips-container {
-    margin-top: 20px;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Five columns in the grid */
-    grid-gap: 10px; /* Gap between grid items */
-  }
-  
-  .grid-header {
-    font-weight: bold;
-    border-bottom: 1px solid #000;
-    padding: 10px;
-  }
+  margin-top: 20px;
+}
 
-  .upcoming-trips-heading {
-    color: yellow;
-  }
-  
-  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Six columns for button */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+.grid-header {
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+  text-align: left; /* Align headers to left */
+}
+
+.upcoming-trips-heading {
+  color: yellow;
+}
+
+.trip-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Six columns for button */
+  grid-gap: 1px;
+  padding: 10px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease; /* Enables hover effect */
+}
+
+.trip-item:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.trip-details td {
+  border: none; /* Remove border for details row */
+  padding: 10px;
+}
+
+.join-now-button {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  padding: 5px 10px;
+}
