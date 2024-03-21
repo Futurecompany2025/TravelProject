@@ -1,40 +1,69 @@
-import React from 'react';
-import './assets/css/style.css';
-import './assets/css/animate.min.css';
+
+
 import './assets/css/bootstrap.min.css';
-import './assets/css/flaticon.css';
-import './assets/css/fontawesome-all.min.css';
-import './assets/css/magnific-popup.css';
-import './assets/css/nice-select.css';
 import './assets/css/owl.carousel.min.css';
-import './assets/css/responsive.css';
-import './assets/css/slick.css';
+import './assets/css/flaticon.css';
 import './assets/css/slicknav.css';
+import './assets/css/animate.min.css';
+import './assets/css/magnific-popup.css';
+import './assets/css/fontawesome-all.min.css';
 import './assets/css/themify-icons.css';
-import Footer from './components/footer';
-import HeroSlider from './components/HeroSlider';
-import OurServices from './components/OurServices';
-import FavouritePlaces from './components/FavouritePlaces';
-import VideoArea from './components/VideoArea';
-import AboutUs from './components/aboutus';
-import TestimonialArea from './components/TestimonialArea';
-import HomeBlogArea from './components/HomeBlogArea';
-import Navbar  from './components/navbar';
+import './assets/css/slick.css';
+import './assets/css/nice-select.css';
+import './assets/css/style.css';
+
+import hero1 from './assets/img/hero/h1_hero.jpg';
+import logo from './assets/img/logo/logo.png'; 
+import Navbar from './components/navbar';
+import Headerbar from './components/header';
 import SearchArea from './components/searchArea';
+import Destinations from './components/destinations';
+import WhyUs from './components/whyus';
+import Footer from './components/footer';
+import SupportCompanyArea from './components/aboutjs';
+import FavouritePlaces from './favoritePlaces';
+ 
+
+
+
 function App() {
   return (
-    <div className="App">
-     <Navbar/>
-     <AboutUs/>
-     <HomeBlogArea/>
-     <SearchArea/>
-      <Footer/>
-      <HeroSlider/>
-      <OurServices/>
-      <FavouritePlaces/>
-      <VideoArea/>
-      <TestimonialArea/>
-    </div>
+  <>
+
+<Headerbar />
+<Navbar />
+<SearchArea />
+<SupportCompanyArea />
+<WhyUs />
+<FavouritePlaces />
+
+
+        <Destinations />
+       
+        <Footer />
+
+       
+
+
+
+        
+    
+  
+  
+  
+  </>
   );
 }
 export default App;
+
+ {/* <div id="preloader-">
+        <div className="preloader d-flex align-items-center justify-content-center">
+            <div className="preloader-inner position-relative">
+                <div className="preloader-circle"></div>
+                <div className="preloader-img pere-text">
+                    <img src="assets/img/logo/logo.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div> */}
+    {/* <!-- Preloader Start --> */}
