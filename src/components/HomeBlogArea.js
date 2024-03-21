@@ -1,4 +1,5 @@
 import React from 'react';
+
 function HomeBlogArea() {
   return (
     <div className="home-blog-area section-padding2">
@@ -6,7 +7,7 @@ function HomeBlogArea() {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-tittle text-center">
-              <span>Blogs</span>
+              <h2>Blogs</h2>
             </div>
           </div>
         </div>
@@ -17,11 +18,11 @@ function HomeBlogArea() {
               <div className="blog-img-cap">
                 <div className="blog-img">
                   {/* Add your image source here */}
-                  <img src="assets/img/blog/home-blog1.jpg" alt=""/>
+                  <img src="assets/img/blog/home-blog1.jpg" alt="Traveling"/>
                 </div>
                 <div className="blog-cap">
                   <p>Traveling</p>
-                  <h3><a href="single-blog.html"></a></h3>
+                  <h3><a href="single-blog.html">Tips For Taking A Long-Term Trip With Kids.</a></h3>
                   <a href="#" className="more-btn">Read more »</a>
                 </div>
               </div>
@@ -38,11 +39,11 @@ function HomeBlogArea() {
               <div className="blog-img-cap">
                 <div className="blog-img">
                   {/* Add your image source here */}
-                  <img src="assets/img/blog/home-blog2.jpg" alt=""/>
+                  <img src="assets/img/blog/home-blog2.jpg" alt="Traveling"/>
                 </div>
                 <div className="blog-cap">
                   <p>Traveling</p>
-                  <h3><a href="single-blog.html"></a></h3>
+                  <h3><a href="single-blog.html">Tips For Taking A Long-Term Trip With Kids.</a></h3>
                   <a href="#" className="more-btn">Read more »</a>
                 </div>
               </div>
@@ -59,11 +60,11 @@ function HomeBlogArea() {
               <div className="blog-img-cap">
                 <div className="blog-img">
                   {/* Add your image source here */}
-                  <img src="assets/img/blog/home-blog3.jpg" alt=""/>
+                  <img src="assets/img/blog/home-blog1.jpg" alt="Traveling"/>
                 </div>
                 <div className="blog-cap">
                   <p>Traveling</p>
-                  <h3><a href="single-blog.html"></a></h3>
+                  <h3><a href="single-blog.html">Tips For Taking A Long-Term Trip With Kids.</a></h3>
                   <a href="#" className="more-btn">Read more »</a>
                 </div>
               </div>

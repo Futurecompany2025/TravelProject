@@ -1,0 +1,10 @@
+about-us p {
+    font-size: 1.1rem; /* Increase paragraph text size */
+  }
+  
+  .about-us a.btn {
+    /* Additional styling for the button, like padding or margin */
+  }
+  .about-us {
+    text-align: justify;
+  }

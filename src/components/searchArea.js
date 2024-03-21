@@ -1,10 +1,7 @@
 import './searchArea.css';
 function SearchArea(){
     return(
-        <div className="slider-area ">
-          
-        
-        
+        <div className="slider-area ">    
 <div className="slider-active">
 <div className="single-slider hero-overly slider-height d-flex align-items-center" id ='searchArea'>   
     <div className="container">

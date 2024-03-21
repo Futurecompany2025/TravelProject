@@ -16,28 +16,24 @@ import HeroSlider from './components/HeroSlider';
 import OurServices from './components/OurServices';
 import FavouritePlaces from './components/FavouritePlaces';
 import VideoArea from './components/VideoArea';
-import SupportCompanyArea from './components/SupportCompanyArea';
+import AboutUs from './components/aboutus';
 import TestimonialArea from './components/TestimonialArea';
 import HomeBlogArea from './components/HomeBlogArea';
-// import Header from './components/header';
 import Navbar  from './components/navbar';
+import SearchArea from './components/searchArea';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      {/* Main Content */}
-      <main>
-        {/* Include other components here */}
-        <HeroSlider/>
-        <OurServices/>
-        <FavouritePlaces/>
-        <VideoArea/>
-        <SupportCompanyArea/>
-        <TestimonialArea/>
-        <HomeBlogArea/>
-        <Navbar/>
-      </main>
+     <Navbar/>
+     <AboutUs/>
+     <HomeBlogArea/>
+     <SearchArea/>
       <Footer/>
+      <HeroSlider/>
+      <OurServices/>
+      <FavouritePlaces/>
+      <VideoArea/>
+      <TestimonialArea/>
     </div>
   );
 }
