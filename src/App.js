@@ -11,9 +11,6 @@ import './assets/css/themify-icons.css';
 import './assets/css/slick.css';
 import './assets/css/nice-select.css';
 import './assets/css/style.css';
-
-import hero1 from './assets/img/hero/h1_hero.jpg';
-import logo from './assets/img/logo/logo.png'; 
 import Navbar from './components/navbar';
 import Headerbar from './components/header';
 import SearchArea from './components/searchArea';
