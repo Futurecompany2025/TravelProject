@@ -1,5 +1,4 @@
-
-
+import React from 'react';
 import './assets/css/bootstrap.min.css';
 import './assets/css/owl.carousel.min.css';
 import './assets/css/flaticon.css';
@@ -14,41 +13,21 @@ import './assets/css/style.css';
 import Navbar from './components/navbar';
 import SearchArea from './components/searchArea';
 import Footer from './components/footer';
-import SupportCompanyArea from './components/aboutjs';
-import FavouritePlaces from './favoritePlaces';
+import FavouritePlaces from './components/FavouritePlaces';
 import AboutUs from './components/aboutus';
+import UpcomingTrips from './components/upcomingtrips';
+
 function App() {
   return (
-  <>
-<Navbar />
-<SearchArea />
-<SupportCompanyArea />
-<FavouritePlaces />
-<AboutUs/>
-        <Footer />
-
-       
-
-
-
-        
-    
-  
-  
-  
-  </>
+    <>
+      <Navbar />
+      <SearchArea />
+      <AboutUs />
+      <FavouritePlaces />
+      <UpcomingTrips /> {/* No need to pass trips data here */}
+      <Footer />
+    </>
   );
 }
-export default App;
 
- {/* <div id="preloader-">
-        <div className="preloader d-flex align-items-center justify-content-center">
-            <div className="preloader-inner position-relative">
-                <div className="preloader-circle"></div>
-                <div className="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt=""/>
-                </div>
-            </div>
-        </div>
-    </div> */}
-    {/* <!-- Preloader Start --> */}
+export default App;
