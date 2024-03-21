@@ -1,6 +1,5 @@
  import './navbar.css';
  import logo from '../assets/img/logo/logo.png'; 
-
  function Navbar(){
     return(
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,7 +16,7 @@
                 Destinations
               </a>
               <div class="dropdown-menu " aria-labelledby="homeDropdown">
-                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Nepal  <i class="fas fa-chevron-right"></i></a>
+                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Nepal<i class="fas fa-chevron-right"></i></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Bhutan  <i class="fas fa-chevron-right"></i></a>
                 <div class="dropdown-divider"></div>

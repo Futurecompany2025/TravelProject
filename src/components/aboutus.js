@@ -1,6 +1,5 @@
 import React from 'react';
 import './aboutus.css'; // Import CSS file for styling
-
 function AboutUs() {
   return (
     <div className="about-us">
@@ -23,5 +22,4 @@ function AboutUs() {
     </div>
   );
 }
-
 export default AboutUs;

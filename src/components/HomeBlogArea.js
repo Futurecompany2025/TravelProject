@@ -1,5 +1,4 @@
 import React from 'react';
-
 function HomeBlogArea() {
   return (
     <div className="home-blog-area section-padding2">

@@ -12,31 +12,19 @@ import './assets/css/slick.css';
 import './assets/css/nice-select.css';
 import './assets/css/style.css';
 import Navbar from './components/navbar';
-import Headerbar from './components/header';
 import SearchArea from './components/searchArea';
-import Destinations from './components/destinations';
-import WhyUs from './components/whyus';
 import Footer from './components/footer';
 import SupportCompanyArea from './components/aboutjs';
 import FavouritePlaces from './favoritePlaces';
- 
-
-
-
+import AboutUs from './components/aboutus';
 function App() {
   return (
   <>
-
-<Headerbar />
 <Navbar />
 <SearchArea />
 <SupportCompanyArea />
-<WhyUs />
 <FavouritePlaces />
-
-
-        <Destinations />
-       
+<AboutUs/>
         <Footer />
 
        
