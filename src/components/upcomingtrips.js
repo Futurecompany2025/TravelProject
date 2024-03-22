@@ -1,5 +1,6 @@
 import React from 'react';
-import './JoinUpcomingTrips.css'; // Import the CSS file
+import './JoinUpcomingTrips.css';
+
 const trips = [
   {
     tripName: "Everest Base Camp Trek - 15",
@@ -52,15 +53,16 @@ const trips = [
   },
   // Add more trip data as needed
 ];
+
 const handleJoinClick = (trip) => {
   alert(`You've clicked Join Now for "${trip.tripName}"`);
 };
 
 const JoinUpcomingTrips = () => {
   return (
-    <div className="trips-container">
+    <div className="container"> {/* Use Bootstrap container class */}
       <h2 className="upcoming-trips-heading">Join Upcoming Trips</h2>
-      <table>
+      <table className="table"> {/* Use Bootstrap table class */}
         <thead>
           <tr>
             <th className="grid-header">TRIP NAME</th>
@@ -81,7 +83,7 @@ const JoinUpcomingTrips = () => {
                 <td></td> {/* Empty cell */}
                 <td></td> {/* Empty cell */}
                 <td>
-                  <button className="join-now-button" onClick={() => handleJoinClick(trip)}>
+                  <button className="btn btn-primary" onClick={() => handleJoinClick(trip)}>
                     Join Now
                   </button>
                 </td>
@@ -103,5 +105,3 @@ const JoinUpcomingTrips = () => {
 };
 
 export default JoinUpcomingTrips;
-
-

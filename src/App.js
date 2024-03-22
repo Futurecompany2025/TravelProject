@@ -16,7 +16,7 @@ import Footer from './components/footer';
 import FavouritePlaces from './components/FavouritePlaces';
 import AboutUs from './components/aboutus';
 import UpcomingTrips from './components/upcomingtrips';
-
+import Recommendation from './components/recommendation';
 function App() {
   return (
     <>
@@ -24,10 +24,10 @@ function App() {
       <SearchArea />
       <AboutUs />
       <FavouritePlaces />
-      <UpcomingTrips /> {/* No need to pass trips data here */}
+      <UpcomingTrips />
+       <Recommendation />
       <Footer />
-    </>
+      </>
   );
 }
-
 export default App;
