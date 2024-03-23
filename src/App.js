@@ -17,6 +17,7 @@ import FavouritePlaces from './components/FavouritePlaces';
 import AboutUs from './components/aboutus';
 import UpcomingTrips from './components/upcomingtrips';
 import Recommendation from './components/recommendation';
+import Blog from './components/blog'
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
       <FavouritePlaces />
       <UpcomingTrips />
        <Recommendation />
+       <Blog />
       <Footer />
       </>
   );

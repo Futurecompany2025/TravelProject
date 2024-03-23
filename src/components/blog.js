@@ -6,18 +6,18 @@ function HomeBlogArea() {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-tittle text-center">
-              <h2>Blogs</h2>
+              <h2 style={{ fontSize: '100px', color: 'Purple' }}>Blogs</h2>
             </div>
           </div>
         </div>
         <div className="row">
-          {/* First Blog Post */}
+          {/* Blog Posts */}
           <div className="col-xl-4 col-lg-4 col-md-4">
             <div className="home-blog-single mb-30">
               <div className="blog-img-cap">
                 <div className="blog-img">
                   {/* Add your image source here */}
-                  <img src="assets/img/blog/home-blog1.jpg" alt="Traveling"/>
+                  <img src={require("../assets/img/gallery/img.jpeg")} alt="Traveling"/>
                 </div>
                 <div className="blog-cap">
                   <p>Traveling</p>
@@ -38,7 +38,7 @@ function HomeBlogArea() {
               <div className="blog-img-cap">
                 <div className="blog-img">
                   {/* Add your image source here */}
-                  <img src="assets/img/blog/home-blog2.jpg" alt="Traveling"/>
+                  <img src={require("../assets/img/gallery/img2.jpg")} alt="Traveling"/>
                 </div>
                 <div className="blog-cap">
                   <p>Traveling</p>
@@ -59,7 +59,7 @@ function HomeBlogArea() {
               <div className="blog-img-cap">
                 <div className="blog-img">
                   {/* Add your image source here */}
-                  <img src="assets/img/blog/home-blog1.jpg" alt="Traveling"/>
+                  <img src={require("../assets/img/gallery/img3.jpg")} alt="Traveling"/>
                 </div>
                 <div className="blog-cap">
                   <p>Traveling</p>
@@ -78,11 +78,12 @@ function HomeBlogArea() {
         {/* More Blogs Button */}
         <div className="row">
           <div className="col-lg-12 text-center">
-            <a href="#" className="btn btn-primary">More Blogs</a>
+            <a href="#" className="btn btn-warning">More Blogs</a>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
 export default HomeBlogArea;

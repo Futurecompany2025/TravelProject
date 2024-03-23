@@ -57,7 +57,6 @@ const trips = [
 const handleJoinClick = (trip) => {
   alert(`You've clicked Join Now for "${trip.tripName}"`);
 };
-
 const JoinUpcomingTrips = () => {
   return (
     <div className="container"> {/* Use Bootstrap container class */}
