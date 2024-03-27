@@ -3,15 +3,13 @@
  function Navbar(){
     return(
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-          <div className="logo">
-                                  <a href="index.html"><img src={logo} alt=""/></a>
+          <div className="logo" style={{ maxWidth: '150px' }}>
+          <a href="index.html"><img src={logo} alt="" style={{ maxWidth: '100%', height: 'auto' }} /></a> {/* Adjust the size of the logo */}
                                 </div>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle px-4 text-dark " href="#" id="homeDropdown" role="button" aria-haspopup="true" aria-expanded="false">

@@ -13,18 +13,23 @@ import './assets/css/style.css';
 import Navbar from './components/navbar';
 import SearchArea from './components/searchArea';
 import Footer from './components/footer';
-import aboutUs from './components/aboutus';
+import AboutUs from './components/aboutus';
 import UpcomingTrips from './components/upcomingtrips';
 import Recommendation from './components/recommendation';
 import Blog from './components/blog';
+import Headerbar from './components/header';
+import Destinations from './components/destinations';
 function App() {
   return (
     <>
+    <Headerbar />
       <Navbar />
       <SearchArea />
-      <aboutUs/>
+      <AboutUs  />
+      <Recommendation />
+      <Destinations />
       <UpcomingTrips />
-       <Recommendation />
+      
        <Blog />
       <Footer />
       </>

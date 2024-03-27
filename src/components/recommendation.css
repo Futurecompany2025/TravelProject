@@ -1,0 +1,49 @@
+.decorative-line {
+    width: 70%; /* Adjust width as needed */
+    margin: 0 auto 1rem; /* Adjust margins as needed */
+    position: relative;
+  }
+  
+  .decorative-line:before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 10px; /* Adjust the height of the curved line */
+    background: linear-gradient(to right, transparent, #ccc); /* Adjust gradient colors as needed */
+    border-radius: 50%;
+    top: 60px; /* Adjust the vertical position of the curved line */
+    left: 40%; /* Adjust the horizontal position of the curved line */
+    transform: scaleX(2); /* Adjust the horizontal scale to make the curve more pronounced */
+  }
+  
+
+  .site-header {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--secondary-color); /* Assuming you have a custom CSS variable for secondary color */
+  }
+
+  .green-text {
+    color: green; /* Green color */
+  }
+  
+  .blue-text {
+    color: blue; /* Blue color */
+  }
+
+  .card {
+    overflow: hidden;
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.1); /* Adjust the scale factor for zoom effect */
+  }
+  
+  
+  

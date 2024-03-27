@@ -1,5 +1,5 @@
 
-function SupportCompanyArea() {
+function Aboutus (){
   return (
     <div className="support-company-area support-padding fix">
       <div className="container">
@@ -25,4 +25,4 @@ function SupportCompanyArea() {
     </div>
   );
 }
-export default SupportCompanyArea;
+export default Aboutus;
