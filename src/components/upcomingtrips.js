@@ -1,6 +1,5 @@
 import React from 'react';
-import './JoinUpcomingTrips.css';
-
+import './upcomingtrips.css';
 const trips = [
   {
     tripName: "Everest Base Camp Trek - 15",
@@ -77,9 +76,10 @@ const JoinUpcomingTrips = () => {
             <React.Fragment key={index}>
               <tr className="trip-item">
                 <td>{trip.tripName}</td>
-                <td></td> {/* Empty cell */}
-                <td></td> {/* Empty cell */}
-                <td></td> {/* Empty cell */}
+                <td>{trip.price}</td>
+                <td>{trip.duration}</td>
+                <td>{trip.departureDate}</td>
+                <td>{trip.status}</td>
                 <td></td> {/* Empty cell */}
                 <td>
                   <button className="btn btn-primary" onClick={() => handleJoinClick(trip)}>
@@ -87,14 +87,7 @@ const JoinUpcomingTrips = () => {
                   </button>
                 </td>
               </tr>
-              <tr key={index + 'details'} className="trip-details">
-                <td></td> {/* Empty cell */}
-                <td>{trip.price}</td>
-                <td>{trip.duration}</td>
-                <td>{trip.departureDate}</td>
-                <td>{trip.status}</td>
-                <td></td> {/* Empty cell */}
-              </tr>
+              
             </React.Fragment>
           ))}
         </tbody>
@@ -102,5 +95,4 @@ const JoinUpcomingTrips = () => {
     </div>
   );
 };
-
 export default JoinUpcomingTrips;

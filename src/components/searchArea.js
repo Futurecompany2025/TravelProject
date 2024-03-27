@@ -1,7 +1,10 @@
 import './searchArea.css';
 function SearchArea(){
     return(
-        <div className="slider-area ">    
+        <div className="slider-area ">
+          
+        
+        
 <div className="slider-active">
 <div className="single-slider hero-overly slider-height d-flex align-items-center" id ='searchArea'>   
     <div className="container">
@@ -18,11 +21,11 @@ function SearchArea(){
             <div className="col-xl-12">
               
                 <form action="#" className="search-box">
-                    <div className="input-form mb-30 ml-50 mr-0 pr-0 pl-0">
+                    <div className="input-form mb-30 ml-10 mr-0 pr-0 pl-0">
                         <input type="text" placeholder="Type your keywords ?"/>
                     </div>
 
-                    <div className="search-form mb-30 mr-50 pl-0 ml-0 ">
+                    <div className="search-form mb-30 mr-50 pl-0 ml-55 ">
                         <a href="#">Search</a>
                     </div>	
                     {/* <div className="select-form mb-30">
