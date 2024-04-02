@@ -4,18 +4,13 @@
 body {
     font-size: 21px;
   }
-  
   /* Apply styles to table headers */
   .table th {
     font-size: 20px;
   }
-
   .table td{
     font-size: 18px;
   }
-
-  
-  
   /* Apply styles to table cells */
   .trip-item th {
     font-size: 21px;

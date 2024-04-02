@@ -1,5 +1,6 @@
-
-function Aboutus (){
+import React from 'react';
+import './aboutus.css';
+function AboutUs() {
   return (
     <div className="support-company-area support-padding fix">
       <div className="container">
@@ -16,7 +17,7 @@ function Aboutus (){
                 <p>
                   With the experience of 23 years, we are ready to help you design your package as per your requirements. Every one of our packages is truly tailor-made, and our expert team has designed it for all ages, groups, families, and even solo travelers. We let you choose your package and leave you freedom.
                 </p>
-                <a href="#" className="btn border-btn">Learn More</a>
+                <button className="btn btn-primary">Learn More</button>
               </div>
             </div>
           </div>
@@ -25,4 +26,4 @@ function Aboutus (){
     </div>
   );
 }
-export default Aboutus;
+export default AboutUs;

@@ -19,20 +19,29 @@ import Recommendation from './components/recommendation';
 import Blog from './components/blog';
 import Headerbar from './components/header';
 import Destinations from './components/destinations';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RecommendationDetails from './pages/RecommendationDetails';
+
 function App() {
   return (
-    <>
-    <Headerbar />
-      <Navbar />
-      <SearchArea />
-      <AboutUs  />
-      <Recommendation />
-      <Destinations />
-      <UpcomingTrips />
-      
-       <Blog />
-      <Footer />
+    <Router>
+      <>
+        <Headerbar />
+        <Navbar />
+        <SearchArea />
+        <AboutUs />
+        <Recommendation />
+        <Destinations />
+        <UpcomingTrips />
+        <Routes>
+        <Route path="/{item.slug}" element={<RecommendationDetails />} />
+          <Route path="/:slug" element={<RecommendationDetails />} />
+        </Routes>
+        <Blog />
+        <Footer />
       </>
+    </Router>
   );
 }
+
 export default App;

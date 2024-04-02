@@ -9,13 +9,10 @@ function Headerbar(){
             <div className="col-lg-8">
                 <div className="header-info-left">
                     <ul>  
-                    <li><i class="fa fa-phone" aria-hidden="true"></i>666 569 025077</li>                        
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i>needhelp@gotrip.com</li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i>+977994561703</li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i>+977994561703</li>
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i>+977994561703</li>
-                        <button style={{backgroundColor:'blue',borderRadius:'25px',}}>Make enquiry</button>
-                        
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+9779865461367</li>                        
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>j1trek@gmail.com</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                        <button style={{backgroundColor:'var(--secondary-color)', borderRadius:'25px', padding: '11px 19px', fontFamily: 'Mukta', fontSize: '17px', height: '43px', border: 'none', outline: 'none', color: 'white', textAlign: 'center', display: 'inline-block', boxSizing: 'border-box'}}>Make enquiry</button>
                     </ul>
                 </div>
             </div>
@@ -37,10 +34,7 @@ function Headerbar(){
             <div className="row align-items-center">
                 {/* <!-- Logo --> */}
                 <div className="col-xl-2 col-lg-2 col-md-1">
-             
                 </div>
-             
-               
                 {/* <!-- Mobile Menu --> */}
                 <div className="col-12">
                     <div className="mobile_menu d-block d-lg-none"></div>

@@ -1,110 +1,58 @@
+// Recommendation.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import './recommendation.css';
-
 // Import images
 import Hero1 from '../assets/img/hero/1.jpg';
-import Hero2 from '../assets/img/hero/1.jpg';
-import Hero3 from '../assets/img/hero/1.jpg';
-import Hero4 from '../assets/img/hero/1.jpg';
-import Hero5 from '../assets/img/hero/1.jpg';
-import Hero6 from '../assets/img/hero/1.jpg';
+import Hero2 from '../assets/img/hero/2.webp';
+import Hero3 from '../assets/img/hero/3.jpg';
+import Hero4 from '../assets/img/hero/4.jpg';
+import Hero5 from '../assets/img/hero/5.jpg';
+import Hero6 from '../assets/img/hero/6.jpg';
 
 function Recommendation() {
+  const recommendations = [
+    { slug: 'three-high-passes-trek', image: Hero1, title: 'Three High Passes Trek', duration: '19 Days', price: 'USD 1790' },
+    { slug: 'everest-base-camp-trek', image: Hero2, title: 'Everest Base Camp Trek', duration: '15 Days', price: 'USD 1390' },
+    { slug: 'annapurna-panorama-trek', image: Hero3, title: 'Annapurna Panorama Trek', duration: '12 Days', price: 'USD 1040' },
+    { slug: 'ultra-luxury-trek-to-everest-base-camp', image: Hero4, title: 'Ultra-Luxury Trek to Everest Base Camp', duration: '13 Days', price: 'USD 5220' },
+    { slug: 'upper-mustang-trek', image: Hero5, title: 'Upper Mustang Trek', duration: '16 Days', price: 'USD 2395' },
+    { slug: 'everest-base-camp-trek-with-gokyo-lake', image: Hero6, title: 'Everest Base Camp Trek with Gokyo Lake & Cho la pass', duration: '18 Days', price: 'USD 1730' }
+  ];
+
   return (
-    <div style={{ backgroundColor: '#e8ebf3', minHeight: '100vh' }}>
+    <div className="recommendation-container">
       <div className="container">
         <h3 className="site-header">
           <span className="green-text">Our </span>
           <span className="blue-text">Recommendation</span>
         </h3>
-        <div className="decorative-line"></div> 
+      </div>
+      <div className="decorative-line"></div>
+      <div className="container mt-4">
         <div className="row">
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <div className="zoom-image">
-                <img src={Hero1} className="card-img-top img-fluid" alt="Hero 1" />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Three High Passes Trek</h5>
-                <p className="card-text">
-                  <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: 19 Days
-                </p>
-                <p className="text-end">USD 1790</p>
-              </div>
+          {recommendations.map((item) => (
+            <div key={item.slug} className="col-lg-4 col-md-6 mb-4">
+              <Link to={`/${item.slug}`} className="recommendation-link"> {/* Update the link to point to the details page */}
+                <div className="card">
+                  <div className="zoom-image">
+                    <img src={item.image} className="card-img-top img-fluid recommendation-image" alt={item.title} />
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">{item.title}</h5>
+                    <p className="card-text">
+                      <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: {item.duration}
+                    </p>
+                    <div className="price-section">
+                      <p className="price">USD <span className="blue-text">{item.price.split(' ')[1]}</span></p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <div className="zoom-image">
-                <img src={Hero2} className="card-img-top img-fluid" alt="Hero 2" />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Everest Base Camp Trek</h5>
-                <p className="card-text">
-                  <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: 15 Days
-                </p>
-                <p className="text-end">USD 1390</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <div className="zoom-image">
-                <img src={Hero3} className="card-img-top img-fluid" alt="Hero 3" />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Annapurna Panorama Trek</h5>
-                <p className="card-text">
-                  <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: 12 Days
-                </p>
-                <p className="text-end">USD 1040</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <div className="zoom-image">
-                <img src={Hero4} className="card-img-top img-fluid" alt="Hero 4" />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Ultra-Luxury Trek to Everest Base Camp</h5>
-                <p className="card-text">
-                  <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: 13 Days
-                </p>
-                <p className="text-end">USD 5220</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <div className="zoom-image">
-                <img src={Hero5} className="card-img-top img-fluid" alt="Hero 5" />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Upper Mustang Trek</h5>
-                <p className="card-text">
-                  <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: 16 Days
-                </p>
-                <p className="text-end">USD 2395</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card">
-              <div className="zoom-image">
-                <img src={Hero6} className="card-img-top img-fluid" alt="Hero 6" />
-              </div>
-              <div className="card-body">
-                <h5 className="card-title">Everest Base Camp Trek with Gokyo Lake & Cho la pass</h5>
-                <p className="card-text">
-                  <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: 18 Days
-                </p>
-                <p className="text-end">USD 1730</p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
