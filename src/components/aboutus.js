@@ -1,5 +1,6 @@
 import React from 'react';
 import './aboutus.css';
+import { Link } from 'react-router-dom';
 function AboutUs() {
   return (
     <div className="support-company-area support-padding fix">
@@ -17,7 +18,7 @@ function AboutUs() {
                 <p>
                   With the experience of 23 years, we are ready to help you design your package as per your requirements. Every one of our packages is truly tailor-made, and our expert team has designed it for all ages, groups, families, and even solo travelers. We let you choose your package and leave you freedom.
                 </p>
-                <button className="btn btn-primary">Learn More</button>
+                <Link to="/about-us" className="btn btn-primary">Learn More</Link>
               </div>
             </div>
           </div>

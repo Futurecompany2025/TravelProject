@@ -1,9 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
 const RecommendationDetails = () => {
   const { slug } = useParams();
-
   // Dummy data for demonstration
   const recommendationDetails = {
     'three-high-passes-trek': {
@@ -49,14 +47,11 @@ const RecommendationDetails = () => {
       // Add more details as needed
     }
   };
-
   // Fetch recommendation details based on the slug
   const recommendation = recommendationDetails[slug];
-
   if (!recommendation) {
     return <div>Recommendation not found</div>;
   }
-
   return (
     <div>
       <h2>{recommendation.title}</h2>
@@ -67,5 +62,4 @@ const RecommendationDetails = () => {
     </div>
   );
 };
-
 export default RecommendationDetails;
