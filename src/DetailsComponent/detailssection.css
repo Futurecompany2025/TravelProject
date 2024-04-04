@@ -1,0 +1,31 @@
+.recommendation-details {
+    background-color: #007bff; /* Blue color from the image */
+    color: #fff; /* White color for text */
+    padding: 2rem; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Allow us to arrange elements side-by-side */
+    flex-wrap: wrap; /* Wrap details if they overflow */
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .details-grid {
+    flex: 1; /* Make the details grid take up most of the space */
+    display: grid; /* Use a grid layout for details */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column widths as needed */
+    grid-gap: 1rem; /* Spacing between details */
+  }
+  
+  .detail-item {
+    text-align: center; /* Center the text within each detail */
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  h2 {
+    margin-bottom: 1rem; /* Space between heading and details */
+  }
