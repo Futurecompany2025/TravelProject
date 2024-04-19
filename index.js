@@ -17,7 +17,13 @@ mongoose.connect('mongodb://localhost:27017/Trekking', {
 // Create a Mongoose schema
 const formDataManSchema = new mongoose.Schema({
   name: String,
+  country:String,
   email: String,
+  contactNo: String,
+  noOfTraveller: String,
+  passportNo:String,
+  arrivalDate:String,
+  specialRequirement:String,
   message: String
 });
 12
@@ -34,7 +40,13 @@ app.post('/submit-form', async (req, res) => {
     // Create a new FormData document
     const FormDataMan = new FormDataMan({
       name: req.body.name,
+      country: req.body.email,
       email: req.body.email,
+      contactNo: req.body.email,
+      noOfTraveller: req.body.email,
+      passportNo: req.body.email,
+      arrivalDate: req.body.email,
+      specialRequirement: req.body.email,
       message: req.body.message
     });
 
