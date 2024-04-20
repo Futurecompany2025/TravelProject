@@ -3,7 +3,11 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const app = express();
+const cors = require('cors'); 
 const PORT = process.env.PORT || 5000;
+
+
+app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/Trekking', {
@@ -26,7 +30,10 @@ const formDataManSchema = new mongoose.Schema({
   specialRequirement:String,
   message: String
 });
-12
+
+formDataManSchema.index({ name: 'text', country: 'text', email: 'text', passportNo: 'text', specialRequirement: 'text', message: 'text' });
+
+
 // Create a Mongoose model
 const FormDataMan = mongoose.model('FormDataMan', formDataManSchema);
 
@@ -38,20 +45,20 @@ app.use(bodyParser.json());
 app.post('/submit-form', async (req, res) => {
   try {
     // Create a new FormData document
-    const FormDataMan = new FormDataMan({
-      name: req.body.name,
-      country: req.body.email,
+    const FormData = new FormDataMan({
+      name: req.body.fullName,
+      country: req.body.country,
       email: req.body.email,
-      contactNo: req.body.email,
-      noOfTraveller: req.body.email,
-      passportNo: req.body.email,
-      arrivalDate: req.body.email,
-      specialRequirement: req.body.email,
+      contactNo: req.body.contactNo,
+      noOfTraveller: req.body.noOfTraveller,
+      passportNo: req.body.passportNo,
+      arrivalDate: req.body.arrivalDate,
+      specialRequirement: req.body.specialRequirement,
       message: req.body.message
     });
 
     // Save the form data to MongoDB
-    await FormDataMan.save();
+    await FormData.save();
 
     res.status(201).json({ message: 'Form data saved successfully' });
   } catch (error) {
@@ -93,7 +100,7 @@ app.get('/search', async (req, res) => {
   const query = req.query.q; // Assuming the search query is passed as a query parameter
 
   try {
-    const result = await collection.find({ $text: { $search: query } }).toArray();
+    const result = await FormDataMan.find({ $text: { $search: query } });
     res.json(result);
   } catch (error) {
     console.error('Error searching:', error);

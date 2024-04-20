@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Futurecompany2025/TravelProject#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
     "mongoose": "^8.2.4"
   }
