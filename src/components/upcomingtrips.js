@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './upcomingtrips.css';
 const trips = [
   {
@@ -52,15 +52,19 @@ const trips = [
   },
   // Add more trip data as needed
 ];
-
-const handleJoinClick = (trip) => {
-  alert(`You've clicked Join Now for "${trip.tripName}"`);
-};
 const JoinUpcomingTrips = () => {
+  const [showBookingForm, setShowBookingForm] = useState(false);
+  const [selectedTrip, setSelectedTrip] = useState(null);
+
+  const handleJoinClick = (trip) => {
+    setSelectedTrip(trip);
+    setShowBookingForm(true);
+  };
+
   return (
-    <div className="container"> {/* Use Bootstrap container class */}
+    <div className="container"> 
       <h2 className="upcoming-trips-heading">Join Upcoming Trips</h2>
-      <table className="table"> {/* Use Bootstrap table class */}
+      <table className="table"> 
         <thead>
           <tr>
             <th className="grid-header">TRIP NAME</th>
@@ -68,30 +72,39 @@ const JoinUpcomingTrips = () => {
             <th className="grid-header">DURATION</th>
             <th className="grid-header">DEPARTURE DATE</th>
             <th className="grid-header">TRIP STATUS</th>
-            <th className="grid-header"></th> {/* Empty header for button */}
+            <th className="grid-header"></th> 
           </tr>
         </thead>
         <tbody>
           {trips.map((trip, index) => (
-            <React.Fragment key={index}>
-              <tr className="trip-item">
-                <td>{trip.tripName}</td>
-                <td>{trip.price}</td>
-                <td>{trip.duration}</td>
-                <td>{trip.departureDate}</td>
-                <td>{trip.status}</td>
-                <td></td> {/* Empty cell */}
-                <td>
-                  <button className="btn btn-primary" onClick={() => handleJoinClick(trip)}>
-                    Join Now
-                  </button>
-                </td>
-              </tr>
-              
-            </React.Fragment>
+            <tr key={index} className="trip-item">
+              <td>{trip.tripName}</td>
+              <td>{trip.price}</td>
+              <td>{trip.duration}</td>
+              <td>{trip.departureDate}</td>
+              <td>{trip.status}</td>
+              <td>
+                <button className="btn btn-primary" onClick={() => handleJoinClick(trip)}>
+                  Join Now
+                </button>
+              </td>
+            </tr>
           ))}
         </tbody>
       </table>
+      {showBookingForm && (
+        <BookingForm trip={selectedTrip} onClose={() => setShowBookingForm(false)} />
+      )}
+    </div>
+  );
+};
+const BookingForm = ({ trip, onClose }) => {
+  // Implement your booking form JSX here
+  return (
+    <div className="booking-form">
+      <h2>Booking Form for {trip.tripName}</h2>
+      {/* Your form elements go here */}
+      <button onClick={onClose}>Close</button>
     </div>
   );
 };

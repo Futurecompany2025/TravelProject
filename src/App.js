@@ -22,6 +22,7 @@ import Recommendation from './components/recommendation';
 import AboutUs from './components/aboutus';
 import Destinations from './components/destinations';
 import UpcomingTrips from './components/upcomingtrips';
+import BlogDetails from './pages/blogdetails';
 function Home() {
   return (
     <>
@@ -37,7 +38,6 @@ function Home() {
     </>
   );
 }
-
 function App() {
   return (
     <Router>
@@ -45,9 +45,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/:slug" element={<RecommendationDetails />} />
         <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/blog" element={<BlogDetails />} />
       </Routes>
     </Router>
   );
 }
-
 export default App;

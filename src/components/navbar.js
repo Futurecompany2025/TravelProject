@@ -23,8 +23,6 @@
                 <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Tibet  <i class="fas fa-chevron-right"></i></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item d-flex justify-content-between align-items-center" href="#"> India <i class="fas fa-chevron-right"></i></a>
-
-              
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -86,18 +84,13 @@
               <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Bhutan Travel Guide </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Tibet Travel  Guide</a>
-    
               </div>
             </li>
-
             <li class="nav-item dropdown">
               <a class="nav-link  px-4 text-dark" href="#" id="contactDropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Blogs
               </a>
-      
             </li>
-
-
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle px-4 text-dark" href="#" id="contactDropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 Company

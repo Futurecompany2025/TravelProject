@@ -45,5 +45,4 @@ function Headerbar(){
 </div>
 </div>)
 }
-
 export default Headerbar;

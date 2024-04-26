@@ -1,4 +1,5 @@
-import React from 'react';
+// Inside Overview component
+
 const Overview = ({ overview }) => {
   return (
     <div>

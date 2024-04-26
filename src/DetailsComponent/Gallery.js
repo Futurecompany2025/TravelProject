@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Gallery = ({ images }) => {
   return (
     <div>
@@ -12,5 +11,4 @@ const Gallery = ({ images }) => {
     </div>
   );
 };
-
 export default Gallery;

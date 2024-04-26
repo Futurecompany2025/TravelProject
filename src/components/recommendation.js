@@ -11,7 +11,6 @@ import Hero3 from '../assets/img/hero/3.jpg';
 import Hero4 from '../assets/img/hero/4.jpg';
 import Hero5 from '../assets/img/hero/5.jpg';
 import Hero6 from '../assets/img/hero/6.jpg';
-
 function Recommendation() {
   const recommendations = [
     { slug: 'three-high-passes-trek', image: Hero1, title: 'Three High Passes Trek', duration: '19 Days', price: 'USD 1790' },
@@ -21,7 +20,6 @@ function Recommendation() {
     { slug: 'upper-mustang-trek', image: Hero5, title: 'Upper Mustang Trek', duration: '16 Days', price: 'USD 2395' },
     { slug: 'everest-base-camp-trek-with-gokyo-lake', image: Hero6, title: 'Everest Base Camp Trek with Gokyo Lake & Cho la pass', duration: '18 Days', price: 'USD 1730' }
   ];
-
   return (
     <div className="recommendation-container">
       <div className="container">
@@ -58,5 +56,4 @@ function Recommendation() {
     </div>
   );
 }
-
 export default Recommendation;

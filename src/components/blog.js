@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 function HomeBlogArea() {
   return (
     <div className="home-blog-area section-padding2">
@@ -78,12 +79,11 @@ function HomeBlogArea() {
         {/* More Blogs Button */}
         <div className="row">
           <div className="col-lg-12 text-center">
-            <a href="#" className="btn btn-warning">More Blogs</a>
+          <Link to="/blog" className="btn btn-primary">More Blogs</Link>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
 export default HomeBlogArea;

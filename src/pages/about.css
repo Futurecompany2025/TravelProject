@@ -9,12 +9,10 @@
   align-items: left;
   text-align: center;
 }
-
 .aboutus-container h1 {
   color:white;
   font-size: 36px;
 }
-
 .aboutus-header {
   background-image: url('../assets/img/gallery/img3.jpg');
   background-size: cover;
@@ -26,13 +24,10 @@
   align-items: center;
   text-align: center;
 }
-
 .breadcrumb-item {
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
 }
-
-
 .orange-box {
   background-color: orange;
   padding: 5px 10px;
@@ -40,7 +35,6 @@
   color: white;
   text-decoration: none;
 }
-
 .orange-box:hover {
   background-color: darkorange;
 }

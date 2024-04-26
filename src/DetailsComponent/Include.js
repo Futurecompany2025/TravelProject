@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Include = ({ items }) => {
   return (
     <div>
@@ -12,5 +11,4 @@ const Include = ({ items }) => {
     </div>
   );
 };
-
 export default Include;

@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../DetailsComponent/detailssection.css';
+import '../DetailsComponent/detailssection.css';
 const RecommendationAdditionalDetails = ({
   price,
   meal,
@@ -56,6 +56,7 @@ const RecommendationAdditionalDetails = ({
           <p>{bestTime}</p>
         </div>
       </div>
+      {/* Include Overview component here */}
     </div>
   );
 };

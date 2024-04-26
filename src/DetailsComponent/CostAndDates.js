@@ -1,5 +1,4 @@
 import React from 'react';
-
 const CostAndDates = ({ cost, dates }) => {
   return (
     <div>
@@ -14,5 +13,4 @@ const CostAndDates = ({ cost, dates }) => {
     </div>
   );
 };
-
 export default CostAndDates;

@@ -11,7 +11,6 @@ const AboutUsPage = () => {
       <Headerbar />
       <Navbar /> 
         <HeaderSection />
-        
         <DescriptionSection />
         <ImageSection />
       <Footer /> 
@@ -27,7 +26,6 @@ const HeaderSection = () => {
   <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }} className="breadcrumb-item orange-box">Home</Breadcrumb.Item>
   <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/about-us" }} className="breadcrumb-item orange-box">About Us</Breadcrumb.Item>
 </Breadcrumb>
-
       </div>
     <div className="container">
       <div className="row">
@@ -67,7 +65,6 @@ const DescriptionSection = () => {
     </div>
   );
 }
-
 const ImageSection = () => {
   return (
     <div className="aboutus-section">
