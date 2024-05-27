@@ -1,0 +1,32 @@
+.aboutus-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.breadcrumb-container {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.breadcrumb-item-custom {
+  color: white !important;
+}
+
+.breadcrumb-item-custom.blue-link {
+  color: blue !important; /* Change the color to blue */
+}
+
+.breadcrumb-item-custom.blue-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.breadcrumb-item-custom.blue-link a {
+  color: blue !important; /* Change the color to blue */
+  text-decoration: none;
+}
+
+.breadcrumb-item-custom + .breadcrumb-item-custom::before {
+  color: white !important; /* Ensure the separator is also white */
+}

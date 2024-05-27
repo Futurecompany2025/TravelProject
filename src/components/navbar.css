@@ -1,0 +1,11 @@
+
+/* Add your custom CSS styles here */
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 1rem; /* Set font weight to 600 (equivalent to semi-bold) */
+  }
+

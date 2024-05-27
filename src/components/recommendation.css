@@ -1,0 +1,60 @@
+.recommendation-container {
+  background-image: url('../assets/img/gallery/img3.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+.decorative-line {
+  width: 70%;
+  margin: 0 auto; /* Center the decorative line horizontally */
+  position: relative;
+}
+.decorative-line:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, transparent, #ccc);
+  border-radius: 50%;
+  bottom: -10px; /* Adjusted vertical position to be just below the text */
+  left: 0; /* Ensure the line spans the entire width */
+}
+.site-header {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 10px; /* Adjusted margin-bottom for spacing */
+}
+.green-text {
+  color: green;
+  font-size: 3.125rem;
+}
+.card {
+  overflow: hidden;
+}
+.zoom-image {
+  transition: transform 0.3s ease-in-out;
+}
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+.blue-text {
+  color: pink;
+  font-size: 3.125rem;
+}
+.price-section {
+  display: flex;
+  justify-content: flex-end;
+}
+.price {
+  color: skyblue;
+  font-size: 2.5rem;
+}
+.recommendation-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height for consistent display */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+

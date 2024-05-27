@@ -1,0 +1,33 @@
+/* JoinUpcomingTrips.css */
+
+/* Apply styles to all text */
+body {
+    font-size: 21px;
+  }
+  /* Apply styles to table headers */
+  .table th {
+    font-size: 20px;
+  }
+  .table td{
+    font-size: 18px;
+  }
+  /* Apply styles to table cells */
+  .trip-item th {
+    font-size: 21px;
+  }
+
+  .trip-item:hover{
+    background-color:#e8ebf3;
+  }
+  
+  /* Apply styles to buttons */
+  .btn {
+    font-size: 21px;
+  }
+
+  .table{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 40px;
+  }
+  
