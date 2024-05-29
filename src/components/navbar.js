@@ -1,118 +1,101 @@
- import './navbar.css';
- import logo from '../assets/img/logo/logo.png'; 
- import { Link } from 'react-router-dom';
- function Navbar(){
-    return(
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-          <div className="logo" style={{ maxWidth: '150px' }}>
-          <a href="index.html"><img src={logo} alt="" style={{ maxWidth: '100%', height: 'auto' }} /></a> {/* Adjust the size of the logo */}
-                                </div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-4 text-dark " href="#" id="homeDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Destinations
-              </a>
-              <div class="dropdown-menu " aria-labelledby="homeDropdown">
-                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Nepal  <i class="fas fa-chevron-right"></i></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Bhutan  <i class="fas fa-chevron-right"></i></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Tibet  <i class="fas fa-chevron-right"></i></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item d-flex justify-content-between align-items-center" href="#"> India <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-4 text-dark" href="#" id="aboutDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Day Tour
-              </a>
-              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Rafting</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Helicopter tour </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Annapurna Base Camp </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Helicopter Tour</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-4 text-dark" href="#" id="servicesDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Luxury Travel
-              </a>
-              <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Rafting</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Helicopter tour </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Annapurna base camp </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Helicopter Tour</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-4 text-dark" href="#" id="contactDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Travel Style
-              </a>
-              <div class="dropdown-menu" aria-labelledby="contactDropdown">
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Family Trip</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Corporate Travel</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Solo Travel</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Group Travel</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-4 text-dark" href="#" id="contactDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Travel Guide
-              </a>
-              <div class="dropdown-menu" aria-labelledby="contactDropdown">
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Nepal Travel Guide</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">India Travel Guide </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Bhutan Travel Guide </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Tibet Travel  Guide</a>
-              </div>
-            </li>
-            <li className="nav-item">
-                        <Link className="nav-link px-4 text-dark" to="/blog">Blog</Link>
-                    </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-4 text-dark" href="#" id="contactDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Company
-              </a>
-              <div class="dropdown-menu" aria-labelledby="contactDropdown">
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="/about-us">About us</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Pay now</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="/OurTeam">Our team </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Reviews</a>
-
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Documents</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Why us? </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">Partner With Us </a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-            <a className="nav-link px-4 text-dark" href="/Contact-us" id="contactDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                Contact
-              </a>
-            </li>
-          </ul>
+import React from 'react';
+import logo from '../assets/img/logo/logo.png';
+import { Link } from 'react-router-dom';
+import './navbar.css';
+function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="Logo" className="navbar-logo" />
+          </Link>
         </div>
-      </nav>
-    )  
-  }
-  export default Navbar;
+        <ul className="navbar-nav ml-auto">
+          <NavItem title="Destinations">
+            <DropdownItem title="Nepal">
+              <SubDropdownItem title="Lumbini" />
+              <SubDropdownItem title="Everest Base Camp" />
+              <SubDropdownItem title="Annapurna Circuit" />
+            </DropdownItem>
+            <DropdownItem title="Bhutan" />
+            <DropdownItem title="Tibet" />
+            <DropdownItem title="India" />
+          </NavItem>
+          {/* Add other navbar items */}
+          <NavItem title="Day Tour">
+            <DropdownItem title="Rafting" />
+            <DropdownItem title="Helicopter tour" />
+            <DropdownItem title="Annapurna Base Camp" />
+            <DropdownItem title="Helicopter Tour" />
+          </NavItem>
+          <NavItem title="Luxury Travel">
+            <DropdownItem title="Rafting" />
+            <DropdownItem title="Helicopter tour" />
+            <DropdownItem title="Annapurna base camp" />
+            <DropdownItem title="Helicopter Tour" />
+          </NavItem>
+          <NavItem title="Travel Style">
+            <DropdownItem title="Family Trip" />
+            <DropdownItem title="Corporate Travel" />
+            <DropdownItem title="Solo Travel" />
+            <DropdownItem title="Group Travel" />
+          </NavItem>
+          <NavItem title="Travel Guide">
+            <DropdownItem title="Nepal Travel Guide" />
+            <DropdownItem title="India Travel Guide" />
+            <DropdownItem title="Bhutan Travel Guide" />
+            <DropdownItem title="Tibet Travel Guide" />
+          </NavItem>
+          <NavItem title="Blog">
+            <Link className="nav-link px-4 text-dark" to="/blog">Blog</Link>
+          </NavItem>
+          <NavItem title="Company">
+            <DropdownItem title="About us" />
+            <DropdownItem title="Pay now" />
+            <DropdownItem title="Our team" />
+            <DropdownItem title="Reviews" />
+            <DropdownItem title="Documents" />
+            <DropdownItem title="Why us?" />
+            <DropdownItem title="Partner With Us" />
+          </NavItem>
+          <NavItem title="Contact">
+            <Link className="nav-link px-4 text-dark" to="/Contact-us">Contact</Link>
+          </NavItem>
+        </ul>
+      </div>
+    </nav>
+  );
+}
+
+const NavItem = ({ title, children }) => (
+  <li className="nav-item dropdown">
+    <span className="nav-link dropdown-toggle px-4 text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {title}
+    </span>
+    <div className="dropdown-menu" aria-labelledby={`${title}Dropdown`}>
+      {children}
+    </div>
+  </li>
+);
+
+const DropdownItem = ({ title, children }) => (
+  <React.Fragment>
+    <span className="dropdown-item d-flex justify-content-between align-items-center" href="#">
+      {title} <i className="fas fa-chevron-right"></i>
+    </span>
+    {children && <div className="dropdown-divider"></div>}
+    {children}
+  </React.Fragment>
+);
+
+const SubDropdownItem = ({ title }) => (
+  <span className="dropdown-item d-flex justify-content-between align-items-center" href="#">
+    {title}
+  </span>
+);
+
+export default Navbar;
