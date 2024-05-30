@@ -1,64 +1,30 @@
 /* Headerbar.css */
 .headerbar {
-    background-color: #212529; /* Dark blue background */
-    color: #fff; /* White text color */
-    padding: 0.5rem 2rem; /* Adjust padding as needed */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .headerbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .headerbar-left .headerbar-item {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem; /* Space between left items */
-  }
-  
-  .headerbar-item .flag-icon {
-    width: 20px; /* Adjust flag icon size */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 5px; /* Add spacing after flag icon */
-  }
-  
-  .headerbar-right {
-    display: flex;
-    align-items: center; /* Align items to the right */
-  }
-  
-  .headerbar-right .headerbar-item {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem; /* Space between right items */
-  }
-  
-  .headerbar-cta button {
-    background-color: transparent; /* Transparent background for button */
-    color: #fff; /* White button text color */
-    border: 1px solid #fff; /* White button border */
-    padding: 0.5rem 1rem; /* Adjust button padding */
-    border-radius: 4px; /* Add rounded corners to button */
-    margin-left: 1rem; /* Add spacing before button */
-  }
-  .make-inquiry-btn {
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 20px; /* Adjust border-radius to make the button oval */
-    padding: 10px 20px; /* Adjust padding as needed */
-    cursor: pointer;
-    white-space: nowrap;
-  }
-  
-  .make-inquiry-btn:hover {
-    background-color: darkorange; /* Change color on hover if desired */
-  }
-  .headerbar-item {
-    font-size: 17px; /* Adjust the font size as needed */
-  }
-  
-  
+  background-color: #212529; /* Dark blue background */
+  color: #fff; /* White text color */
+  padding: 0.5rem 2rem; /* Adjust padding as needed */
+}
+
+.headerbar-item .flag-icon {
+  width: 20px; /* Adjust flag icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Add spacing after flag icon */
+}
+
+.make-inquiry-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 20px; /* Adjust border-radius to make the button oval */
+  padding: 10px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.make-inquiry-btn:hover {
+  background-color: darkorange; /* Change color on hover if desired */
+}
+
+.headerbar-item {
+  font-size: 17px; /* Adjust the font size as needed */
+}

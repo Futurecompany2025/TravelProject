@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './upcomingtrips.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const trips = [
   {
     tripName: "Everest Base Camp Trek - 15",
@@ -52,6 +54,7 @@ const trips = [
   },
   // Add more trip data as needed
 ];
+
 const JoinUpcomingTrips = () => {
   const [showBookingForm, setShowBookingForm] = useState(false);
   const [selectedTrip, setSelectedTrip] = useState(null);
@@ -62,50 +65,53 @@ const JoinUpcomingTrips = () => {
   };
 
   return (
-    <div className="container"> 
+    <div className="container my-4">
       <h2 className="upcoming-trips-heading">Join Upcoming Trips</h2>
-      <table className="table"> 
-        <thead>
-          <tr>
-            <th className="grid-header">TRIP NAME</th>
-            <th className="grid-header">PRICE</th>
-            <th className="grid-header">DURATION</th>
-            <th className="grid-header">DEPARTURE DATE</th>
-            <th className="grid-header">TRIP STATUS</th>
-            <th className="grid-header"></th> 
-          </tr>
-        </thead>
-        <tbody>
-          {trips.map((trip, index) => (
-            <tr key={index} className="trip-item">
-              <td>{trip.tripName}</td>
-              <td>{trip.price}</td>
-              <td>{trip.duration}</td>
-              <td>{trip.departureDate}</td>
-              <td>{trip.status}</td>
-              <td>
-                <button className="btn btn-primary" onClick={() => handleJoinClick(trip)}>
-                  Join Now
-                </button>
-              </td>
+      <div className="table-responsive">
+        <table className="table table-hover">
+          <thead>
+            <tr>
+              <th className="grid-header">TRIP NAME</th>
+              <th className="grid-header">PRICE</th>
+              <th className="grid-header">DURATION</th>
+              <th className="grid-header">DEPARTURE DATE</th>
+              <th className="grid-header">TRIP STATUS</th>
+              <th className="grid-header"></th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {trips.map((trip, index) => (
+              <tr key={index} className="trip-item">
+                <td>{trip.tripName}</td>
+                <td>{trip.price}</td>
+                <td>{trip.duration}</td>
+                <td>{trip.departureDate}</td>
+                <td>{trip.status}</td>
+                <td>
+                  <button className="btn btn-primary" onClick={() => handleJoinClick(trip)}>
+                    Join Now
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       {showBookingForm && (
         <BookingForm trip={selectedTrip} onClose={() => setShowBookingForm(false)} />
       )}
     </div>
   );
 };
+
 const BookingForm = ({ trip, onClose }) => {
-  // Implement your booking form JSX here
   return (
     <div className="booking-form">
       <h2>Booking Form for {trip.tripName}</h2>
       {/* Your form elements go here */}
-      <button onClick={onClose}>Close</button>
+      <button className="btn btn-secondary" onClick={onClose}>Close</button>
     </div>
   );
 };
+
 export default JoinUpcomingTrips;

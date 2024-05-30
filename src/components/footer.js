@@ -2,34 +2,32 @@ import './footer.css';
 import { Link } from 'react-router-dom';
 function Footer() {
     return (
-        <div id='footer' className="footer-area footer-padding footer-bg" data-background="assets/img/service/footer_bg.jpg">
-            <div className="container">
+        <div id='footer' className="footer-area footer-padding footer-bg">
+            <div className="container container-custom mx-auto">
                 <div className="row d-flex justify-content-between">
                     <div className="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                        <div className="single-footer-caption mb-4">
-                            <div className="single-footer-caption mb-3">
-                                <div className="footer-tittle">
-                                    <div className="footer-pera">
-                                        <h4 className="h6">J1 Trekking</h4>
-                                        <p className="small">
-                                            <strong>Nepal Contact:</strong><br />
-                                            Address: Thamel, Kathmandu, Nepal<br />
-                                            Phone: +977 9841666232<br />
-                                            Email: info@trekwaysnepal.com
-                                        </p>
-                                        <h4 className="h6">USA Contact</h4>
-                                        <p className="small">
-                                            Address: Stillwater, MN 55082<br />
-                                            Phone: +1-651-703-8181<br />
-                                            Email: stevenayers10@gmail.com
-                                        </p>
-                                    </div>
+                        <div className="single-footer-caption mb-3">
+                            <div className="footer-tittle">
+                                <div className="footer-pera">
+                                    <h4 className="h6">J1 Trekking</h4>
+                                    <p className="small">
+                                        <strong>Nepal Contact:</strong><br />
+                                        Address: Thamel, Kathmandu, Nepal<br />
+                                        Phone: +977 9841666232<br />
+                                        Email: info@J1TrekkingNepal.com
+                                    </p>
+                                    <h4 className="h6">USA Contact</h4>
+                                    <p className="small">
+                                        Address: Stillwater, MN 55082<br />
+                                        Phone: +1-651-703-8181<br />
+                                        Email: stevenayers10@gmail.com
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                        <div className="single-footer-caption mb-4">
+                        <div className="single-footer-caption mb-3">
                             <div className="footer-tittle">
                                 <h4 className="h6">Subscribe Our Newsletter</h4>
                                 <p className="small">Get the latest news, offers and inspiring travel stories straight to your inbox.</p>
@@ -40,12 +38,11 @@ function Footer() {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                        <div className="single-footer-caption mb-4">
+                        <div className="single-footer-caption mb-3">
                             <div className="footer-tittle">
                                 <h4 className="h6">Pages</h4>
                                 <ul className="list-unstyled small">
-                        {/* Replace '#' with the actual paths */}
-                        <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about-us">About Us</Link></li>
                                     <li><Link to="/ourteam">Our Team</Link></li>
                                     <li><a href="#">Online Payment</a></li>
@@ -56,7 +53,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                        <div className="single-footer-caption mb-4">
+                        <div className="single-footer-caption mb-3">
                             <div className="footer-tittle">
                                 <h4 className="h6">Privacy Policy</h4>
                                 <ul className="list-unstyled small">
@@ -68,7 +65,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-                        <div className="single-footer-caption mb-4">
+                        <div className="single-footer-caption mb-3">
                             <div className="footer-tittle">
                                 <h4 className="h6">We Accept</h4>
                                 <p className="small">Online payment methods</p>
@@ -96,4 +93,5 @@ function Footer() {
         </div>
     );
 }
+
 export default Footer;

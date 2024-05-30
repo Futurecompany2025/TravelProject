@@ -1,33 +1,31 @@
-/* JoinUpcomingTrips.css */
+/* upcomingtrips.css */
+.upcoming-trips-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-/* Apply styles to all text */
-body {
-    font-size: 21px;
-  }
-  /* Apply styles to table headers */
-  .table th {
-    font-size: 20px;
-  }
-  .table td{
-    font-size: 18px;
-  }
-  /* Apply styles to table cells */
-  .trip-item th {
-    font-size: 21px;
-  }
+.grid-header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
 
-  .trip-item:hover{
-    background-color:#e8ebf3;
-  }
-  
-  /* Apply styles to buttons */
-  .btn {
-    font-size: 21px;
-  }
+.trip-item td {
+  vertical-align: middle;
+}
 
-  .table{
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    line-height: 40px;
-  }
-  
+.table-responsive {
+  margin-top: 20px;
+}
+
+.booking-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.booking-form h2 {
+  margin-bottom: 20px;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Headerbar from '../components/Headbar';
+import Footer from '../components/footer'; 
 import RecommendationTitle from '../DetailsComponent/RecommendationTitle';
 import DetailsSection from '../DetailsComponent/detailssection';
 import Hero1 from '../assets/img/hero/1.jpg';
@@ -134,6 +135,7 @@ const RecommendationDetails = () => {
           reviews={recommendation.reviews}
           faqs={recommendation.faqs}
         />
+        <Footer />
         {/* Add more sections or components here */}
       </div>
     </div>

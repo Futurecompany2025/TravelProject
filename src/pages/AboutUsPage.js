@@ -5,7 +5,6 @@ import Headerbar from '../components/Headbar';
 import { Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './about.css'; // Import the CSS file for styling
-
 const AboutUsPage = () => {
   return (
     <>
@@ -74,5 +73,4 @@ const ImageSection = () => {
     </div>
   );
 }
-
 export default AboutUsPage;
