@@ -2,7 +2,6 @@ import React from 'react';
 import logo from '../assets/img/logo/logo.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -96,14 +95,4 @@ const DropdownItem = ({ title, children }) => (
     {children && <div className="dropdown-menu sub-dropdown">{children}</div>}
   </div>
 );
-
-const SubDropdownItem = ({ title, children }) => (
-  <div className="dropdown">
-    <span className="dropdown-item d-flex justify-content-between align-items-center">
-      {title} {children && <i className="fas fa-chevron-right"></i>}
-    </span>
-    {children && <div className="dropdown-menu sub-dropdown">{children}</div>}
-  </div>
-);
-
 export default Navbar;

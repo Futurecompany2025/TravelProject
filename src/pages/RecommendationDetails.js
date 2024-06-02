@@ -13,7 +13,6 @@ import Hero3 from '../assets/img/hero/3.jpg';
 import Hero4 from '../assets/img/hero/4.jpg';
 import Hero5 from '../assets/img/hero/5.jpg';
 import Hero6 from '../assets/img/hero/6.jpg';
-
 const recommendationDetails = {
   'three-high-passes-trek': {
     title: 'Everest Three High Passes Trek',
@@ -206,21 +205,21 @@ const RecommendationDetails = () => {
           <div className="scroll-box-title" onClick={() => scrollToSection('faqs')}>FAQs</div>
         </div>
         <DetailsSection
-          id="overview"
-          overview={recommendation.overview}
-          id="itinerary"
-          itinerary={recommendation.itinerary}
-          id="includes"
-          includes={recommendation.includes}
-          id="cost-dates"
-          costDates={recommendation.costDates}
-          id="useful-info"
-          usefulInfo={recommendation.usefulInfo}
-          id="gallery"
-          gallery={recommendation.gallery}
-          id="faqs"
-          faqs={recommendation.faqs}
-        />
+  overviewId="overview"
+  overview={recommendation.overview}
+  itineraryId="itinerary"
+  itinerary={recommendation.itinerary}
+  includesId="includes"
+  includes={recommendation.includes}
+  costDatesId="cost-dates"
+  costDates={recommendation.costDates}
+  usefulInfoId="useful-info"
+  usefulInfo={recommendation.usefulInfo}
+  galleryId="gallery"
+  gallery={recommendation.gallery}
+  faqsId="faqs"
+  faqs={recommendation.faqs}
+/>
         <Footer />
       </div>
     </div>
