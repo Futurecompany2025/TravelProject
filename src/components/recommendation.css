@@ -19,6 +19,7 @@
   bottom: -10px; /* Adjusted vertical position to be just below the text */
   left: 0; /* Ensure the line spans the entire width */
 }
+
 .site-header {
   text-align: center;
   font-family: 'Playfair Display', serif;
@@ -27,34 +28,64 @@
   color: var(--secondary-color);
   margin-bottom: 10px; /* Adjusted margin-bottom for spacing */
 }
+
 .green-text {
   color: green;
   font-size: 3.125rem;
 }
-.card {
-  overflow: hidden;
-}
-.zoom-image {
-  transition: transform 0.3s ease-in-out;
-}
-.zoom-image:hover {
-  transform: scale(1.1);
-}
+
 .blue-text {
   color: pink;
   font-size: 3.125rem;
 }
+
+.card {
+  overflow: hidden;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
 .price-section {
   display: flex;
   justify-content: flex-end;
 }
+
 .price {
   color: skyblue;
   font-size: 2.5rem;
 }
+
 .recommendation-image {
   width: 100%;
   height: 200px; /* Set a fixed height for consistent display */
   object-fit: cover; /* Maintain aspect ratio and cover the entire space */
 }
 
+/* Remove underline from links */
+.recommendation-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-title {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
