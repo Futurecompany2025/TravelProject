@@ -1,72 +1,37 @@
 import React from 'react';
-
-const DetailsSection = ({
-  price,
-  meal,
-  startEndPoints,
-  transportation,
-  accommodations,
-  activity,
-  maxAltitude,
-  distance,
-  tripGrade,
-  bestTime,
-  overview,
-  itinerary,
-  includes,
-  costDates,
-  usefulInfo,
-  gallery,
-  reviews,
-  faqs
-}) => {
+const DetailsSection = ({ overview, itinerary, includes, costDates, usefulInfo, gallery, faqs }) => {
   return (
     <div>
-      <h2>Details</h2>
-      <p><strong>Price:</strong> {price}</p>
-      <p><strong>Meal:</strong> {meal}</p>
-      <p><strong>Start/End Points:</strong> {startEndPoints}</p>
-      <p><strong>Transportation:</strong> {transportation}</p>
-      <p><strong>Accommodations:</strong> {accommodations}</p>
-      <p><strong>Activity:</strong> {activity}</p>
-      <p><strong>Max Altitude:</strong> {maxAltitude}</p>
-      <p><strong>Distance:</strong> {distance}</p>
-      <p><strong>Trip Grade:</strong> {tripGrade}</p>
-      <p><strong>Best Time:</strong> {bestTime}</p>
-      <div>
-        <h3>Overview</h3>
+      <div id="overview">
+        <h2>Overview</h2>
         <p>{overview}</p>
       </div>
-      <div>
-        <h3>Itinerary</h3>
+      <div id="itinerary">
+        <h2>Itinerary</h2>
         <p>{itinerary}</p>
       </div>
-      <div>
-        <h3>Includes</h3>
+      <div id="includes">
+        <h2>Includes</h2>
         <p>{includes}</p>
       </div>
-      <div>
-        <h3>Cost & Dates</h3>
+      <div id="cost-dates">
+        <h2>Cost & Dates</h2>
         <p>{costDates}</p>
       </div>
-      <div>
-        <h3>Useful Info</h3>
+      <div id="useful-info">
+        <h2>Useful Info</h2>
         <p>{usefulInfo}</p>
       </div>
-      <div>
-        <h3>Gallery</h3>
+      <div id="gallery">
+        <h2>Gallery</h2>
         <p>{gallery}</p>
       </div>
-      <div>
-        <h3>Reviews</h3>
-        <p>{reviews}</p>
-      </div>
-      <div>
-        <h3>FAQs</h3>
+      <div id="faqs">
+        <h2>FAQs</h2>
         <p>{faqs}</p>
       </div>
     </div>
   );
-};
+}
 
 export default DetailsSection;

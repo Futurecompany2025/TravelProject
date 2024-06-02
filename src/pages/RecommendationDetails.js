@@ -2,37 +2,53 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/navbar';
 import Headerbar from '../components/Headbar';
-import Footer from '../components/footer'; 
+import Footer from '../components/footer';
 import RecommendationTitle from '../DetailsComponent/RecommendationTitle';
 import DetailsSection from '../DetailsComponent/detailssection';
+import './RecommendationDetails.css'; // Make sure to import the CSS file
+import { AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange } from '@mui/icons-material';
 import Hero1 from '../assets/img/hero/1.jpg';
 import Hero2 from '../assets/img/hero/2.webp';
 import Hero3 from '../assets/img/hero/3.jpg';
 import Hero4 from '../assets/img/hero/4.jpg';
 import Hero5 from '../assets/img/hero/5.jpg';
 import Hero6 from '../assets/img/hero/6.jpg';
+
 const recommendationDetails = {
   'three-high-passes-trek': {
     title: 'Everest Three High Passes Trek',
     backgroundImage: Hero1,
-    price: 'USD 1790',
-    meal: 'Breakfast in Kathmandu & Full meals on a trek',
-    startEndPoints: 'Kathmandu/Kathmandu',
-    transportation: 'Flight and Private Transport',
-    accommodations: 'Hotel and Lodge',
-    activity: '6-7 hours walking each day',
-    maxAltitude: '5,550mt/18208ft',
-    distance: '166 KM/130 Miles',
-    tripGrade: 'Challenging',
-    bestTime: 'March to May & September to November',
-    overview: 'Ultra-luxury trek to Everest Base Camp offers a more comfortable and indulgent experience compared to traditional treks. While the trek itself is challenging and takes you through some of the most breathtaking landscapes in the world, luxury treks aim to provide high-end accommodations, personalized services, and additional amenities to make the journey more enjoyable. We do provide more comfortable beds, private bathrooms with hot showers, and other amenities to ensure a more pleasant experience. On this luxury trek to Everest Base Camp, you will have private guides and porters who are dedicated to you. It allows for a more personalized experience, and the guides can cater to your specific interests and preferences. It\'s important to note that while a luxury trek to Everest Base Camp offers enhanced comfort, the physical challenges of the trek remain, and participants should still be prepared for high-altitude conditions and variable weather. Trek Ways Nepal offers a full board package which is worry-free package with the best possible accommodation. Come and enjoy the Himalayas with our warmest hospitality.',
-    itinerary: 'Sample itinerary description...',
+    overview: 'Ultra-luxury trek to Everest Base Camp...',
+    itinerary: [
+      'Day 1: Arrival in Kathmandu (1,300m/4,264ft)',
+      'Day 2: Kathmandu Valley sightseeing tour and trek preparation (1,300m/4,264ft)',
+      'Day 3: Drive from Kathmandu to Pokhara (820m/2,690ft) 6-7 hour',
+      'Day 4: Drive to Nayapul (2 hours) and trek to Tikhedhunga (1,480m/4,855ft) 4-5 hour',
+      'Day 5: Trek from Tikhedhunga to Ghorepani (2,860m/9,383ft) 6-7 hour',
+      'Day 6: Hike to Poon Hill and trek to Tadapani (2,630m/8,628ft) 5-6 hour',
+      'Day 7: Trek from Tadapani to Jhinudanda (1,780m/5,839ft) 5-6 hour',
+      'Day 8: Trek from Jhinudanda to Landruk (1,565m/5,134ft) 3-4 hours',
+      'Day 9: Trek from Landruk to Pothana (1,890m/6,200ft) 3 hour',
+      'Day 10: Trek from Pothana to Phedi and drive to Pokhara (820m/2,690ft) 3 hour',
+      'Day 11: Drive from Pokhara to Kathmandu (1,300m/4,264ft) 6-7 hour',
+      'Day 12: Departure day'
+    ],
     includes: 'Sample includes description...',
     costDates: 'Sample cost and dates description...',
     usefulInfo: 'Sample useful info description...',
     gallery: 'Sample gallery description...',
     reviews: 'Sample reviews description...',
-    faqs: 'Sample FAQs description...'
+    faqs: 'Sample FAQs description...',
+    price: 'USD 2395',
+    meal: 'Breakfast in Kathmandu & Full meals on trek',
+    startEndPoints: 'Kathmandu/Kathmandu',
+    transportation: 'Flight and Private Transport',
+    accommodations: 'Hotel and Lodge',
+    activity: '6-7 hours walking',
+    maxAltitude: '(3,942m/12,933ft)',
+    distance: '102 KM/63.3 Miles',
+    tripGrade: 'Moderate',
+    bestTime: 'March to June & September to November'
   },
   'everest-base-camp-trek': {
     title: 'Everest Base Camp Trek',
@@ -100,14 +116,17 @@ const recommendationDetails = {
     faqs: 'FAQs for Everest Base Camp Trek with Gokyo Lake...'
   }
 };
-
+  // Other recommendations...
 const RecommendationDetails = () => {
   const { slug } = useParams();
   const recommendation = recommendationDetails[slug];
-
   if (!recommendation) {
     return <div>Recommendation not found</div>;
   }
+
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div>
@@ -115,30 +134,97 @@ const RecommendationDetails = () => {
       <Navbar />
       <div>
         <RecommendationTitle title={recommendation.title} backgroundImage={recommendation.backgroundImage} />
+        <div className="recommendation-details">
+          <div className="recommendation-column">
+            <div className="recommendation-item">
+              <AttachMoney />
+              <span>Price starts from</span>
+              <span>{recommendation.price}</span>
+            </div>
+            <div className="recommendation-item">
+              <DirectionsWalk />
+              <span>Activity:</span>
+              <span>{recommendation.activity}</span>
+            </div>
+          </div>
+          <div className="recommendation-column">
+            <div className="recommendation-item">
+              <CalendarToday />
+              <span>Meal:</span>
+              <span>{recommendation.meal}</span>
+            </div>
+            <div className="recommendation-item">
+              <Height />
+              <span>Max Altitude:</span>
+              <span>{recommendation.maxAltitude}</span>
+            </div>
+          </div>
+          <div className="recommendation-column">
+            <div className="recommendation-item">
+              <LocationOn />
+              <span>Start & End Point:</span>
+              <span>{recommendation.startEndPoints}</span>
+            </div>
+            <div className="recommendation-item">
+              <LocationOn />
+              <span>Distance:</span>
+              <span>{recommendation.distance}</span>
+            </div>
+          </div>
+          <div className="recommendation-column">
+            <div className="recommendation-item">
+              <Flight />
+              <span>Transportation:</span>
+              <span>{recommendation.transportation}</span>
+            </div>
+            <div className="recommendation-item">
+              <Grade />
+              <span>Trip Grade:</span>
+              <span>{recommendation.tripGrade}</span>
+            </div>
+          </div>
+          <div className="recommendation-column">
+            <div className="recommendation-item">
+              <Hotel />
+              <span>Accommodations:</span>
+              <span>{recommendation.accommodations}</span>
+            </div>
+            <div className="recommendation-item">
+              <DateRange />
+              <span>Best Time:</span>
+              <span>{recommendation.bestTime}</span>
+            </div>
+          </div>
+        </div>
+        <div className="details-scroll-box">
+          <div className="scroll-box-title" onClick={() => scrollToSection('overview')}>Overview</div>
+          <div className="scroll-box-title" onClick={() => scrollToSection('itinerary')}>Itinerary</div>
+          <div className="scroll-box-title" onClick={() => scrollToSection('includes')}>Includes</div>
+          <div className="scroll-box-title" onClick={() => scrollToSection('cost-dates')}>Cost & Dates</div>
+          <div className="scroll-box-title" onClick={() => scrollToSection('useful-info')}>Useful Info</div>
+          <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
+          <div className="scroll-box-title" onClick={() => scrollToSection('faqs')}>FAQs</div>
+        </div>
         <DetailsSection
-          price={recommendation.price}
-          meal={recommendation.meal}
-          startEndPoints={recommendation.startEndPoints}
-          transportation={recommendation.transportation}
-          accommodations={recommendation.accommodations}
-          activity={recommendation.activity}
-          maxAltitude={recommendation.maxAltitude}
-          distance={recommendation.distance}
-          tripGrade={recommendation.tripGrade}
-          bestTime={recommendation.bestTime}
+          id="overview"
           overview={recommendation.overview}
+          id="itinerary"
           itinerary={recommendation.itinerary}
+          id="includes"
           includes={recommendation.includes}
+          id="cost-dates"
           costDates={recommendation.costDates}
+          id="useful-info"
           usefulInfo={recommendation.usefulInfo}
+          id="gallery"
           gallery={recommendation.gallery}
-          reviews={recommendation.reviews}
+          id="faqs"
           faqs={recommendation.faqs}
         />
         <Footer />
-        {/* Add more sections or components here */}
       </div>
     </div>
   );
 };
+
 export default RecommendationDetails;

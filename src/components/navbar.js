@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/img/logo/logo.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,26 +18,31 @@ function Navbar() {
         <ul className="navbar-nav ml-auto">
           <NavItem title="Destinations">
             <DropdownItem title="Nepal">
-              <SubDropdownItem title="Lumbini" />
-              <SubDropdownItem title="Everest Base Camp" />
-              <SubDropdownItem title="Annapurna Circuit" />
+                <DropdownItem title="Trekking in Nepal" />
+                <DropdownItem title="Tour in Nepal" />
+                <DropdownItem title="Luxury Tours in Nepal" />
+                <DropdownItem title="Peak Climbing in Nepal" />
+                <DropdownItem title="Expeditions in Nepal" />
             </DropdownItem>
-            <DropdownItem title="Bhutan" />
-            <DropdownItem title="Tibet" />
-            <DropdownItem title="India" />
+            <DropdownItem title="Bhutan">
+                <DropdownItem title="Bhutan Tour" />
+            </DropdownItem>
+            <DropdownItem title="Tibet">
+                <DropdownItem title="Tibet Tour" />
+            </DropdownItem>
+            <DropdownItem title="India">
+                <DropdownItem title="India Tour" />
+            </DropdownItem>
           </NavItem>
-          {/* Add other navbar items */}
           <NavItem title="Day Tour">
             <DropdownItem title="Rafting" />
-            <DropdownItem title="Helicopter tour" />
-            <DropdownItem title="Annapurna Base Camp" />
             <DropdownItem title="Helicopter Tour" />
+            <DropdownItem title="Annapurna Base Camp" />
           </NavItem>
           <NavItem title="Luxury Travel">
             <DropdownItem title="Rafting" />
-            <DropdownItem title="Helicopter tour" />
-            <DropdownItem title="Annapurna base camp" />
             <DropdownItem title="Helicopter Tour" />
+            <DropdownItem title="Annapurna Base Camp" />
           </NavItem>
           <NavItem title="Travel Style">
             <DropdownItem title="Family Trip" />
@@ -50,21 +56,21 @@ function Navbar() {
             <DropdownItem title="Bhutan Travel Guide" />
             <DropdownItem title="Tibet Travel Guide" />
           </NavItem>
-          <NavItem title="Blog">
+          <li className="nav-item">
             <Link className="nav-link px-4 text-dark" to="/blog">Blog</Link>
-          </NavItem>
+          </li>
           <NavItem title="Company">
-            <DropdownItem title="About us" />
-            <DropdownItem title="Pay now" />
-            <DropdownItem title="Our team" />
-            <DropdownItem title="Reviews" />
-            <DropdownItem title="Documents" />
-            <DropdownItem title="Why us?" />
-            <DropdownItem title="Partner With Us" />
+            <Link className="dropdown-item" to="/about-us">About us</Link>
+            <Link className="dropdown-item" to="/pay-now">Pay now</Link>
+            <Link className="dropdown-item" to="/our-team">Our team</Link>
+            <Link className="dropdown-item" to="/reviews">Reviews</Link>
+            <Link className="dropdown-item" to="/documents">Documents</Link>
+            <Link className="dropdown-item" to="/why-us">Why us?</Link>
+            <Link className="dropdown-item" to="/partner-with-us">Partner With Us</Link>
           </NavItem>
-          <NavItem title="Contact">
-            <Link className="nav-link px-4 text-dark" to="/Contact-us">Contact</Link>
-          </NavItem>
+          <li className="nav-item">
+            <Link className="nav-link px-4 text-dark" to="/contact-us">Contact</Link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -73,7 +79,7 @@ function Navbar() {
 
 const NavItem = ({ title, children }) => (
   <li className="nav-item dropdown">
-    <span className="nav-link dropdown-toggle px-4 text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span className="nav-link dropdown-toggle px-4 text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       {title}
     </span>
     <div className="dropdown-menu" aria-labelledby={`${title}Dropdown`}>
@@ -83,19 +89,21 @@ const NavItem = ({ title, children }) => (
 );
 
 const DropdownItem = ({ title, children }) => (
-  <React.Fragment>
-    <span className="dropdown-item d-flex justify-content-between align-items-center" href="#">
-      {title} <i className="fas fa-chevron-right"></i>
+  <div className="dropdown">
+    <span className="dropdown-item d-flex justify-content-between align-items-center">
+      {title} {children && <i className="fas fa-chevron-right"></i>}
     </span>
-    {children && <div className="dropdown-divider"></div>}
-    {children}
-  </React.Fragment>
+    {children && <div className="dropdown-menu sub-dropdown">{children}</div>}
+  </div>
 );
 
-const SubDropdownItem = ({ title }) => (
-  <span className="dropdown-item d-flex justify-content-between align-items-center" href="#">
-    {title}
-  </span>
+const SubDropdownItem = ({ title, children }) => (
+  <div className="dropdown">
+    <span className="dropdown-item d-flex justify-content-between align-items-center">
+      {title} {children && <i className="fas fa-chevron-right"></i>}
+    </span>
+    {children && <div className="dropdown-menu sub-dropdown">{children}</div>}
+  </div>
 );
 
 export default Navbar;

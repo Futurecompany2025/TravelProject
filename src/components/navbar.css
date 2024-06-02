@@ -1,17 +1,29 @@
-
 /* Add your custom CSS styles here */
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* Navbar link styles */
 .navbar-nav .nav-link {
-    font-weight: 500;
-    font-size: 1rem; /* Set font weight to 600 (equivalent to semi-bold) */
-  }
-  .navbar-logo {
-    max-width: 150px;
-  }
-  /* Add your navbar CSS styles here */
+  font-weight: 400; /* Decrease font weight */
+  font-size: 0.9rem; /* Decrease font size */
+  padding: 0.5rem 1rem; /* Adjust padding for height */
+}
+
+/* Navbar logo styles */
+.navbar-logo {
+  max-width: 100px;
+}
+
+/* Navbar container styles */
+.navbar {
+  max-width: 950px; /* Set your desired maximum width */
+  margin: 0 auto; /* Center the navbar horizontally */
+  padding: 0rem 0rem; /* Adjust padding for height */
+}
+
+/* Sidebar styles */
 .sidebar {
   position: absolute;
   top: 0;
@@ -24,9 +36,11 @@
   display: none;
 }
 
-.nav-item.dropdown:hover .sidebar {
+.nav-item:hover > .dropdown-menu {
   display: block;
+  left: 0;
 }
+
 
 .sidebar-item {
   display: block;
@@ -39,4 +53,18 @@
   background-color: #e9ecef;
 }
 
+.dropdown-menu {
+  position: absolute;
+  left: -9999px;
+  top: 100%;
+  display: none;
+  min-width: 10rem;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
+.dropdown:hover > .sub-dropdown {
+  display: block;
+  left: 100%;
+  top: 0;
+}

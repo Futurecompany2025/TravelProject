@@ -1,0 +1,61 @@
+.recommendation-details {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .recommendation-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recommendation-item img {
+    margin-right: 10px;
+  }
+  
+  .recommendation-item span {
+    font-size: 16px;
+  }
+  .recommendation-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Adjust as needed */
+  }
+
+  .details-scroll-box {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .scroll-box-title {
+    margin-right: 15px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .scroll-box-title:hover {
+    text-decoration: underline;
+  }
+  
+  .itinerary-day {
+    margin: 10px 0;
+  }
+  
+  .itinerary-title {
+    cursor: pointer;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .itinerary-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }

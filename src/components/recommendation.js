@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import './recommendation.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // Import images
 import Hero1 from '../assets/img/hero/1.jpg';
 import Hero2 from '../assets/img/hero/2.webp';

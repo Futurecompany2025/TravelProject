@@ -1,30 +1,32 @@
-/* Headerbar.css */
+.flag-icon {
+  width: 20px; /* Set the width of the flag icon */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
 .headerbar {
-  background-color: #212529; /* Dark blue background */
-  color: #fff; /* White text color */
-  padding: 0.5rem 2rem; /* Adjust padding as needed */
-}
-
-.headerbar-item .flag-icon {
-  width: 20px; /* Adjust flag icon size */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 5px; /* Add spacing after flag icon */
-}
-
-.make-inquiry-btn {
-  background-color: orange;
-  color: white;
-  border: none;
-  border-radius: 20px; /* Adjust border-radius to make the button oval */
-  padding: 10px 20px; /* Adjust padding as needed */
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.make-inquiry-btn:hover {
-  background-color: darkorange; /* Change color on hover if desired */
+  padding: 5px 15px; /* Adjust padding as needed */
+  line-height: 1.4; /* Adjust line height to reduce vertical space */
+  font-family: var(--bs-font-sans-serif); /* Use specified font family */
+  font-size: 0.9rem; /* Decrease font size */
+  font-weight: 400; /* Set font weight to 400 */
+  color: #212529; /* Set text color */
+  height: 50px; /* Set the height as needed */
 }
 
 .headerbar-item {
-  font-size: 17px; /* Adjust the font size as needed */
+  font-size: 0.8rem; /* Decrease font size */
+}
+
+.contact-info {
+  font-size: 0.8rem; /* Decrease font size */
+}
+
+.talk-to-expert {
+  font-size: 0.8rem; /* Decrease font size */
+}
+
+.make-inquiry-btn {
+  font-size: 0.1rem; /* Decrease font size */
+  padding: 1px 1px; /* Adjust padding as needed */
+  height: auto;
 }
