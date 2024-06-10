@@ -1,0 +1,53 @@
+/* Updated footer.css */
+.site-footer {
+    position: relative;
+    background-color: var(--primary-color);
+}
+
+.section-padding {
+    padding: 20px 0; /* Reduce padding to make the footer more compact */
+}
+
+.footer-area {
+    background-color: lightslategray; /* Background color of the footer */
+    padding: 10px 0; /* Reduce padding for a smaller height */
+}
+
+.footer-padding {
+    padding: 10px 0; /* Further reduce vertical padding */
+}
+
+.footer-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.single-footer-caption {
+    margin-bottom: 10px; /* Further reduce bottom margin */
+}
+
+.footer-tittle h4 {
+    font-size: 16px; /* Keep the reduced font size */
+    margin-bottom: 5px; /* Further reduce bottom margin */
+}
+
+.footer-tittle p,
+.footer-tittle ul {
+    font-size: 14px; /* Keep the compact font size */
+    margin-bottom: 5px; /* Further reduce bottom margin */
+}
+
+.footer-copy-right {
+    text-align: left;
+    font-size: 14px; /* Smaller font size */
+}
+
+.footer-social a {
+    color: #333;
+    margin-right: 5px; /* Further reduce margin between icons */
+    font-size: 16px; /* Keep reduced icon size */
+}
+
+.footer-social {
+    text-align: right; /* Align icons to the right */
+}

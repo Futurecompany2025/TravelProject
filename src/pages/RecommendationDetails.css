@@ -1,0 +1,81 @@
+.recommendation-details {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.recommendation-item {
+  display: flex;
+  align-items: center;
+}
+
+.recommendation-item span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.recommendation-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-main {
+  display: flex;
+  margin-top: 20px;
+}
+
+.details-overview {
+  flex: 1;
+}
+
+.details-scroll-box {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.scroll-box-title {
+  margin-right: 15px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.scroll-box-title:hover {
+  text-decoration: underline;
+}
+
+.contact-box {
+  margin-left: 50px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  width: 300px;
+}
+
+.contact-button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+.contact-details {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}

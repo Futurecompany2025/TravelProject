@@ -1,0 +1,39 @@
+.support-caption {
+    font-family: 'Mukta', sans-serif !important;
+    color:blue;
+    font-size: 1.2rem;
+    font-weight: 3000;
+    line-height: 1.6;
+  }
+
+  .support-company-area .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .trending-trips {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .trending-trips h3, .trending-trips h4 {
+    margin-bottom: 15px;
+  }
+  
+  .trip-list {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .trip-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .trip-item:last-child {
+    border-bottom: none;
+  }

@@ -1,0 +1,60 @@
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .content-section {
+    padding: 20px;
+    background-color: #e8ebf3;
+  }
+  
+  .recommendation-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .price-section .price {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .price-section .blue-text {
+    color: #007bff;
+  }
+  
+  .zoom-image {
+    overflow: hidden;
+  }
+  
+  .zoom-image img {
+    transition: transform 0.3s;
+  }
+  
+  .zoom-image img:hover {
+    transform: scale(1.1);
+  }
+  

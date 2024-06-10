@@ -1,0 +1,39 @@
+.flag-icon {
+  width: 20px; /* Set the width of the flag icon */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+.headerbar {
+  padding: 5px 15px; /* Adjust padding as needed */
+  line-height: 1.4; /* Adjust line height to reduce vertical space */
+  font-family: var(--bs-font-sans-serif); /* Use specified font family */
+  font-size: 0.9rem; /* Decrease font size */
+  font-weight: 400; /* Set font weight to 400 */
+  color: #212529; /* Set text color */
+  height: auto; /* Set the height as needed */
+}
+
+.headerbar-item {
+  font-size: 0.8rem; /* Decrease font size */
+}
+
+.contact-info {
+  font-size: 0.8rem; /* Decrease font size */
+}
+
+.talk-to-expert {
+  font-size: 0.8rem; /* Decrease font size */
+}
+
+.make-inquiry-btn {
+  font-size: 0.8rem; /* Decrease font size */
+  padding: 5px 10px; /* Adjust padding as needed */
+  height: auto;
+}
+
+/* Add some margins for mobile view */
+@media (max-width: 767px) {
+  .headerbar-item {
+    margin-bottom: 5px;
+  }
+}
