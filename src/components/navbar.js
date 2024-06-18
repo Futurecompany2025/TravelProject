@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/img/logo/logo.png';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        className="navbar-toggler"
+        type="button"
+        onClick={toggleMenu}
+      >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div className={`collapse navbar-collapse ${showMenu ? 'show' : ''}`}>
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="Logo" className="navbar-logo" />
@@ -16,9 +27,9 @@ function Navbar() {
         </div>
         <ul className="navbar-nav ml-auto">
           <NavItem title="Destinations">
-          <DropdownItem title="Nepal" to="/nepal">
-                <DropdownItem title="Trekking in Nepal" to="/nepal/trekking" />
-                <DropdownItem title="Tour in Nepal" to="/nepal/tour" />
+            <DropdownItem title="Nepal" to="/nepal">
+              <DropdownItem title="Trekking in Nepal" to="/nepal/trekking" />
+              <DropdownItem title="Tour in Nepal" to="/nepal/tour" />
                 <DropdownItem title="Luxury Tours in Nepal" to="/nepal/luxury-tours" />
                 <DropdownItem title="Peak Climbing in Nepal" to="/nepal/peak-climbing" />
                 <DropdownItem title="Expeditions in Nepal" to="/nepal/expeditions" />
@@ -34,17 +45,17 @@ function Navbar() {
             </DropdownItem>
           </NavItem>
           <NavItem title="Day Tour">
-            <DropdownItem title="Helicopter Tour to Everest Base Camp Day Tour" to="/day-tour/rafting" />
-            <DropdownItem title="White Water Day Rafting" to="/day-tour/helicopter" />
-            <DropdownItem title="Muktinath Helicopter Tour" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Annapurna Base Camp Helicopter Tour" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Langtang Helicopter Tour" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Kakani Day Hike" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Kathmandu and Patan Day Tour" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Shivapuri Day Hike" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="5 UNESCO World Heritage sites of Kathmandu Day Tour" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Kathmandu and Kirtipur Day Tour" to="/day-tour/annapurna-base-camp" />
-            <DropdownItem title="Tare Bhir Day Hike" to="/day-tour/annapurna-base-camp" />
+          <DropdownItem title="Helicopter Tour to Everest Base Camp Day Tour" to="/day-tour/helicopter-everest-base" />
+          <DropdownItem title="White Water Day Rafting" to="/day-tour/white-water-day-rafting" />
+  <DropdownItem title="Muktinath Helicopter Tour" to="/day-tour/muktinath-helicopter-tour" />
+  <DropdownItem title="Annapurna Base Camp Helicopter Tour" to="/day-tour/annapurna-base-camp" />
+  <DropdownItem title="Langtang Helicopter Tour" to="/day-tour/langtang-helicopter-tour" />
+  <DropdownItem title="Kakani Day Hike" to="/day-tour/kakani-day-hike" />
+  <DropdownItem title="Kathmandu and Patan Day Tour" to="/day-tour/kathmandu-patan-day-tour" />
+  <DropdownItem title="Shivapuri Day Hike" to="/day-tour/shivapuri-day-hike" />
+  <DropdownItem title="5 UNESCO World Heritage sites of Kathmandu Day Tour" to="/day-tour/5-unesco-world-heritage-sites" />
+  <DropdownItem title="Kathmandu and Kirtipur Day Tour" to="/day-tour/kathmandu-kirtipur-day-tour" />
+  <DropdownItem title="Tare Bhir Day Hike" to="/day-tour/tare-bhir-day-hike" />
           </NavItem>
           <NavItem title="Luxury Travel">
             <DropdownItem title="Ultra - Luxury Trek to Everest Base Camp" to="/luxury-travel/rafting" />

@@ -197,10 +197,6 @@ const RecommendationDetails = () => {
         </div>
         <div className="details-scroll-box">
           <div className="scroll-box-title" onClick={() => scrollToSection('overview')}>Overview</div>
-          <div className="contact-box">
-          <button className="contact-button">Book Now</button>
-          <button className="contact-button">Make Inquiry</button>
-        </div>
           <div className="scroll-box-title" onClick={() => scrollToSection('itinerary')}>Itinerary</div>
           <div className="scroll-box-title" onClick={() => scrollToSection('includes')}>Includes</div>
           <div className="scroll-box-title" onClick={() => scrollToSection('cost-dates')}>Cost & Dates</div>
@@ -211,7 +207,6 @@ const RecommendationDetails = () => {
         <DetailsSection
   overviewId="overview"
   overview={recommendation.overview}
-  
   itineraryId="itinerary"
   itinerary={recommendation.itinerary}
   includesId="includes"
@@ -225,10 +220,10 @@ const RecommendationDetails = () => {
   faqsId="faqs"
   faqs={recommendation.faqs}
 />
-
         <Footer />
       </div>
     </div>
   );
 };
+
 export default RecommendationDetails;

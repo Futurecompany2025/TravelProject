@@ -1,0 +1,174 @@
+/* Header Section */
+.tarebhirday-hike-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    position: relative;
+  }
+  
+  .tarebhirday-hike-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .tarebhirday-hike-header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Tour Details Wrapper */
+  .tarebhirday-hike-details-wrapper {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /* Individual Tour Details Items */
+  .tarebhirday-hike-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tarebhirday-hike-item span {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  /* Columns Layout */
+  .tarebhirday-hike-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Scroll Box for Navigation */
+  .tarebhirday-hike-scroll-box {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .scroll-box-title {
+    margin-right: 15px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .scroll-box-title:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content and Aside Layout */
+  .tarebhirday-hike-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .tarebhirday-hike-main {
+    flex: 0 1 70%;
+    padding-right: 20px;
+  }
+  
+  .tarebhirday-hike-main section {
+    margin-bottom: 20px;
+  }
+  
+  .tarebhirday-hike-main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .tarebhirday-hike-main p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .tarebhirday-hike-aside {
+    flex: 0 1 25%;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  /* Information Box in Aside */
+  .tarebhirday-hike-info-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tarebhirday-hike-info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .tarebhirday-hike-info-box .tour-price {
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .book-now-btn,
+  .make-inquiry-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .book-now-btn {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .make-inquiry-btn {
+    background-color: #337ab7;
+    color: white;
+  }
+  
+  /* TripAdvisor Box */
+  .tripadvisor-box {
+    margin-top: 20px;
+  }
+  
+  .tripadvisor-box p {
+    margin: 5px 0;
+  }
+  
+  /* Contact Box */
+  .contact-box {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .contact-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-box p {
+    margin: 5px 0;
+  }
+  

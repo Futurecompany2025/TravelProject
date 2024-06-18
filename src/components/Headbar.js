@@ -5,7 +5,6 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faViber } from '@fortawesome/free-brands-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Flag from 'react-world-flags';
-
 const Headerbar = () => {
   return (
     <div className="headerbar bg-dark text-white">
@@ -56,5 +55,4 @@ const Headerbar = () => {
     </div>
   );
 };
-
 export default Headerbar;

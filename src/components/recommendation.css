@@ -4,11 +4,13 @@
   background-position: center;
   padding: 30px 0;
 }
+
 .decorative-line {
   width: 70%;
   margin: 0 auto; /* Center the decorative line horizontally */
   position: relative;
 }
+
 .decorative-line:before {
   content: '';
   position: absolute;
@@ -88,4 +90,61 @@
   margin: 10px 0;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 767px) {
+  .site-header {
+    font-size: 2rem;
+  }
+
+  .green-text, .blue-text {
+    font-size: 2.5rem;
+  }
+
+  .recommendation-image {
+    height: 150px; /* Adjust the height for smaller screens */
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .price-section {
+    justify-content: center; /* Center the price section on smaller screens */
+  }
+}
+
+@media (max-width: 575px) {
+  .decorative-line {
+    width: 90%; /* Increase width to fit better on smaller screens */
+  }
+
+  .green-text, .blue-text {
+    font-size: 2rem;
+  }
+
+  .recommendation-image {
+    height: 120px; /* Further adjust the height for very small screens */
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
 }

@@ -1,0 +1,133 @@
+/* white-water-day-rafting.css */
+
+.rafting-tour-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    position: relative;
+  }
+  
+  .rafting-tour-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .rafting-tour-header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .rafting-tour-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .rafting-tour-content {
+    width: 70%;
+  }
+  
+  .details-scroll-box {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+  
+  .scroll-box-title {
+    margin-right: 15px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .scroll-box-title:hover {
+    text-decoration: underline;
+  }
+  
+  .rafting-tour-content section {
+    margin-bottom: 40px;
+  }
+  
+  .rafting-tour-sidebar {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .sidebar-box {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sidebar-box .price {
+    color: #ff5722;
+    font-weight: bold;
+  }
+  
+  .sidebar-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .book-now, .make-inquiry {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-now {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .make-inquiry {
+    background-color: #3f51b5;
+    color: #fff;
+  }
+  
+  .sidebar-recommendation {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tripadvisor-logo {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-contact {
+    text-align: center;
+  }
+  
+  .sidebar-contact h4 {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-contact p {
+    margin: 5px 0;
+  }
+  

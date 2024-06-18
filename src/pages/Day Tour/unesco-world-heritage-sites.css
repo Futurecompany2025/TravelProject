@@ -1,0 +1,108 @@
+/* Header Section */
+.five-unesco-world-heritage-sites-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    position: relative;
+  }
+  
+  .five-unesco-world-heritage-sites-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .five-unesco-world-heritage-sites-header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Details Wrapper */
+  .five-unesco-world-heritage-sites-details-wrapper {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Overview Section */
+  .five-unesco-world-heritage-sites-overview {
+    margin-bottom: 20px;
+  }
+  
+  .five-unesco-world-heritage-sites-overview h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Individual Sites Section */
+  .five-unesco-world-heritage-sites-sites {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .five-unesco-world-heritage-sites-site {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .five-unesco-world-heritage-sites-site h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Includes, Cost & Dates, Useful Info, Gallery, Reviews, FAQs Sections */
+  .five-unesco-world-heritage-sites-includes,
+  .five-unesco-world-heritage-sites-cost-dates,
+  .five-unesco-world-heritage-sites-useful-info,
+  .five-unesco-world-heritage-sites-gallery,
+  .five-unesco-world-heritage-sites-reviews,
+  .five-unesco-world-heritage-sites-faqs {
+    margin-bottom: 20px;
+  }
+  
+  .five-unesco-world-heritage-sites-includes h2,
+  .five-unesco-world-heritage-sites-cost-dates h2,
+  .five-unesco-world-heritage-sites-useful-info h2,
+  .five-unesco-world-heritage-sites-gallery h2,
+  .five-unesco-world-heritage-sites-reviews h2,
+  .five-unesco-world-heritage-sites-faqs h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Scroll Box for Navigation */
+  .five-unesco-world-heritage-sites-scroll-box {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .scroll-box-title {
+    margin-right: 15px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .scroll-box-title:hover {
+    text-decoration: underline;
+  }
+  
+  
