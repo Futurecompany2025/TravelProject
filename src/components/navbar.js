@@ -45,27 +45,27 @@ function Navbar() {
             </DropdownItem>
           </NavItem>
           <NavItem title="Day Tour">
-          <DropdownItem title="Helicopter Tour to Everest Base Camp Day Tour" to="/day-tour/helicopter-everest-base" />
-          <DropdownItem title="White Water Day Rafting" to="/day-tour/white-water-day-rafting" />
-  <DropdownItem title="Muktinath Helicopter Tour" to="/day-tour/muktinath-helicopter-tour" />
-  <DropdownItem title="Annapurna Base Camp Helicopter Tour" to="/day-tour/annapurna-base-camp" />
-  <DropdownItem title="Langtang Helicopter Tour" to="/day-tour/langtang-helicopter-tour" />
-  <DropdownItem title="Kakani Day Hike" to="/day-tour/kakani-day-hike" />
-  <DropdownItem title="Kathmandu and Patan Day Tour" to="/day-tour/kathmandu-patan-day-tour" />
-  <DropdownItem title="Shivapuri Day Hike" to="/day-tour/shivapuri-day-hike" />
-  <DropdownItem title="5 UNESCO World Heritage sites of Kathmandu Day Tour" to="/day-tour/5-unesco-world-heritage-sites" />
-  <DropdownItem title="Kathmandu and Kirtipur Day Tour" to="/day-tour/kathmandu-kirtipur-day-tour" />
-  <DropdownItem title="Tare Bhir Day Hike" to="/day-tour/tare-bhir-day-hike" />
+          <DropdownItem title="Helicopter Tour to Everest Base Camp Day Tour" to="/helicopter-everest-base" />
+          <DropdownItem title="White Water Day Rafting" to="/white-water-day-rafting" />
+  <DropdownItem title="Muktinath Helicopter Tour" to="/muktinath-helicopter-tour" />
+  <DropdownItem title="Annapurna Base Camp Helicopter Tour" to="/annapurna-base-camp" />
+  <DropdownItem title="Langtang Helicopter Tour" to="/dlangtang-helicopter-tour" />
+  <DropdownItem title="Kakani Day Hike" to="/kakani-day-hike" />
+  <DropdownItem title="Kathmandu and Patan Day Tour" to="/kathmandu-patan-day-tour" />
+  <DropdownItem title="Shivapuri Day Hike" to="/shivapuri-day-hike" />
+  <DropdownItem title="5 UNESCO World Heritage sites of Kathmandu Day Tour" to="/5-unesco-world-heritage-sites" />
+  <DropdownItem title="Kathmandu and Kirtipur Day Tour" to="/kathmandu-kirtipur-day-tour" />
+  <DropdownItem title="Tare Bhir Day Hike" to="/tare-bhir-day-hike" />
           </NavItem>
           <NavItem title="Luxury Travel">
-            <DropdownItem title="Ultra - Luxury Trek to Everest Base Camp" to="/luxury-travel/rafting" />
-            <DropdownItem title="Helicopter Tour to Everest Base Camp Day Tour" to="/luxury-travel/helicopter" />
-            <DropdownItem title="Heli Trek to Everest Base Camp" to="/luxury-travel/annapurna-base-camp" />
-            <DropdownItem title="Muktinath Helicopter Tour" to="/luxury-travel/annapurna-base-camp" />
-            <DropdownItem title="Luxury Trek to Annapurna" to="/luxury-travel/annapurna-base-camp" />
-            <DropdownItem title="Exquisite Nepal Luxury Tour" to="/luxury-travel/annapurna-base-camp" />
-            <DropdownItem title="Annapurna Base Camp Helicopter Tour" to="/luxury-travel/annapurna-base-camp" />
-            <DropdownItem title="Langtang Helicopter Tour" to="/luxury-travel/annapurna-base-camp" />
+            <DropdownItem title="Ultra - Luxury Trek to Everest Base Camp" to="/rafting" />
+            <DropdownItem title="Helicopter Tour to Everest Base Camp Day Tour" to="/helicopter" />
+            <DropdownItem title="Heli Trek to Everest Base Camp" to="/annapurna-base-camp" />
+            <DropdownItem title="Muktinath Helicopter Tour" to="/muktinath-helicopter-tour" />
+            <DropdownItem title="Luxury Trek to Annapurna" to="/annapurna-base-camp" />
+            <DropdownItem title="Exquisite Nepal Luxury Tour" to="/annapurna-base-camp" />
+            <DropdownItem title="Annapurna Base Camp Helicopter Tour" to="/annapurna-base-camp" />
+            <DropdownItem title="Langtang Helicopter Tour" to="/annapurna-base-camp" />
           </NavItem>
           <NavItem title="Travel Style">
             <DropdownItem title="Family Trip" to="/travel-style/family-trip" />

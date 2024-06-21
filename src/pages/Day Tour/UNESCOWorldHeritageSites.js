@@ -7,7 +7,6 @@ import {
   AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange
 } from '@mui/icons-material';
 import backgroundImage from '../../assets/img/hero/Tour/6.jpg'; // Replace with appropriate image path
-
 const unescoSitesDetails = {
   title: '5 UNESCO World Heritage Sites',
   backgroundImage: backgroundImage, // Replace with appropriate image path
@@ -111,5 +110,4 @@ const FiveUNESCOHeritageSites = () => {
     </div>
   );
 };
-
 export default FiveUNESCOHeritageSites;

@@ -62,6 +62,7 @@ function Home() {
     </>
   );
 }
+
 function App() {
   return (
     <Router>
@@ -70,10 +71,10 @@ function App() {
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="/" element={<Home />} />
         {/* Define more specific routes before less specific ones */}
-        <Route path="/day-tour/helicopter-everest-base" element={<Helicoptereverestbase />} />
-        <Route path="/day-tour/kakani-day-hike" element={<KakaniDayHike />} />
-        <Route path="/day-tour/kathmandu-kirtipur-day-tour" element={<KathmanduKirtipurDayTour />} />
-        <Route path="/day-tour/white-water-day-rafting" element={< WhiteWaterDayRafting  />} />
+        <Route path="/helicopter-everest-base" element={<Helicoptereverestbase />} />
+        <Route path="/kakani-day-hike" element={<KakaniDayHike />} />
+        <Route path="/kathmandu-kirtipur-day-tour" element={<KathmanduKirtipurDayTour />} />
+        <Route path="/white-water-day-rafting" element={<WhiteWaterDayRafting />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/blog" element={<BlogDetails />} />
         <Route path="/contact-us" element={<ContactUs />} />
@@ -88,17 +89,17 @@ function App() {
         <Route path="/nepal/peak-climbing" element={<PeakClimbingInNepal />} />
         <Route path="/nepal/expeditions" element={<ExpeditionsInNepal />} />
         {/* Move this to the end to avoid conflict with other routes */}
-        <Route path="/day-tour/annapurna-base-camp" element={<AnnapurnaBaseCampHelicopter />} />
-        <Route path="/day-tour/muktinath-helicopter-tour" element={<MuktinathHelicopterTour  />} />
-        <Route path="/day-tour/muktinath-helicopter-tour" element={<MuktinathHelicopterTour  />} />
-        <Route path="/day-tour/langtang-helicopter-tour" element={<LangtangHelicopterTour  />} />
-        <Route path="/day-tour/kathmandu-patan-day-tour" element={<KathmanduAndPatanDayTour  />} />
-        <Route path="/day-tour/shivapuri-day-hike" element={<ShivapuriDayHike />} />
-        <Route path="/day-tour/tare-bhir-day-hike" element={< TarebhirdayHike />} />
-        <Route path="/day-tour/5-unesco-world-heritage-sites" element={<FiveUNESCOHeritageSites  />} />
-        
+        <Route path="/annapurna-base-camp" element={<AnnapurnaBaseCampHelicopter />} />
+        <Route path="/muktinath-helicopter-tour" element={<MuktinathHelicopterTour />} />
+        <Route path="/langtang-helicopter-tour" element={<LangtangHelicopterTour />} />
+        <Route path="/kathmandu-patan-day-tour" element={<KathmanduAndPatanDayTour />} />
+        <Route path="/shivapuri-day-hike" element={<ShivapuriDayHike />} />
+        <Route path="/tare-bhir-day-hike" element={<TarebhirdayHike />} />
+        <Route path="/5-unesco-world-heritage-sites" element={<FiveUNESCOHeritageSites />} />
+        <Route path="/:slug" element={<RecommendationDetails />} />
       </Routes>
     </Router>
   );
 }
+
 export default App;

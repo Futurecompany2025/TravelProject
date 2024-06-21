@@ -79,3 +79,32 @@
   font-size: 16px;
   line-height: 1.5;
 }
+
+
+.booking-info-container {
+  width: 30%; /* Adjust width as needed */
+  padding: 20px;
+}
+
+.booking-info-box {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.booking-info-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.booking-info-box p {
+  margin-bottom: 10px;
+}
+
+.booking-info-box .tour-price {
+  font-weight: bold;
+}
+
+.contact-box {
+  margin-top: 20px;
+}

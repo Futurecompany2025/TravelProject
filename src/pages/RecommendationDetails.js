@@ -18,6 +18,15 @@ const recommendationDetails = {
     title: 'Everest Three High Passes Trek',
     backgroundImage: Hero1,
     overview: 'Ultra-luxury trek to Everest Base Camp...',
+    bookingInfo: {
+      title: 'Three High Passes Trek',
+      price: 'USD 1200',
+      tripadvisor: 'TripAdvisor',
+      nepalPhone: '+977 9841666232',
+      usaPhone: '+1 651-703-8181',
+      ukPhone: '+44 7946748780'
+    
+  },
     itinerary: [
       'Day 1: Arrival in Kathmandu (1,300m/4,264ft)',
       'Day 2: Kathmandu Valley sightseeing tour and trek preparation (1,300m/4,264ft)',
@@ -49,6 +58,7 @@ const recommendationDetails = {
     tripGrade: 'Moderate',
     bestTime: 'March to June & September to November'
   },
+
   'everest-base-camp-trek': {
     title: 'Everest Base Camp Trek',
     backgroundImage: Hero2,
@@ -60,7 +70,16 @@ const recommendationDetails = {
     usefulInfo: 'Useful Info for Everest Base Camp Trek...',
     gallery: 'Gallery for Everest Base Camp Trek...',
     reviews: 'Reviews for Everest Base Camp Trek...',
-    faqs: 'FAQs for Everest Base Camp Trek...'
+    faqs: 'FAQs for Everest Base Camp Trek...',
+    bookingInfo: {
+      title: ' Everest Base Camp Trek',
+      price: 'USD 1200',
+      tripadvisor: 'TripAdvisor',
+      nepalPhone: '+977 9841666232',
+      usaPhone: '+1 651-703-8181',
+      ukPhone: '+44 7946748780'
+    
+  },
   },
   'annapurna-panorama-trek': {
     title: 'Annapurna Panorama Trek',
@@ -73,7 +92,16 @@ const recommendationDetails = {
     usefulInfo: 'Useful Info for Annapurna Panorama Trek...',
     gallery: 'Gallery for Annapurna Panorama Trek...',
     reviews: 'Reviews for Annapurna Panorama Trek...',
-    faqs: 'FAQs for Annapurna Panorama Trek...'
+    faqs: 'FAQs for Annapurna Panorama Trek...',
+    bookingInfo: {
+      title: 'Annapurna Panorama Trek',
+      price: 'USD 1200',
+      tripadvisor: 'TripAdvisor',
+      nepalPhone: '+977 9841666232',
+      usaPhone: '+1 651-703-8181',
+      ukPhone: '+44 7946748780'
+    
+  },
   },
   'ultra-luxury-trek-to-everest-base-camp': {
     title: 'Ultra-Luxury Trek to Everest Base Camp',
@@ -86,7 +114,16 @@ const recommendationDetails = {
     usefulInfo: 'Useful Info for Ultra-Luxury Trek to Everest Base Camp...',
     gallery: 'Gallery for Ultra-Luxury Trek to Everest Base Camp...',
     reviews: 'Reviews for Ultra-Luxury Trek to Everest Base Camp...',
-    faqs: 'FAQs for Ultra-Luxury Trek to Everest Base Camp...'
+    faqs: 'FAQs for Ultra-Luxury Trek to Everest Base Camp...',
+    bookingInfo: {
+      title: 'Ultra-Luxury Trek to Everest Base Camp',
+      price: 'USD 1200',
+      tripadvisor: 'TripAdvisor',
+      nepalPhone: '+977 9841666232',
+      usaPhone: '+1 651-703-8181',
+      ukPhone: '+44 7946748780'
+    
+  },
   },
   'upper-mustang-trek': {
     title: 'Upper Mustang Trek',
@@ -99,7 +136,16 @@ const recommendationDetails = {
     usefulInfo: 'Useful Info for Upper Mustang Trek...',
     gallery: 'Gallery for Upper Mustang Trek...',
     reviews: 'Reviews for Upper Mustang Trek...',
-    faqs: 'FAQs for Upper Mustang Trek...'
+    faqs: 'FAQs for Upper Mustang Trek...',
+    bookingInfo: {
+      title: 'Upper Mustang Trek',
+      price: 'USD 1200',
+      tripadvisor: 'TripAdvisor',
+      nepalPhone: '+977 9841666232',
+      usaPhone: '+1 651-703-8181',
+      ukPhone: '+44 7946748780'
+    
+  },
   },
   'everest-base-camp-trek-with-gokyo-lake': {
     title: 'Everest Base Camp Trek with Gokyo Lake & Cho la pass',
@@ -112,7 +158,15 @@ const recommendationDetails = {
     usefulInfo: 'Useful Info for Everest Base Camp Trek with Gokyo Lake...',
     gallery: 'Gallery for Everest Base Camp Trek with Gokyo Lake...',
     reviews: 'Reviews for Everest Base Camp Trek with Gokyo Lake...',
-    faqs: 'FAQs for Everest Base Camp Trek with Gokyo Lake...'
+    faqs: 'FAQs for Everest Base Camp Trek with Gokyo Lake...',
+    bookingInfo: {
+      title: 'Everest Base Camp Trek with Gokyo Lake and Cho La Pass',
+      price: 'USD 1200',
+      nepalPhone: '+977 9841666232',
+      usaPhone: '+1 651-703-8181',
+      ukPhone: '+44 7946748780'
+    
+  },
   }
 };
   // Other recommendations...
@@ -204,7 +258,24 @@ const RecommendationDetails = () => {
           <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
           <div className="scroll-box-title" onClick={() => scrollToSection('faqs')}>FAQs</div>
         </div>
+        {recommendation.bookingInfo && (
+         <div className="booking-info-box">
+         <h2>{recommendation.bookingInfo.title}</h2>
+         <p>Price starts from <span className="tour-price">{recommendation.bookingInfo.price}</span></p>
+         <button className="book-now-btn">Book Now</button>
+         <button className="make-inquiry-btn">Make Inquiry</button>
+         <div className="tripadvisor-box">
+         </div>
+         <div className="contact-box">
+           <h3>Speak to Expert</h3>
+           <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: {recommendation.bookingInfo.nepalPhone}</p>
+           <p><span role="img" aria-label="USA">🇺🇸</span> USA: {recommendation.bookingInfo.usaPhone}</p>
+           <p><span role="img" aria-label="UK">🇬🇧</span> UK: {recommendation.bookingInfo.ukPhone}</p>
+         </div>
+       </div>
+     )}
         <DetailsSection
+        
   overviewId="overview"
   overview={recommendation.overview}
   itineraryId="itinerary"
@@ -225,5 +296,4 @@ const RecommendationDetails = () => {
     </div>
   );
 };
-
 export default RecommendationDetails;
