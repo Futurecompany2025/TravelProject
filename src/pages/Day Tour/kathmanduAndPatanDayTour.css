@@ -79,13 +79,14 @@
 /* Main content and aside styling */
 .kathmandu-and-patan-day-tour-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
 }
 
 .kathmandu-and-patan-day-tour-main {
-  flex: 0 1 70%;
-  padding-right: 20px;
+  flex: 0 1 100%; /* Full width on smaller screens */
+  padding-right: 0; /* No padding on smaller screens */
 }
 
 .kathmandu-and-patan-day-tour-main section {
@@ -103,9 +104,10 @@
 }
 
 .kathmandu-and-patan-day-tour-aside {
-  flex: 0 1 25%;
+  flex: 0 0 100%; /* Full width on smaller screens */
   border: 1px solid #ddd;
   padding: 20px;
+  margin-top: 20px; /* Margin top for spacing on smaller screens */
 }
 
 /* Information box in the aside */
@@ -168,4 +170,16 @@
 
 .contact-box p {
   margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .kathmandu-and-patan-day-tour-main {
+    flex: 0 1 70%; /* 70% width on medium screens and larger */
+    padding-right: 20px; /* Adjust padding as needed */
+  }
+
+  .kathmandu-and-patan-day-tour-aside {
+    flex: 0 1 30%; /* 30% width on medium screens and larger */
+    margin-top: 0; /* Reset margin top */
+  }
 }

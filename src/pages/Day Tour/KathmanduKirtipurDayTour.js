@@ -7,7 +7,6 @@ import {
   AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange
 } from '@mui/icons-material';
 import backgroundImage from '../../assets/img/hero/Tour/6.jpg'; // Adjusted image path as needed
-
 const kathmanduKirtipurDayTourDetails = {
   title: 'Kathmandu & Kirtipur Day Tour',
   backgroundImage: backgroundImage,
@@ -157,5 +156,4 @@ const KathmanduKirtipurDayTour = () => {
     </div>
   );
 };
-
 export default KathmanduKirtipurDayTour;

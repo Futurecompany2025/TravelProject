@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from '../../components/navbar';
 import Headerbar from '../../components/Headbar';
 import Footer from '../../components/footer';
-import './muktinathHelicopter.css';
 import {
   AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange
 } from '@mui/icons-material';
 import backgroundImage from '../../assets/img/hero/Tour/12.jpg';
+import './muktinathHelicopter.css';
 
 const muktinathTourDetails = {
   title: 'Muktinath Helicopter Tour',
@@ -135,7 +135,7 @@ const MuktinathHelicopterTour = () => {
             <div className="tripadvisor-box">
               <p>RECOMMENDED ON</p>
               <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" />
-              <p>Trek Ways Nepal</p>
+              <p>J One Trekking And Expedition</p>
             </div>
             <div className="contact-box">
               <h3>Speak to Expert</h3>

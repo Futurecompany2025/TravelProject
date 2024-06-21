@@ -139,7 +139,7 @@ const HelicopterTourToEverestBaseCamp = () => {
             <div className="tripadvisor-box">
               <p>RECOMMENDED ON</p>
               <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" />
-              <p>Trek Ways Nepal</p>
+              <p>J One Trekking And Expedition</p>
             </div>
             <div className="contact-box">
               <h3>Speak to Expert</h3>

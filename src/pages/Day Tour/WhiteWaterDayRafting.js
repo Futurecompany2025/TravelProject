@@ -87,7 +87,7 @@ const WhiteWaterDayRafting = () => {
           <div className="sidebar-recommendation">
             <p>RECOMMENDED ON</p>
             <img src="../../assets/img/tripadvisor.png" alt="Tripadvisor" className="tripadvisor-logo" />
-            <p>Trek Ways Nepal</p>
+            <p>J One Trekking And Expedition</p>
           </div>
           <div className="sidebar-contact">
             <h4>Speak to Expert</h4>

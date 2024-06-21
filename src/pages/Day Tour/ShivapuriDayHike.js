@@ -118,7 +118,7 @@ const ShivapuriDayHike = () => {
             <div className="tripadvisor-box">
               <p>RECOMMENDED ON</p>
               <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" />
-              <p>J1 Trekking Nepal</p>
+              <p>J One Trekking And Expedition</p>
             </div>
             <div className="contact-box">
               <h3>Speak to Expert</h3>

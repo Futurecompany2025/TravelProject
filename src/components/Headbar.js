@@ -15,7 +15,7 @@ const Headerbar = () => {
               <FontAwesomeIcon icon={faPhone} className="mr-2" /> +9779841666232
             </div>
             <div className="headerbar-item d-flex align-items-center">
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@trekwaysnepal.com
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@J One Trekking And Expedition.com
             </div>
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end flex-wrap">

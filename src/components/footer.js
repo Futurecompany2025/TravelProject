@@ -9,7 +9,7 @@ function Footer() {
                         <div className="single-footer-caption mb-3">
                             <div className="footer-tittle">
                                 <div className="footer-pera">
-                                    <h4 className="h6">J1 Trekking</h4>
+                                    <h4 className="h6">J1 Trekking And Expedition</h4>
                                     <p className="small">
                                         <strong>Nepal Contact:</strong><br />
                                         Address: Thamel, Kathmandu, Nepal<br />

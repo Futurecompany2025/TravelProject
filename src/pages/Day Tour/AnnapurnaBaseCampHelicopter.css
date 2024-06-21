@@ -1,3 +1,18 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
 .annapurna-tour-header {
   display: flex;
   align-items: center;
@@ -30,19 +45,23 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Tour details wrapper */
 .annapurna-tour-details-wrapper {
   background-color: #003366;
   color: #fff;
   padding: 20px;
+}
+
+/* Tour details columns */
+.annapurna-tour-column {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+  flex-direction: column;
 }
 
 .annapurna-tour-item {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .annapurna-tour-item span {
@@ -50,11 +69,7 @@
   font-size: 16px;
 }
 
-.annapurna-tour-column {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Scroll box for section titles */
 .details-scroll-box {
   display: flex;
   overflow-x: auto;
@@ -72,15 +87,17 @@
   text-decoration: underline;
 }
 
+/* Main content sections */
 .annapurna-tour-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
 }
 
 .annapurna-tour-main {
   flex: 0 1 70%;
-  padding-right: 20px; /* Adjust as needed */
+  padding-right: 20px;
 }
 
 .annapurna-tour-aside {
@@ -89,6 +106,7 @@
   padding: 20px;
 }
 
+/* Tour info box */
 .tour-info-box {
   margin-bottom: 20px;
 }
@@ -115,6 +133,7 @@
   background-color: #0056b3;
 }
 
+/* TripAdvisor box */
 .tripadvisor-box {
   margin-bottom: 20px;
 }
@@ -123,6 +142,7 @@
   max-width: 100px;
 }
 
+/* Contact box */
 .contact-box {
   margin-bottom: 20px;
 }

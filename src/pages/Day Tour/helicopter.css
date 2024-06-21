@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 60vh; /* Adjust height for responsiveness */
   color: white;
   position: relative;
 }
@@ -27,7 +27,7 @@
 .helicopter-tour-header h1 {
   position: relative;
   z-index: 2;
-  font-size: 36px;
+  font-size: 3em; /* Adjust font size */
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -55,6 +55,7 @@
 .helicopter-tour-column {
   display: flex;
   flex-direction: column;
+  flex: 1; /* Flex to take equal space */
 }
 
 .details-scroll-box {
@@ -62,7 +63,9 @@
   overflow-x: auto;
   padding: 10px;
   background-color: #f1f1f1;
+  flex-wrap: nowrap; /* Ensure it doesn't wrap */
 }
+
 
 .scroll-box-title {
   margin-right: 15px;
@@ -76,20 +79,21 @@
 
 .helicopter-tour-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
 }
 
 .helicopter-tour-main {
-  flex: 0 1 70%;
-  padding-right: 20px; /* Adjust as needed */
+  flex: 1; /* Take full width on smaller screens */
+  padding-right: 20px; /* Adjust padding */
 }
 
 .helicopter-tour-aside {
-  flex: 0 1 25%;
-  border: 1px solid #ddd;
-  padding: 20px;
+  flex: 0 1 100%; /* Full width on smaller screens, 25% on larger */
+  margin-top: 20px; /* Adjust margin */
 }
+
 
 .tour-info-box {
   border: 1px solid #ccc;

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../../../components/navbar';
 import Headbar from '../../../components/Headbar';
-
 import Footer from '../../../components/footer';
 import Tour1 from '../../../assets/img/hero/Tour/1.jpeg';
 import Tour2 from '../../../assets/img/hero/Tour/2.jpg';
