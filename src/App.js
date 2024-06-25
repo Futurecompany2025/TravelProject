@@ -45,7 +45,15 @@ import KathmanduAndPatanDayTour from './pages/Day Tour/KathmanduPatanDayTour';
 import ShivapuriDayHike from './pages/Day Tour/ShivapuriDayHike';
 import TarebhirdayHike from './pages/Day Tour/TareBhirDayHike';
 import FiveUNESCOHeritageSites from './pages/Day Tour/UNESCOWorldHeritageSites';
+import FamilyTrip from './pages/Travel Style/FamilyTrip';
+import CorporateTravel from './pages/Travel Style/CorporateTravel';
+import SoloTravel from './pages/Travel Style/SoloTravel';
+import GroupTravel from './pages/Travel Style/GroupTravel';
+import Religious from './pages/Travel Style/Relegious';
 import OurTeam from './pages/Ourteam';
+import Partner from './pages/partner';
+import Paynow from './pages/paynow'
+import Documents from './pages/Documents';
 function Home() {
   return (
     <>
@@ -62,7 +70,6 @@ function Home() {
     </>
   );
 }
-
 function App() {
   return (
     <Router>
@@ -79,6 +86,7 @@ function App() {
         <Route path="/blog" element={<BlogDetails />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/documents" element={<Documents />} />
         <Route path="/nepal" element={<Nepal />} />
         <Route path="/bhutan" element={<Bhutan />} />
         <Route path="/tibet" element={<Tibet />} />
@@ -97,9 +105,15 @@ function App() {
         <Route path="/tare-bhir-day-hike" element={<TarebhirdayHike />} />
         <Route path="/5-unesco-world-heritage-sites" element={<FiveUNESCOHeritageSites />} />
         <Route path="/:slug" element={<RecommendationDetails />} />
+        <Route path="/travel-style/family-trip" element={<FamilyTrip />} />
+         <Route path="/travel-style/corporate-travel" element={<CorporateTravel />} />
+                <Route path="/travel-style/solo-travel" element={<SoloTravel />} />
+                <Route path="/travel-style/group-travel" element={<GroupTravel />} />
+                <Route path="/travel-style/religious" element={<Religious />} />
+                <Route path="/partner-with-us" element={<Partner />} />
+                <Route path= "/pay-now" element={<Paynow />} />
       </Routes>
     </Router>
   );
 }
-
 export default App;

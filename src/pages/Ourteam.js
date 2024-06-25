@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Headerbar from '../components/Headbar';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import './OurTeam.css'; 
 const OurTeam = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const OurTeam = () => {
       <Footer />
     </div>
   );
-}
+};
 const HeaderSection = () => {
   return (
     <header className="team-header" style={{ 
@@ -35,19 +36,19 @@ const HeaderSection = () => {
       </div>
     </header>
   );
-}
+};
 const TeamGridSection = () => {
   // Dummy data for team members
   const teamMembers = [
-    // { id: 1, name: 'Ambika Khanal', role: 'Managing Director', image: require('../assets/img/team/1.png') },
+    { id: 1, name: 'Rajkumar khanal ', role: 'Managing Director', image: require('../assets/img/team/rajkumar.jpeg') },
     { id: 2, name: 'Rabindra Rimal', role: 'Executive', image: require('../assets/img/team/rabindra.jpeg') },
     { id: 3, name: 'Sharleen Bland', role: 'Representative', image: require('../assets/img/team/shaleen.jpeg') },
     { id: 4, name: 'Anika vander schaaf', role: 'Representative', image: require('../assets/img/team/anika.jpeg') },
     { id: 5, name: 'Deepa Khanal', role: 'Head of Account', image: require('../assets/img/team/deepa.jpeg') },
-    // { id: 6, name: '', role: 'Climbings Leader', image: require('../assets/img/team/3.png') },
-    { id: 7, name: 'Chandra Tamang', role: 'Trekking Guide', image: require('../assets/img/team/Chandra.jpeg') }, // Using 1.png for example
-    { id: 8, name: 'Bikash Basnet', role: 'Trekking Guide', image: require('../assets/img/team/bikash.jpeg') }, // Using 2.png for example
-  ];                                                                                    
+    { id: 6, name: 'Nima Wanchu Sherpa', role: 'Climbing Leader', image: require },
+    { id: 7, name: 'Chandra Tamang', role: 'Trekking Guide', image: require('../assets/img/team/Chandra.jpeg') },
+    { id: 8, name: 'Bikash Basnet', role: 'Trekking Guide', image: require('../assets/img/team/bikash.jpeg') },
+  ];
   return (
     <div className="team-grid-section" style={{ marginTop: '50px', marginBottom: '50px' }}>
       <div className="container">
@@ -55,7 +56,7 @@ const TeamGridSection = () => {
         <div className="row">
           {teamMembers.map(member => (
             <div key={member.id} className="col-md-4 mb-3">
-              <div className="card">
+              <div className="card h-100">
                 <img src={member.image} alt={member.name} className="card-img-top" />
                 <div className="card-body">
                   <h5 className="card-title">{member.name}</h5>
@@ -68,5 +69,5 @@ const TeamGridSection = () => {
       </div>
     </div>
   );
-}
+};
 export default OurTeam;

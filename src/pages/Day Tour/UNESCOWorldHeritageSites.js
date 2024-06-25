@@ -37,126 +37,99 @@ const UNESCOWorldHeritageSites = () => {
       <Headerbar />
       <Navbar />
       <div className="unesco-tour-header" style={{ backgroundImage: `url(${unescoSitesDetails.backgroundImage})` }}>
-        <div className="container">
-          <h1 className="text-white text-center">{unescoSitesDetails.title}</h1>
-        </div>
+        <h1>{unescoSitesDetails.title}</h1>
       </div>
-      <div className="container my-4">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="card mb-3">
-              <div className="card-body">
-                <AttachMoney />
-                <span className="fw-bold">Price starts from</span>
-                <span>{unescoSitesDetails.price}</span>
-              </div>
-            </div>
-            <div className="card mb-3">
-              <div className="card-body">
-                <DirectionsWalk />
-                <span className="fw-bold">Activity:</span>
-                <span>Exploration</span>
-              </div>
-            </div>
-            <div className="card mb-3">
-              <div className="card-body">
-                <CalendarToday />
-                <span className="fw-bold">Meal:</span>
-                <span>No meals provided</span>
-              </div>
-            </div>
+      <div className="unesco-tour-details-wrapper">
+        <div className="unesco-tour-column">
+          <div className="unesco-tour-item">
+            <AttachMoney />
+            <span>Price varies by site</span>
           </div>
-          <div className="col-md-6">
-            <div className="card mb-3">
-              <div className="card-body">
-                <Height />
-                <span className="fw-bold">Max Altitude:</span>
-                <span>Varies by site</span>
-              </div>
-            </div>
-            <div className="card mb-3">
-              <div className="card-body">
-                <LocationOn />
-                <span className="fw-bold">Start & End Point:</span>
-                <span>Varies by site</span>
-              </div>
-            </div>
-            <div className="card mb-3">
-              <div className="card-body">
-                <Grade />
-                <span className="fw-bold">Trip Grade:</span>
-                <span>Easy to Moderate</span>
-              </div>
-            </div>
-            <div className="card mb-3">
-              <div className="card-body">
-                <DateRange />
-                <span className="fw-bold">Best Time:</span>
-                <span>Year-round, best in spring and autumn</span>
-              </div>
-            </div>
+          <div className="unesco-tour-item">
+            <DirectionsWalk />
+            <span>Activity:</span>
+            <span>Exploration</span>
+          </div>
+          <div className="unesco-tour-item">
+            <CalendarToday />
+            <span>Meal:</span>
+            <span>No meals provided</span>
+          </div>
+        </div>
+        <div className="unesco-tour-column">
+          <div className="unesco-tour-item">
+            <Height />
+            <span>Max Altitude:</span>
+            <span>Varies by site</span>
+          </div>
+          <div className="unesco-tour-item">
+            <LocationOn />
+            <span>Start & End Point:</span>
+            <span>Varies by site</span>
+          </div>
+          <div className="unesco-tour-item">
+            <Grade />
+            <span>Trip Grade:</span>
+            <span>Easy to Moderate</span>
+          </div>
+        </div>
+        <div className="unesco-tour-column">
+          <div className="unesco-tour-item">
+            <DateRange />
+            <span>Best Time:</span>
+            <span>Year-round, best in spring and autumn</span>
           </div>
         </div>
       </div>
       <div className="details-scroll-box">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="scroll-box-title" onClick={() => scrollToSection('overview')}>Overview</div>
-              <div className="scroll-box-title" onClick={() => scrollToSection('includes')}>Includes</div>
-              <div className="scroll-box-title" onClick={() => scrollToSection('cost-dates')}>Cost & Dates</div>
-              <div className="scroll-box-title" onClick={() => scrollToSection('useful-info')}>Useful Info</div>
-              <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('overview')}>Overview</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('includes')}>Includes</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('cost-dates')}>Cost & Dates</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('useful-info')}>Useful Info</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
+      </div>
+      <div className="unesco-tour-content">
+        <div className="unesco-tour-main">
+          <section id="overview">
+            <h2>Overview</h2>
+            <p>{unescoSitesDetails.overview}</p>
+          </section>
+          <section id="includes">
+            <h2>Includes</h2>
+            <p>{unescoSitesDetails.includes}</p>
+          </section>
+          <section id="cost-dates">
+            <h2>Cost & Dates</h2>
+            <p>{unescoSitesDetails.costDates}</p>
+          </section>
+          <section id="useful-info">
+            <h2>Useful Info</h2>
+            <p>{unescoSitesDetails.usefulInfo}</p>
+          </section>
+          <section id="gallery">
+            <h2>Gallery</h2>
+            <p>{unescoSitesDetails.gallery}</p>
+          </section>
+        </div>
+        <aside className="unesco-tour-aside">
+          <div className="tour-info-box">
+            <h2>{unescoSitesDetails.title}</h2>
+            <p>Price varies by site</p>
+            <button className="book-now-btn">Book Now</button>
+            <button className="make-inquiry-btn">Make Inquiry</button>
+            <div className="tripadvisor-box">
+              <p>RECOMMENDED ON</p>
+              <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" />
+              <p>Your Company Name</p>
+            </div>
+            <div className="contact-box">
+              <h3>Speak to Expert</h3>
+              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
+              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
+              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="container my-4">
-        <div className="row">
-          <div className="col-md-8">
-            <section id="overview">
-              <h2 className="mb-3">Overview</h2>
-              <p>{unescoSitesDetails.overview}</p>
-            </section>
-            <section id="includes">
-              <h2 className="mb-3">Includes</h2>
-              <p>{unescoSitesDetails.includes}</p>
-            </section>
-            <section id="cost-dates">
-              <h2 className="mb-3">Cost & Dates</h2>
-              <p>{unescoSitesDetails.costDates}</p>
-            </section>
-            <section id="useful-info">
-              <h2 className="mb-3">Useful Info</h2>
-              <p>{unescoSitesDetails.usefulInfo}</p>
-            </section>
-            <section id="gallery">
-              <h2 className="mb-3">Gallery</h2>
-              <p>{unescoSitesDetails.gallery}</p>
-            </section>
-          </div>
-          <div className="col-md-4">
-            <aside className="card mb-3">
-              <div className="card-body">
-                <h2 className="card-title">{unescoSitesDetails.title}</h2>
-                <p>Price starts from <span className="fw-bold tour-price">{unescoSitesDetails.price}</span></p>
-                <button className="btn btn-primary d-block mb-2">Book Now</button>
-                <button className="btn btn-secondary d-block">Make Inquiry</button>
-                <div className="tripadvisor-box mt-3">
-                  <p>RECOMMENDED ON</p>
-                  <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" className="img-fluid" />
-                  <p>Your Company Name</p>
-                </div>
-                <div className="contact-box mt-3">
-                  <h3>Speak to Expert</h3>
-                  <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
-                  <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
-                  <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
+        </aside>
       </div>
       <Footer />
     </div>

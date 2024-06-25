@@ -1,0 +1,46 @@
+/* OurTeam.css */
+/* Styles for the team header section */
+.team-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+}
+/* Styles for the breadcrumb container */
+.breadcrumb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.breadcrumb {
+    background: none;
+    padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+}
+
+/* Styles for the team grid section */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

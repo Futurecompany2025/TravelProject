@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh; /* Adjust height for responsiveness */
+  height: 60vh;
   color: white;
   position: relative;
 }
@@ -25,12 +25,12 @@
 .unesco-tour-header h1 {
   position: relative;
   z-index: 2;
-  font-size: 3em; /* Adjust font size */
+  font-size: 3em;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.unesco-tour-content-wrapper {
+.unesco-tour-details-wrapper {
   background-color: #003366;
   color: #fff;
   padding: 20px;
@@ -53,7 +53,7 @@
 .unesco-tour-column {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Flex to take equal space */
+  flex: 1;
 }
 
 .details-scroll-box {
@@ -61,7 +61,7 @@
   overflow-x: auto;
   padding: 10px;
   background-color: #f1f1f1;
-  flex-wrap: nowrap; /* Ensure it doesn't wrap */
+  flex-wrap: nowrap;
 }
 
 .scroll-box-title {
@@ -82,13 +82,13 @@
 }
 
 .unesco-tour-main {
-  flex: 1; /* Take full width on smaller screens */
-  padding-right: 20px; /* Adjust padding */
+  flex: 1;
+  padding-right: 20px;
 }
 
 .unesco-tour-aside {
-  flex: 0 1 100%; /* Full width on smaller screens, 25% on larger */
-  margin-top: 20px; /* Adjust margin */
+  flex: 0 1 100%;
+  margin-top: 20px;
 }
 
 .tour-info-box {

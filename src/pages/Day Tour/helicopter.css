@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60vh; /* Adjust height for responsiveness */
+  height: 60vh;
   color: white;
   position: relative;
 }
@@ -27,7 +27,7 @@
 .helicopter-tour-header h1 {
   position: relative;
   z-index: 2;
-  font-size: 3em; /* Adjust font size */
+  font-size: 3em;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -55,7 +55,7 @@
 .helicopter-tour-column {
   display: flex;
   flex-direction: column;
-  flex: 1; /* Flex to take equal space */
+  flex: 1;
 }
 
 .details-scroll-box {
@@ -63,9 +63,8 @@
   overflow-x: auto;
   padding: 10px;
   background-color: #f1f1f1;
-  flex-wrap: nowrap; /* Ensure it doesn't wrap */
+  flex-wrap: nowrap;
 }
-
 
 .scroll-box-title {
   margin-right: 15px;
@@ -85,15 +84,14 @@
 }
 
 .helicopter-tour-main {
-  flex: 1; /* Take full width on smaller screens */
-  padding-right: 20px; /* Adjust padding */
+  flex: 1;
+  padding-right: 20px;
 }
 
 .helicopter-tour-aside {
-  flex: 0 1 100%; /* Full width on smaller screens, 25% on larger */
-  margin-top: 20px; /* Adjust margin */
+  flex: 0 1 100%;
+  margin-top: 20px;
 }
-
 
 .tour-info-box {
   border: 1px solid #ccc;
@@ -152,4 +150,68 @@
 
 .contact-box p {
   margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .helicopter-tour-header {
+    height: 40vh;
+  }
+
+  .helicopter-tour-header h1 {
+    font-size: 2em;
+  }
+
+  .helicopter-tour-details-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .helicopter-tour-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .helicopter-tour-content {
+    flex-direction: column;
+  }
+
+  .helicopter-tour-main {
+    padding-right: 0;
+  }
+
+  .helicopter-tour-aside {
+    margin-top: 0;
+  }
+
+  .scroll-box-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .helicopter-tour-header h1 {
+    font-size: 1.5em;
+  }
+
+  .details-scroll-box {
+    font-size: 12px;
+  }
+
+  .helicopter-tour-item span {
+    font-size: 14px;
+  }
+
+  .tour-info-box h2 {
+    font-size: 20px;
+  }
+
+  .book-now-btn,
+  .make-inquiry-btn {
+    font-size: 14px;
+  }
+
+  .contact-box h3 {
+    font-size: 16px;
+  }
 }

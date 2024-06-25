@@ -1,9 +1,17 @@
+/* aboutus.css */
+
+/* Styles for the support caption */
 .support-caption {
   font-family: 'Mukta', sans-serif;
   color: blue;
   font-size: 1.2rem;
-  font-weight: 400; /* Corrected font weight */
+  font-weight: 400;
   line-height: 1.6;
+}
+
+/* Styles for the support company area */
+.support-company-area {
+  padding: 20px 0;
 }
 
 .support-company-area .container {
@@ -12,6 +20,11 @@
   flex-wrap: wrap;
 }
 
+.right-caption {
+  padding: 20px;
+}
+
+/* Styles for trending trips section */
 .trending-trips {
   padding: 20px;
   background-color: #f9f9f9;
@@ -21,33 +34,98 @@
 .trending-trips h3,
 .trending-trips h4 {
   margin-bottom: 15px;
+  color: #333;
 }
 
 .trip-list {
   max-height: 400px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .trip-item {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.3s;
 }
 
-.trip-item:last-child {
-  border-bottom: none;
+.trip-item:hover {
+  background-color: #f0f0f0;
 }
 
-/* Ensure About Us title visibility */
+.trip-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.trip-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-title,
+.trip-price {
+  margin: 0;
+}
+
+/* Styles for section title */
+/* Styles for section title */
 .section-tittle h2 {
-  color: blue;
+  color: black; /* Change the color to black */
 }
 
-/* Responsive adjustments */
+.about-blue {
+  color: blue; /* Keep these as they are */
+}
+
+.us-green {
+  color: green; /* Keep these as they are */
+}
+/* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .support-company-area .container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .right-caption,
+  .trending-trips {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .trending-trips {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .support-caption {
+    font-size: 1rem;
+  }
+
+  .trip-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trip-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .trip-info span:first-child {
+    font-size: 1.2rem;
   }
 }

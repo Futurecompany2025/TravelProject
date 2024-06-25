@@ -1,6 +1,5 @@
 /* white-water-day-rafting.css */
-
-/* Header Section */
+/* Header section */
 .rafting-tour-header {
   display: flex;
   align-items: center;
@@ -9,11 +8,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px; /* Adjust height as needed */
+  height: 60vh;
   color: white;
   position: relative;
 }
-
 .rafting-tour-header::before {
   content: "";
   position: absolute;
@@ -28,32 +26,47 @@
 .rafting-tour-header h1 {
   position: relative;
   z-index: 2;
-  font-size: 2.5em; /* Adjust font size */
+  font-size: 3em;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Main Content and Sidebar */
-.rafting-tour-container {
-  display: flex;
-  flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
-  justify-content: space-between;
+/* Details wrapper */
+.rafting-tour-details-wrapper {
+  background-color: #003366;
+  color: #fff;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.rafting-tour-content {
-  width: 100%; /* Take full width on smaller screens */
-  max-width: 70%; /* Limit width on larger screens */
-  margin-bottom: 20px; /* Space between content and sidebar */
+/* Columns in details wrapper */
+.rafting-tour-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
+/* Items in columns */
+.rafting-tour-item {
+  display: flex;
+  align-items: center;
+}
+
+.rafting-tour-item span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* Scroll box */
 .details-scroll-box {
   display: flex;
   overflow-x: auto;
   padding: 10px;
   background-color: #f1f1f1;
-  margin-bottom: 20px;
-  flex-wrap: nowrap; /* Ensure it doesn't wrap */
+  flex-wrap: nowrap;
 }
 
 .scroll-box-title {
@@ -66,84 +79,84 @@
   text-decoration: underline;
 }
 
-.rafting-tour-content section {
-  margin-bottom: 40px;
-}
-
-.rafting-tour-sidebar {
-  width: 100%; /* Take full width on smaller screens */
-  max-width: 25%; /* Limit width on larger screens */
-  background-color: #f9f9f9;
+/* Main content */
+.rafting-tour-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
 }
 
-.sidebar-box {
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
+.rafting-tour-main {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Aside (sidebar) */
+.rafting-tour-aside {
+  flex: 0 1 100%;
+  margin-top: 20px;
+}
+
+/* Tour info box */
+.tour-info-box {
+  border: 1px solid #ccc;
+  padding: 20px;
   text-align: center;
 }
 
-.sidebar-box .price {
-  color: #ff5722;
+.tour-info-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tour-info-box .tour-price {
+  color: #d9534f;
   font-weight: bold;
 }
 
-.sidebar-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
-}
-
-.book-now, .make-inquiry {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 45%; /* Adjust button width */
-}
-
-@media (max-width: 768px) {
-  .book-now, .make-inquiry {
-    width: 100%; /* Full width on smaller screens */
-  }
-}
-
-/* Button Styles */
-.book-now {
-  background-color: #ff9800;
-  color: #fff;
-}
-
-.make-inquiry {
-  background-color: #3f51b5;
-  color: #fff;
-}
-
-/* Sidebar Recommendation and Contact */
-.sidebar-recommendation {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.tripadvisor-logo {
-  width: 100px;
+/* Buttons */
+.book-now-btn,
+.make-inquiry-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
   margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.book-now-btn {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.make-inquiry-btn {
+  background-color: #337ab7;
+  color: white;
+}
+
+/* TripAdvisor box */
+.tripadvisor-box {
+  margin-top: 20px;
+}
+
+.tripadvisor-box p {
+  margin: 5px 0;
+}
+
+/* Contact box */
+.contact-box {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-box h3 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.sidebar-contact {
-  text-align: center;
-}
-
-.sidebar-contact h4 {
-  margin-bottom: 10px;
-}
-
-.sidebar-contact p {
+.contact-box p {
   margin: 5px 0;
 }

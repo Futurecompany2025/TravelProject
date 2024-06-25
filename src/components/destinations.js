@@ -5,7 +5,6 @@ import service1 from '../assets/img/destinations/nepal.jpeg';
 import service2 from '../assets/img/destinations/bhutan.jpg';
 import service3 from '../assets/img/destinations/tibet.jpg';
 import service4 from '../assets/img/destinations/india.jpg';
-
 function Destinations() {
   return (
     <div style={{ backgroundColor: '#e8ebf3' }} className="favourite-place place-padding">
@@ -60,5 +59,4 @@ function Destinations() {
     </div>
   );
 }
-
 export default Destinations;

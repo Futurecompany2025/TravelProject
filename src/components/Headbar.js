@@ -5,6 +5,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faViber } from '@fortawesome/free-brands-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Flag from 'react-world-flags';
+
 const Headerbar = () => {
   return (
     <div className="headerbar bg-dark text-white">
@@ -23,7 +24,9 @@ const Headerbar = () => {
               <div className="contact-info d-flex align-items-center">
                 <span className="talk-to-expert mr-2">Talk to expert</span>
                 <Flag code="NP" className="flag-icon mr-2" />
-                <span className="contact-number">+9779841666232</span>
+                <a href="https://wa.me/9779860915040" target="_blank" rel="noopener noreferrer" className="contact-number">
+                9779860915040
+                </a>
                 <FontAwesomeIcon icon={faWhatsapp} className="ml-2" />
                 <FontAwesomeIcon icon={faViber} className="ml-2" />
               </div>
@@ -32,7 +35,9 @@ const Headerbar = () => {
               <div className="contact-info d-flex align-items-center">
                 <span className="talk-to-expert mr-2">Talk to expert</span>
                 <Flag code="US" className="flag-icon mr-2" />
-                <span className="contact-number">+1-651-703-8181</span>
+                <a href="https://wa.me/16517038181" target="_blank" rel="noopener noreferrer" className="contact-number">
+                  +1-651-703-8181
+                </a>
                 <FontAwesomeIcon icon={faWhatsapp} className="ml-2" />
                 <FontAwesomeIcon icon={faViber} className="ml-2" />
               </div>
@@ -41,7 +46,9 @@ const Headerbar = () => {
               <div className="contact-info d-flex align-items-center">
                 <span className="talk-to-expert mr-2">Talk to expert</span>
                 <Flag code="GB" className="flag-icon mr-2" />
-                <span className="contact-number">+447946748780</span>
+                <a href="https://wa.me/447946748780" target="_blank" rel="noopener noreferrer" className="contact-number">
+                  +447946748780
+                </a>
                 <FontAwesomeIcon icon={faWhatsapp} className="ml-2" />
                 <FontAwesomeIcon icon={faViber} className="ml-2" />
               </div>
@@ -55,4 +62,5 @@ const Headerbar = () => {
     </div>
   );
 };
+
 export default Headerbar;

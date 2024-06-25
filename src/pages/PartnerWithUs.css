@@ -1,0 +1,91 @@
+/* PartnerWithUs.css */
+
+/* Header section */
+.partner-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; /* Adjust height as needed */
+    color: white;
+    position: relative;
+  }
+  
+  .partner-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+  }
+  
+  .breadcrumb-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+  }
+  
+  .breadcrumb-overlay a,
+  .breadcrumb-overlay span {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-overlay a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .partner-header h1 {
+    z-index: 2;
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Partner content */
+  .partner-content {
+    padding: 20px;
+  }
+  
+  .partner-section {
+    margin-bottom: 30px;
+  }
+  
+  .partner-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .partner-section p {
+    margin-bottom: 15px;
+  }
+  
+  .partner-section ul {
+    margin-bottom: 15px;
+  }
+  
+  .partner-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .partner-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .partner-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .partner-section ul li {
+    margin-bottom: 5px;
+  }
+  

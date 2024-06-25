@@ -7,6 +7,8 @@ import {
   AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange
 } from '@mui/icons-material';
 import backgroundImage from '../../assets/img/hero/1.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const annapurnaTourDetails = {
   title: 'Annapurna Base Camp Helicopter Tour',
   backgroundImage: backgroundImage,
@@ -40,63 +42,65 @@ const AnnapurnaBaseCampHelicopter = () => {
       <div className="annapurna-tour-header" style={{ backgroundImage: `url(${annapurnaTourDetails.backgroundImage})` }}>
         <h1>{annapurnaTourDetails.title}</h1>
       </div>
-      <div className="annapurna-tour-details-wrapper">
-        <div className="annapurna-tour-column">
-          <div className="annapurna-tour-item">
-            <AttachMoney />
-            <span>Price starts from</span>
-            <span>{annapurnaTourDetails.price}</span>
+      <div className="container annapurna-tour-details-wrapper">
+        <div className="row">
+          <div className="col-md-3 annapurna-tour-column">
+            <div className="annapurna-tour-item">
+              <AttachMoney />
+              <span>Price starts from</span>
+              <span>{annapurnaTourDetails.price}</span>
+            </div>
+            <div className="annapurna-tour-item">
+              <DirectionsWalk />
+              <span>Activity:</span>
+              <span>Helicopter Tour</span>
+            </div>
+            <div className="annapurna-tour-item">
+              <CalendarToday />
+              <span>Meal:</span>
+              <span>No meals provided</span>
+            </div>
           </div>
-          <div className="annapurna-tour-item">
-            <DirectionsWalk />
-            <span>Activity:</span>
-            <span>Helicopter Tour</span>
+          <div className="col-md-3 annapurna-tour-column">
+            <div className="annapurna-tour-item">
+              <Height />
+              <span>Max Altitude:</span>
+              <span>4,130m/13,550ft</span>
+            </div>
+            <div className="annapurna-tour-item">
+              <LocationOn />
+              <span>Start & End Point:</span>
+              <span>Pokhara/Pokhara</span>
+            </div>
+            <div className="annapurna-tour-item">
+              <LocationOn />
+              <span>Distance:</span>
+              <span>Approx 210 KM round trip</span>
+            </div>
           </div>
-          <div className="annapurna-tour-item">
-            <CalendarToday />
-            <span>Meal:</span>
-            <span>No meals provided</span>
+          <div className="col-md-3 annapurna-tour-column">
+            <div className="annapurna-tour-item">
+              <Flight />
+              <span>Transportation:</span>
+              <span>Helicopter</span>
+            </div>
+            <div className="annapurna-tour-item">
+              <Grade />
+              <span>Trip Grade:</span>
+              <span>Moderate</span>
+            </div>
+            <div className="annapurna-tour-item">
+              <Hotel />
+              <span>Accommodations:</span>
+              <span>N/A</span>
+            </div>
           </div>
-        </div>
-        <div className="annapurna-tour-column">
-          <div className="annapurna-tour-item">
-            <Height />
-            <span>Max Altitude:</span>
-            <span>4,130m/13,550ft</span>
-          </div>
-          <div className="annapurna-tour-item">
-            <LocationOn />
-            <span>Start & End Point:</span>
-            <span>Pokhara/Pokhara</span>
-          </div>
-          <div className="annapurna-tour-item">
-            <LocationOn />
-            <span>Distance:</span>
-            <span>Approx 210 KM round trip</span>
-          </div>
-        </div>
-        <div className="annapurna-tour-column">
-          <div className="annapurna-tour-item">
-            <Flight />
-            <span>Transportation:</span>
-            <span>Helicopter</span>
-          </div>
-          <div className="annapurna-tour-item">
-            <Grade />
-            <span>Trip Grade:</span>
-            <span>Moderate</span>
-          </div>
-          <div className="annapurna-tour-item">
-            <Hotel />
-            <span>Accommodations:</span>
-            <span>N/A</span>
-          </div>
-        </div>
-        <div className="annapurna-tour-column">
-          <div className="annapurna-tour-item">
-            <DateRange />
-            <span>Best Time:</span>
-            <span>Year-round, weather permitting</span>
+          <div className="col-md-3 annapurna-tour-column">
+            <div className="annapurna-tour-item">
+              <DateRange />
+              <span>Best Time:</span>
+              <span>Year-round, weather permitting</span>
+            </div>
           </div>
         </div>
       </div>
@@ -107,48 +111,50 @@ const AnnapurnaBaseCampHelicopter = () => {
         <div className="scroll-box-title" onClick={() => scrollToSection('useful-info')}>Useful Info</div>
         <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
       </div>
-      <div className="annapurna-tour-content">
-        <div className="annapurna-tour-main">
-          <section id="overview">
-            <h2>Overview</h2>
-            <p>{annapurnaTourDetails.overview}</p>
-          </section>
-          <section id="includes">
-            <h2>Includes</h2>
-            <p>{annapurnaTourDetails.includes}</p>
-          </section>
-          <section id="cost-dates">
-            <h2>Cost & Dates</h2>
-            <p>{annapurnaTourDetails.costDates}</p>
-          </section>
-          <section id="useful-info">
-            <h2>Useful Info</h2>
-            <p>{annapurnaTourDetails.usefulInfo}</p>
-          </section>
-          <section id="gallery">
-            <h2>Gallery</h2>
-            <p>{annapurnaTourDetails.gallery}</p>
-          </section>
+      <div className="container annapurna-tour-content">
+        <div className="row">
+          <main className="col-md-8 annapurna-tour-main">
+            <section id="overview">
+              <h2>Overview</h2>
+              <p>{annapurnaTourDetails.overview}</p>
+            </section>
+            <section id="includes">
+              <h2>Includes</h2>
+              <p>{annapurnaTourDetails.includes}</p>
+            </section>
+            <section id="cost-dates">
+              <h2>Cost & Dates</h2>
+              <p>{annapurnaTourDetails.costDates}</p>
+            </section>
+            <section id="useful-info">
+              <h2>Useful Info</h2>
+              <p>{annapurnaTourDetails.usefulInfo}</p>
+            </section>
+            <section id="gallery">
+              <h2>Gallery</h2>
+              <p>{annapurnaTourDetails.gallery}</p>
+            </section>
+          </main>
+          <aside className="col-md-4 annapurna-tour-aside">
+            <div className="tour-info-box">
+              <h2>{annapurnaTourDetails.title}</h2>
+              <p>Price starts from <span className="tour-price">{annapurnaTourDetails.price}</span></p>
+              <button className="btn btn-primary book-now-btn" onClick={() => scrollToSection('form-section')}>Book Now</button>
+              <button className="btn btn-secondary make-inquiry-btn" onClick={handleMakeInquiry}>Make Inquiry</button>
+              <div className="tripadvisor-box">
+                <p>RECOMMENDED ON</p>
+                <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" />
+                <p>J One Trekking And Expedition</p>
+              </div>
+              <div className="contact-box">
+                <h3>Speak to Expert</h3>
+                <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
+                <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
+                <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
+              </div>
+            </div>
+          </aside>
         </div>
-        <aside className="annapurna-tour-aside">
-          <div className="tour-info-box">
-            <h2>{annapurnaTourDetails.title}</h2>
-            <p>Price starts from <span className="tour-price">{annapurnaTourDetails.price}</span></p>
-            <button className="book-now-btn" onClick={() => scrollToSection('form-section')}>Book Now</button>
-            <button className="make-inquiry-btn" onClick={handleMakeInquiry}>Make Inquiry</button>
-            <div className="tripadvisor-box">
-              <p>RECOMMENDED ON</p>
-              <img src="path/to/tripadvisor-logo.png" alt="TripAdvisor" />
-              <p>J One Trekking And Expedition</p>
-            </div>
-            <div className="contact-box">
-              <h3>Speak to Expert</h3>
-              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
-              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
-              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
-            </div>
-          </div>
-        </aside>
       </div>
       <Footer />
     </div>

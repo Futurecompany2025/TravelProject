@@ -1,18 +1,6 @@
-/* Reset styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* AnnapurnaBaseCampHelicopter.css */
 
-/* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f0f0f0;
-}
-
-/* Header styles */
+/* Header section */
 .annapurna-tour-header {
   display: flex;
   align-items: center;
@@ -21,7 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 60vh;
   color: white;
   position: relative;
 }
@@ -40,28 +28,33 @@ body {
 .annapurna-tour-header h1 {
   position: relative;
   z-index: 2;
-  font-size: 36px;
+  font-size: 3em;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Tour details wrapper */
+/* Details wrapper */
 .annapurna-tour-details-wrapper {
   background-color: #003366;
   color: #fff;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* Tour details columns */
+/* Columns in details wrapper */
 .annapurna-tour-column {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
+/* Items in columns */
 .annapurna-tour-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .annapurna-tour-item span {
@@ -69,12 +62,13 @@ body {
   font-size: 16px;
 }
 
-/* Scroll box for section titles */
+/* Scroll box */
 .details-scroll-box {
   display: flex;
   overflow-x: auto;
   padding: 10px;
   background-color: #f1f1f1;
+  flex-wrap: nowrap;
 }
 
 .scroll-box-title {
@@ -87,7 +81,7 @@ body {
   text-decoration: underline;
 }
 
-/* Main content sections */
+/* Main content */
 .annapurna-tour-content {
   display: flex;
   flex-wrap: wrap;
@@ -96,58 +90,72 @@ body {
 }
 
 .annapurna-tour-main {
-  flex: 0 1 70%;
+  flex: 1;
   padding-right: 20px;
 }
 
+/* Aside (sidebar) */
 .annapurna-tour-aside {
-  flex: 0 1 25%;
-  border: 1px solid #ddd;
-  padding: 20px;
+  flex: 0 1 100%;
+  margin-top: 20px;
 }
 
 /* Tour info box */
 .tour-info-box {
-  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
 }
 
-.tour-price {
+.tour-info-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tour-info-box .tour-price {
+  color: #d9534f;
   font-weight: bold;
-  font-size: 18px;
 }
 
+/* Buttons */
 .book-now-btn,
 .make-inquiry-btn {
   display: block;
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  margin-top: 10px;
   cursor: pointer;
+  border: none;
+  font-size: 16px;
 }
 
-.book-now-btn:hover,
-.make-inquiry-btn:hover {
-  background-color: #0056b3;
+.book-now-btn {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.make-inquiry-btn {
+  background-color: #337ab7;
+  color: white;
 }
 
 /* TripAdvisor box */
 .tripadvisor-box {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.tripadvisor-box img {
-  max-width: 100px;
+.tripadvisor-box p {
+  margin: 5px 0;
 }
 
 /* Contact box */
 .contact-box {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .contact-box h3 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
