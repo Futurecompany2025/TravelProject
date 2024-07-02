@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './assets/css/bootstrap.min.css';
 import './assets/css/owl.carousel.min.css';
@@ -50,9 +51,14 @@ import CorporateTravel from './pages/Travel Style/CorporateTravel';
 import SoloTravel from './pages/Travel Style/SoloTravel';
 import GroupTravel from './pages/Travel Style/GroupTravel';
 import Religious from './pages/Travel Style/Relegious';
+import NepalTravelGuide from './pages/Travel Guide/Nepal';
+import IndiaTravelGuide from './pages/Travel Guide/India';
+import BhutanTravelGuide from './pages/Travel Guide/BhutanTravelGuide';
+import TibetTravelGuide from './pages/Travel Guide/TibetTravelGuide';
 import OurTeam from './pages/Ourteam';
 import Partner from './pages/partner';
-import Paynow from './pages/paynow'
+import Paynow from './pages/paynow';
+import WhyUsPage from './pages/WhyUspage';
 import Documents from './pages/Documents';
 function Home() {
   return (
@@ -112,6 +118,15 @@ function App() {
                 <Route path="/travel-style/religious" element={<Religious />} />
                 <Route path="/partner-with-us" element={<Partner />} />
                 <Route path= "/pay-now" element={<Paynow />} />
+                <Route path="/why-us" element={<WhyUsPage />} />
+                <Route path="/travel-guide/nepal" element={<NepalTravelGuide />} />
+                <Route path="/travel-guide/india" element={<IndiaTravelGuide />} />
+                <Route path="/travel-guide/bhutan" element={<BhutanTravelGuide />} />
+                <Route path="/travel-guide/tibet" elemet={<TibetTravelGuide />} /> 
+                <Route path="/bhutan/tour" element={<Bhutan />} />
+                <Route path="/tibet/tour" element={<Tibet />} />
+                <Route path="/india/tour" element={<India />} />
+
       </Routes>
     </Router>
   );

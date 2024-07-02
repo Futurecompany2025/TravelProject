@@ -3,19 +3,16 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
 /* Navbar link styles */
 .navbar-nav .nav-link {
   font-weight: 400; /* Decrease font weight */
   font-size: 0.9rem; /* Decrease font size */
   padding: 0.5rem 1rem; /* Adjust padding for height */
 }
-
 /* Navbar logo styles */
 .navbar-logo {
   max-width: 100px;
 }
-
 /* Navbar container styles */
 .navbar {
   max-width: 950px; /* Set your desired maximum width */
@@ -40,8 +37,6 @@
   display: block;
   left: 0;
 }
-
-
 .sidebar-item {
   display: block;
   padding: 8px 16px;

@@ -4,52 +4,50 @@ import { Link } from 'react-router-dom';
 import Headerbar from '../components/Headbar';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import './Documents.css'; // Custom CSS for additional styling
+
 const Documents = () => {
   return (
     <div>
       <Headerbar />
       <Navbar />
       <HeaderSection />
-      <DocumentsContent />
+      <DocumentContent />
       <Footer />
     </div>
   );
 };
+
 const HeaderSection = () => {
   return (
-    <header className="documents-header" style={{ 
+    <header className="documents-header text-center text-white" style={{ 
       backgroundImage: `url(${require('../assets/img/hero/1.jpg')})`,
       backgroundSize: 'cover', 
       backgroundPosition: 'center', 
-      textAlign: 'center', 
-      color: 'white', 
-      paddingTop: '50px', 
-      paddingBottom: '50px',
+      padding: '50px 0',
     }}>
-      <h1 className="text-white mb-4">Documents</h1>
-      <div className="breadcrumb-container">
-        <Breadcrumb>
-          <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }} className="text-white">Home</Breadcrumb.Item>
-          <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/documents" }} className="text-white">Documents</Breadcrumb.Item>
-        </Breadcrumb>
-      </div>
+      <h1 className="mb-4">Documents</h1>
+      <Breadcrumb className="d-flex justify-content-center">
+        <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }} className="text-white">Home</Breadcrumb.Item>
+        <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/documents" }} className="text-white">Documents</Breadcrumb.Item>
+      </Breadcrumb>
     </header>
   );
 };
-const DocumentsContent = () => {
+
+const DocumentContent = () => {
   const document = { id: 1, title: 'Document 1', image: require('../assets/img/documents/doc1.jpeg') };
+
   return (
-    <div className="documents-content" style={{ marginTop: '50px', marginBottom: '50px' }}>
-      <div className="container">
-        <h2 className="text-center mb-4">Our Documents</h2>
-        <div className="document-card">
-          <img src={document.image} alt={document.title} className="document-img" />
-          <div className="document-title">
-            <h5>{document.title}</h5>
-          </div>
-        </div>
+    <div className="container my-5 text-center">
+      <h2 className="mb-4">Our Document</h2>
+      <div className="document-item mx-auto">
+        <img src={document.image} alt={document.title} className="document-image mb-3" />
+        <h5 className="document-title">{document.title}</h5>
       </div>
     </div>
   );
 };
+
 export default Documents;

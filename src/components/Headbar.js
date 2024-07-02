@@ -1,56 +1,61 @@
 import React from 'react';
-import './Headerbar.css'; // Import the CSS file
+import './Headerbar.css'; // Import the CSS file for additional styles if needed
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faViber } from '@fortawesome/free-brands-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Flag from 'react-world-flags';
-
 const Headerbar = () => {
+  const formatWhatsappLink = (phoneNumber) => `https://wa.me/${phoneNumber.replace(/\D/g, '')}`;
   return (
-    <div className="headerbar bg-dark text-white">
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-center justify-content-md-start mb-2 mb-md-0">
-            <div className="headerbar-item d-flex align-items-center mb-2 mb-md-0 mr-md-3">
-              <FontAwesomeIcon icon={faPhone} className="mr-2" /> +9779841666232
+    <div className="headerbar bg-dark text-white py-2">
+      <div className="container">
+        <div className="row justify-content-between align-items-center">
+          <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center flex-wrap">
+            <div className="headerbar-item d-flex align-items-center mb-2 mb-md-0 mr-2">
+              <a href={formatWhatsappLink('+9779860915040')} target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-decoration-none text-white">
+                <FontAwesomeIcon icon={faPhone} className="mr-1" /> +9779860915040
+              </a>
             </div>
-            <div className="headerbar-item d-flex align-items-center">
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> info@J One Trekking And Expedition.com
+            <div className="headerbar-item d-flex align-items-center mb-2 mb-md-0 mr-2">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-1" /> info@j1trekkingnepal.com
             </div>
           </div>
-          <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end flex-wrap">
-            <div className="headerbar-item d-flex align-items-center mr-3 mb-2 mb-md-0">
-              <div className="contact-info d-flex align-items-center">
-                <span className="talk-to-expert mr-2">Talk to expert</span>
-                <Flag code="NP" className="flag-icon mr-2" />
-                <a href="https://wa.me/9779860915040" target="_blank" rel="noopener noreferrer" className="contact-number">
-                9779860915040
-                </a>
-                <FontAwesomeIcon icon={faWhatsapp} className="ml-2" />
-                <FontAwesomeIcon icon={faViber} className="ml-2" />
+          <div className="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center flex-wrap">
+            <div className="headerbar-item d-flex align-items-center mb-2 mb-md-0 mr-2">
+              <div className="contact-info d-flex flex-column align-items-center">
+                <span className="talk-to-expert">Talk to expert</span>
+                <div className="d-flex align-items-center">
+                  <Flag code="NP" className="flag-icon mr-1" />
+                  <a href={formatWhatsappLink('+9779860915040')} target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-decoration-none text-white">
+                  +9779860915040 <FontAwesomeIcon icon={faWhatsapp} className="ml-1" />
+                  </a>
+                  <FontAwesomeIcon icon={faViber} className="ml-1" />
+                </div>
               </div>
             </div>
-            <div className="headerbar-item d-flex align-items-center mr-3 mb-2 mb-md-0">
-              <div className="contact-info d-flex align-items-center">
-                <span className="talk-to-expert mr-2">Talk to expert</span>
-                <Flag code="US" className="flag-icon mr-2" />
-                <a href="https://wa.me/16517038181" target="_blank" rel="noopener noreferrer" className="contact-number">
-                  +1-651-703-8181
-                </a>
-                <FontAwesomeIcon icon={faWhatsapp} className="ml-2" />
-                <FontAwesomeIcon icon={faViber} className="ml-2" />
+            <div className="headerbar-item d-flex align-items-center mb-2 mb-md-0 mr-2">
+              <div className="contact-info d-flex flex-column align-items-center">
+                <span className="talk-to-expert">Talk to expert</span>
+                <div className="d-flex align-items-center">
+                  <Flag code="US" className="flag-icon mr-1" />
+                  <a href={formatWhatsappLink('+31 6 37404922')} target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-decoration-none text-white">
+                    +31 6 37404922 <FontAwesomeIcon icon={faWhatsapp} className="ml-1" />
+                  </a>
+                  <FontAwesomeIcon icon={faViber} className="ml-1" />
+                </div>
               </div>
             </div>
-            <div className="headerbar-item d-flex align-items-center mr-3 mb-2 mb-md-0">
-              <div className="contact-info d-flex align-items-center">
-                <span className="talk-to-expert mr-2">Talk to expert</span>
-                <Flag code="GB" className="flag-icon mr-2" />
-                <a href="https://wa.me/447946748780" target="_blank" rel="noopener noreferrer" className="contact-number">
-                  +447946748780
-                </a>
-                <FontAwesomeIcon icon={faWhatsapp} className="ml-2" />
-                <FontAwesomeIcon icon={faViber} className="ml-2" />
+            <div className="headerbar-item d-flex align-items-center mb-2 mb-md-0 mr-2">
+              <div className="contact-info d-flex flex-column align-items-center">
+                <span className="talk-to-expert">Talk to expert</span>
+                <div className="d-flex align-items-center">
+                  <Flag code="GB" className="flag-icon mr-1" />
+                  <a href={formatWhatsappLink('+61 418 768 278')} target="_blank" rel="noopener noreferrer" className="d-flex align-items-center text-decoration-none text-white">
+                    +61 418 768 278 <FontAwesomeIcon icon={faWhatsapp} className="ml-1" />
+                  </a>
+                  <FontAwesomeIcon icon={faViber} className="ml-1" />
+                </div>
               </div>
             </div>
             <div className="headerbar-cta">
@@ -62,5 +67,4 @@ const Headerbar = () => {
     </div>
   );
 };
-
 export default Headerbar;

@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 import RecommendationTitle from '../DetailsComponent/RecommendationTitle';
 import DetailsSection from '../DetailsComponent/detailssection';
 import './RecommendationDetails.css'; // Make sure to import the CSS file
-import { AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange } from '@mui/icons-material';
+import { AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade,Info, Hotel, DateRange } from '@mui/icons-material';
 import Hero1 from '../assets/img/hero/1.jpg';
 import Hero2 from '../assets/img/hero/2.webp';
 import Hero3 from '../assets/img/hero/3.jpg';
@@ -100,7 +100,6 @@ const recommendationDetails = {
       nepalPhone: '+977 9841666232',
       usaPhone: '+1 651-703-8181',
       ukPhone: '+44 7946748780'
-    
   },
   },
   'ultra-luxury-trek-to-everest-base-camp': {
@@ -176,123 +175,98 @@ const RecommendationDetails = () => {
   if (!recommendation) {
     return <div>Recommendation not found</div>;
   }
-
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
-
   return (
     <div>
       <Headerbar />
       <Navbar />
-      <div>
-        <RecommendationTitle title={recommendation.title} backgroundImage={recommendation.backgroundImage} />
-        <div className="recommendation-details">
-          <div className="recommendation-column">
-            <div className="recommendation-item">
-              <AttachMoney />
-              <span>Price starts from</span>
-              <span>{recommendation.price}</span>
-            </div>
-            <div className="recommendation-item">
-              <DirectionsWalk />
-              <span>Activity:</span>
-              <span>{recommendation.activity}</span>
-            </div>
-          </div>
-          <div className="recommendation-column">
-            <div className="recommendation-item">
-              <CalendarToday />
-              <span>Meal:</span>
-              <span>{recommendation.meal}</span>
-            </div>
-            <div className="recommendation-item">
-              <Height />
-              <span>Max Altitude:</span>
-              <span>{recommendation.maxAltitude}</span>
-            </div>
-          </div>
-          <div className="recommendation-column">
-            <div className="recommendation-item">
-              <LocationOn />
-              <span>Start & End Point:</span>
-              <span>{recommendation.startEndPoints}</span>
-            </div>
-            <div className="recommendation-item">
-              <LocationOn />
-              <span>Distance:</span>
-              <span>{recommendation.distance}</span>
-            </div>
-          </div>
-          <div className="recommendation-column">
-            <div className="recommendation-item">
-              <Flight />
-              <span>Transportation:</span>
-              <span>{recommendation.transportation}</span>
-            </div>
-            <div className="recommendation-item">
-              <Grade />
-              <span>Trip Grade:</span>
-              <span>{recommendation.tripGrade}</span>
-            </div>
-          </div>
-          <div className="recommendation-column">
-            <div className="recommendation-item">
-              <Hotel />
-              <span>Accommodations:</span>
-              <span>{recommendation.accommodations}</span>
-            </div>
-            <div className="recommendation-item">
-              <DateRange />
-              <span>Best Time:</span>
-              <span>{recommendation.bestTime}</span>
-            </div>
-          </div>
-        </div>
-        <div className="details-scroll-box">
-          <div className="scroll-box-title" onClick={() => scrollToSection('overview')}>Overview</div>
-          <div className="scroll-box-title" onClick={() => scrollToSection('itinerary')}>Itinerary</div>
-          <div className="scroll-box-title" onClick={() => scrollToSection('includes')}>Includes</div>
-          <div className="scroll-box-title" onClick={() => scrollToSection('cost-dates')}>Cost & Dates</div>
-          <div className="scroll-box-title" onClick={() => scrollToSection('useful-info')}>Useful Info</div>
-          <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
-          <div className="scroll-box-title" onClick={() => scrollToSection('faqs')}>FAQs</div>
-        </div>
-        {recommendation.bookingInfo && (
-         <div className="booking-info-box">
-         <h2>{recommendation.bookingInfo.title}</h2>
-         <p>Price starts from <span className="tour-price">{recommendation.bookingInfo.price}</span></p>
-         <button className="book-now-btn">Book Now</button>
-         <button className="make-inquiry-btn">Make Inquiry</button>
-         <div className="tripadvisor-box">
-         </div>
-         <div className="contact-box">
-           <h3>Speak to Expert</h3>
-           <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: {recommendation.bookingInfo.nepalPhone}</p>
-           <p><span role="img" aria-label="USA">🇺🇸</span> USA: {recommendation.bookingInfo.usaPhone}</p>
-           <p><span role="img" aria-label="UK">🇬🇧</span> UK: {recommendation.bookingInfo.ukPhone}</p>
-         </div>
-       </div>
-     )}
-        <DetailsSection
-        
-  overviewId="overview"
-  overview={recommendation.overview}
-  itineraryId="itinerary"
-  itinerary={recommendation.itinerary}
-  includesId="includes"
-  includes={recommendation.includes}
-  costDatesId="cost-dates"
-  costDates={recommendation.costDates}
-  usefulInfoId="useful-info"
-  usefulInfo={recommendation.usefulInfo}
-  galleryId="gallery"
-  gallery={recommendation.gallery}
-  faqsId="faqs"
-  faqs={recommendation.faqs}
-/>
-        <Footer />
+      <div className="recommendation-header" style={{ backgroundImage: `url(${recommendation.backgroundImage})` }}>
+        <h1>{recommendation.title}</h1>
       </div>
+      <div className="recommendation-details-wrapper">
+        <div className="recommendation-column">
+          <div className="recommendation-item">
+            <AttachMoney />
+            <span>Price starts from</span>
+            <span>{recommendationDetails.price}</span>
+          </div>
+          <div className="recommendation-item">
+            <LocationOn />
+            <span>Location:</span>
+            <span>{recommendationDetails.location}</span>
+          </div>
+          <div className="recommendation-item">
+            <DateRange />
+            <span>Best Time:</span>
+            <span>{recommendationDetails.bestTime}</span>
+          </div>
+        </div>
+        <div className="recommendation-column">
+          <div className="recommendation-item">
+            <Grade />
+            <span>Highlights:</span>
+            <span>{recommendationDetails.highlights}</span>
+          </div>
+          <div className="recommendation-item">
+            <Info />
+            <span>Includes:</span>
+            <span>{recommendationDetails.includes}</span>
+          </div>
+          <div className="recommendation-item">
+            <DateRange />
+            <span>Availability:</span>
+            <span>{recommendationDetails.costDates}</span>
+          </div>
+        </div>
+      </div>
+      <div className="details-scroll-box">
+        <div className="scroll-box-title" onClick={() => scrollToSection('overview')}>Overview</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('includes')}>Includes</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('cost-dates')}>Cost & Dates</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('useful-info')}>Useful Info</div>
+        <div className="scroll-box-title" onClick={() => scrollToSection('gallery')}>Gallery</div>
+      </div>
+      <div className="recommendation-content">
+        <div className="recommendation-main">
+          <section id="overview">
+            <h2>Overview</h2>
+            <p>{recommendationDetails.overview}</p>
+          </section>
+          <section id="includes">
+            <h2>Includes</h2>
+            <p>{recommendationDetails.includes}</p>
+          </section>
+          <section id="cost-dates">
+            <h2>Cost & Dates</h2>
+            <p>{recommendationDetails.costDates}</p>
+          </section>
+          <section id="useful-info">
+            <h2>Useful Info</h2>
+            <p>{recommendationDetails.usefulInfo}</p>
+          </section>
+          <section id="gallery">
+            <h2>Gallery</h2>
+            <p>{recommendationDetails.gallery}</p>
+          </section>
+        </div>
+        <aside className="recommendation-aside">
+          <div className="info-box">
+            <h2>{recommendationDetails.title}</h2>
+            <p>Price starts from <span className="tour-price">{recommendationDetails.price}</span></p>
+            <button className="book-now-btn">Book Now</button>
+            <button className="make-inquiry-btn">Make Inquiry</button>
+            <div className="contact-box">
+              <h3>Contact Us</h3>
+              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
+              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
+              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <Footer />
     </div>
   );
 };

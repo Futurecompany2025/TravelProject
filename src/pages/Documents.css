@@ -1,0 +1,36 @@
+.documents-header {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .document-item {
+    max-width: 300px;
+    margin: 0 auto; /* Center align the document */
+  }
+  
+  .document-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .document-title {
+    margin-top: 10px;
+    font-size: 1.25rem;
+  }
+  @media (max-width: 768px) {
+    .documents-header {
+      padding: 30px 0;
+    }
+    .document-item {
+      max-width: 100%;
+      margin: 0 15px; /* Adjust margin for smaller screens */
+    }
+    .document-title {
+      font-size: 1rem;
+    }
+  }
+  

@@ -9,17 +9,17 @@ function Footer() {
                         <div className="single-footer-caption mb-3">
                             <div className="footer-tittle">
                                 <div className="footer-pera">
-                                    <h4 className="h6">J1 Trekking And Expedition</h4>
+                                    <h4 className="h6">J1 Trekking And Expedition Pvt Ltd</h4>
                                     <p className="small">
                                         <strong>Nepal Contact:</strong><br />
                                         Address: Thamel, Kathmandu, Nepal<br />
-                                        Phone: +977 9841666232<br />
+                                        Phone: +977 9860915040<br />
                                         Email: info@J1TrekkingNepal.com
                                     </p>
                                     <h4 className="h6">USA Contact</h4>
                                     <p className="small">
                                         Address: Stillwater, MN 55082<br />
-                                        Phone: +1-651-703-8181<br />
+                                        Phone: +61 418768278<br />
                                         Email: stevenayers10@gmail.com
                                     </p>
                                 </div>
@@ -44,8 +44,8 @@ function Footer() {
                                 <ul className="list-unstyled small">
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about-us">About Us</Link></li>
-                                    <li><Link to="/ourteam">Our Team</Link></li>
-                                    <li><a href="#">Online Payment</a></li>
+                                    <li><Link to="/our-team">Our Team</Link></li>
+                                    <li><Link to="/pay-now">Online Payment</Link></li>
                                     <li><a href="#">Bank Details</a></li>
                                     <li><a href="#">Reviews</a></li>
                                 </ul>
@@ -93,5 +93,4 @@ function Footer() {
         </div>
     );
 }
-
 export default Footer;

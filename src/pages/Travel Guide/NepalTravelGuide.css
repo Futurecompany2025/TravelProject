@@ -1,0 +1,62 @@
+.nepal-travel-guide-section {
+    background-image: url('/src/assets/img/hero/4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+  }
+  
+  .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-item.active {
+    color: #6c757d;
+  }
+  
+  .nepal-travel-guide-section h1,
+  .nepal-travel-guide-section h2 {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .nepal-travel-guide-section .useful-information,
+  .nepal-travel-guide-section .communication-facilities,
+  .nepal-travel-guide-section .postal-services,
+  .nepal-travel-guide-section .telephone-services,
+  .nepal-travel-guide-section .internet-services,
+  .nepal-travel-guide-section .medical-facilities,
+  .nepal-travel-guide-section .travel-insurance,
+  .nepal-travel-guide-section .food-accommodation,
+  .nepal-travel-guide-section .vaccination-medicines,
+  .nepal-travel-guide-section .legal-documents,
+  .nepal-travel-guide-section .passport-visa-information {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .nepal-travel-guide-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nepal-travel-guide-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .nepal-travel-guide-section ul li strong {
+    font-weight: bold;
+  }
+  

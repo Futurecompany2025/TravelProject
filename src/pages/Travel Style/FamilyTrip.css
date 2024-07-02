@@ -28,3 +28,15 @@
     height: auto;
     display: block;
   }
+  .family-trip-section {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height as per your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+  }
+  

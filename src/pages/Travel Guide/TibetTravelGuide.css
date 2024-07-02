@@ -1,0 +1,41 @@
+.tibet-travel-guide-section {
+    padding: 20px 0;
+  }
+  .breadcrumb {
+    background-color: transparent;
+  }
+  .title-section {
+    background-image: url('../../assets/img/blog/kailash.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+  }
+  .title-section h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .useful-information h2,
+  .communication-facilities h2,
+  .postal-services h2,
+  .telephone-services h2,
+  .internet-services h2,
+  .medical-facilities h2,
+  .travel-insurance h2,
+  .food-accommodation h2,
+  .vaccination-medicines h2,
+  .legal-documents h2,
+  .passport-visa-information h2 {
+    margin-top: 20px;
+  }
+  
+  .useful-information ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .useful-information li {
+    margin-bottom: 10px;
+  }
+  

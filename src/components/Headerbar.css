@@ -1,39 +1,48 @@
-.flag-icon {
-  width: 20px; /* Set the width of the flag icon */
-  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-}
-
 .headerbar {
-  padding: 5px 15px; /* Adjust padding as needed */
-  line-height: 1.4; /* Adjust line height to reduce vertical space */
-  font-family: var(--bs-font-sans-serif); /* Use specified font family */
-  font-size: 0.9rem; /* Decrease font size */
-  font-weight: 400; /* Set font weight to 400 */
-  color: #212529; /* Set text color */
-  height: auto; /* Set the height as needed */
+  padding: 10px 0;
 }
 
 .headerbar-item {
-  font-size: 0.8rem; /* Decrease font size */
+  margin-right: 15px;
 }
 
-.contact-info {
-  font-size: 0.8rem; /* Decrease font size */
+.headerbar .contact-info {
+  text-align: center;
 }
 
-.talk-to-expert {
-  font-size: 0.8rem; /* Decrease font size */
+.headerbar .contact-info .talk-to-expert {
+  font-size: 12px;
+  color: #ffc107;
 }
 
-.make-inquiry-btn {
-  font-size: 0.8rem; /* Decrease font size */
-  padding: 5px 10px; /* Adjust padding as needed */
+.headerbar .contact-info .flag-icon {
+  width: 20px;
   height: auto;
 }
 
-/* Add some margins for mobile view */
+.headerbar .make-inquiry-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
 @media (max-width: 767px) {
+  .headerbar .container {
+    flex-direction: column;
+  }
+
   .headerbar-item {
-    margin-bottom: 5px;
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .headerbar-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .make-inquiry-btn {
+    width: 100%;
   }
 }
