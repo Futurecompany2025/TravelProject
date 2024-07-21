@@ -18,8 +18,13 @@ function Recommendation() {
     { slug: 'annapurna-panorama-trek', image: Hero3, title: 'Annapurna Panorama Trek', duration: '12 Days', price: 'USD 1040' },
     { slug: 'ultra-luxury-trek-to-everest-base-camp', image: Hero4, title: 'Ultra-Luxury Trek to Everest Base Camp', duration: '13 Days', price: 'USD 5220' },
     { slug: 'upper-mustang-trek', image: Hero5, title: 'Upper Mustang Trek', duration: '16 Days', price: 'USD 2395' },
-    { slug: 'everest-base-camp-trek-with-gokyo-lake', image: Hero6, title: 'Everest Base Camp Trek with Gokyo Lake & Cho la pass', duration: '18 Days', price: 'USD 1730' }
-  ];
+    { slug: 'everest-base-camp-trek-with-gokyo-lake', image: Hero6, title: 'Everest Base Camp Trek with Gokyo Lake & Cho la pass', duration: '18 Days', price: 'USD 1730' },
+    { slug: 'muldai-view-trek',  title:'Muldai View Trek', duration: '19 Days', price: 'USD 1790' },
+    { slug: 'short-annapurna-circuit-trek',  title: 'Short Annapurna Circuit Trek', duration: '15 Days', price: 'USD 1390' },
+    { slug: 'gosainkunda-holy-lake-trek-via-langtang-valley',  title: 'gosainkunda-holy-lake-trek-via-langtang-valley', duration: '15 Days', price: 'USD 1390' },
+    { slug: 'annapurna-circuit-trek-with-tilicho-lake',  title: 'Annapurna Circuit Trek with Tilicho Lake', duration: '15 Days', price: 'USD 1390' },
+  { slug: 'short-annapurna-base-camp-trek',  title: 'Annapurna Circuit Trek with Tilicho Lake', duration: '15 Days', price: 'USD 1390' },
+];
   return (
     <div className="recommendation-container">
       <div className="container">

@@ -17,7 +17,7 @@ import Footer from './components/footer';
 import WhyUs from './components/whyus';
 import Blog from './components/blog';
 import Headerbar from './components/Headbar';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route ,Navigate } from 'react-router-dom';
 import RecommendationDetails from './pages/RecommendationDetails';
 import AboutUsPage from './pages/AboutUsPage';
 import Recommendation from './components/recommendation';
@@ -126,7 +126,6 @@ function App() {
                 <Route path="/bhutan/tour" element={<Bhutan />} />
                 <Route path="/tibet/tour" element={<Tibet />} />
                 <Route path="/india/tour" element={<India />} />
-
       </Routes>
     </Router>
   );

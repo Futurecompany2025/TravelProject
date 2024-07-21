@@ -18,9 +18,9 @@ function Footer() {
                                     </p>
                                     <h4 className="h6">USA Contact</h4>
                                     <p className="small">
-                                        Address: Stillwater, MN 55082<br />
-                                        Phone: +61 418768278<br />
-                                        Email: stevenayers10@gmail.com
+                                        Address: ..., ....<br />
+                                        Phone:+31 6 37404922 <br />
+                                        Email: .....@gmail.com
                                     </p>
                                 </div>
                             </div>

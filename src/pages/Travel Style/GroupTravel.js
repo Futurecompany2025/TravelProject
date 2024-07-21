@@ -14,7 +14,6 @@ import Img6 from '../../../src/assets/img/gallery/img3.jpg';
 import Img7 from '../../../src/assets/img/gallery/img.jpeg';
 import Img8 from '../../../src/assets/img/gallery/img2.jpg';
 import './GroupTravel.css'; // Ensure you have a CSS file for styling
-
 const groupTrips = [
   { slug: 'everest-base-camp-trek', image: Img1, title: 'Everest Base Camp Trek', duration: '16 Days', price: 'USD 2395' },
   { slug: 'annapurna-circuit-trek', image: Img2, title: 'Annapurna Circuit Trek', duration: '18 Days', price: 'USD 1730' },
@@ -37,7 +36,6 @@ const groupTrips = [
   { slug: 'annapurna-panorama-trek', image: Img3, title: 'Annapurna Panorama Trek', duration: '10 Days', price: 'USD 1290' },
   { slug: 'pisang-peak-climbing', image: Img4, title: 'Pisang Peak Climbing', duration: '17 Days', price: 'USD 1690' },
 ];
-
 const GroupTravel = () => {
   return (
     <>

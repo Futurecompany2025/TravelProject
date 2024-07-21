@@ -1,23 +1,27 @@
 /* Add your custom CSS styles here */
+
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 /* Navbar link styles */
 .navbar-nav .nav-link {
   font-weight: 400; /* Decrease font weight */
   font-size: 0.9rem; /* Decrease font size */
-  padding: 0.5rem 1rem; /* Adjust padding for height */
+  padding: 0.5rem 0.75rem; /* Adjust padding for height */
 }
+
 /* Navbar logo styles */
 .navbar-logo {
   max-width: 100px;
 }
+
 /* Navbar container styles */
 .navbar {
-  max-width: 950px; /* Set your desired maximum width */
+  max-width: 100%; /* Set your desired maximum width */
   margin: 0 auto; /* Center the navbar horizontally */
-  padding: 0rem 0rem; /* Adjust padding for height */
+  padding: 0.5rem 1rem; /* Adjust padding for height */
 }
 
 /* Sidebar styles */
@@ -37,6 +41,7 @@
   display: block;
   left: 0;
 }
+
 .sidebar-item {
   display: block;
   padding: 8px 16px;
@@ -62,4 +67,47 @@
   display: block;
   left: 100%;
   top: 0;
+}
+
+.navbar-logo-text {
+  font-family: 'Pacifico', cursive; /* Use the Pacifico font or generic cursive */
+  font-size: 1rem; /* Adjust the font size */
+  font-weight: bold; /* Make the text bold */
+  color: skyblue; /* Change the color to yellow */
+  margin-left: 10px; /* Add some space between the logo and the text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Adjust the spacing between navigation items */
+.navbar-nav .nav-item {
+  margin-right: 8px;
+}
+
+/* Ensure proper alignment and responsive behavior */
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    padding: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
+  .navbar-toggler {
+    display: block !important;
+  }
 }
