@@ -5,10 +5,11 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../../../components/navbar';
 import Headbar from '../../../components/Headbar';
 import Footer from '../../../components/footer';
+import Trek0 from '../../../assets/img/hero/Trekking/0.jpg';
 import Trek1 from '../../../assets/img/hero/Trekking/1.jpeg';
 import Trek2 from '../../../assets/img/hero/Trekking/2.jpeg';
-import Trek3 from '../../../assets/img/hero/Trekking/3.jpg';
-import Trek4 from '../../../assets/img/hero/Trekking/4.jpg';
+import Trek3 from '../../../assets/img/hero/Trekking/3.jpeg';
+import Trek4 from '../../../assets/img/hero/Trekking/4.jpeg';
 import Trek5 from '../../../assets/img/hero/Trekking/5.jpeg';
 import Trek6 from '../../../assets/img/hero/Trekking/6.jpeg';
 import Trek7 from '../../../assets/img/hero/Trekking/7.jpeg';
@@ -95,7 +96,7 @@ function Nepal() {
     <>
       <Headbar />
       <Navbar />
-      <div className="Trek-section" style={{ backgroundImage: `url(${Trek1})` }}>
+      <div className="Trek-section" style={{ backgroundImage: `url(${Trek0})` }}>
         <h1>Trekking in Nepal</h1>
       </div>
       <div className="content-section" style={{ backgroundColor: '#e8ebf3', padding: '20px' }}>

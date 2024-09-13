@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
-import logo from '../assets/img/logo/logo.png';
+import logo from '../assets/img/logo/logo.jpg';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -29,7 +26,7 @@ function Navbar() {
         </button>
         <div className={`collapse navbar-collapse ${showMenu ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
-            <NavItem title="Destinations">
+            <NavItem title="Destinations" to="/destinations">
               <DropdownItem title="Nepal" to="/nepal">
                 <DropdownItem title="Trekking in Nepal" to="/nepal/trekking" />
                 <DropdownItem title="Tour in Nepal" to="/nepal/tour" />
@@ -104,7 +101,6 @@ function Navbar() {
     </nav>
   );
 }
-
 const NavItem = ({ title, children }) => (
   <li className="nav-item dropdown">
     <span className="nav-link dropdown-toggle px-3 text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -124,5 +120,4 @@ const DropdownItem = ({ title, to, children }) => (
     {children && <div className="dropdown-menu sub-dropdown">{children}</div>}
   </div>
 );
-
 export default Navbar;

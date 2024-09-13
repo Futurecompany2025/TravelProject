@@ -22,7 +22,7 @@ const Documents = () => {
 const HeaderSection = () => {
   return (
     <header className="documents-header text-center text-white" style={{ 
-      backgroundImage: `url(${require('../assets/img/hero/1.jpg')})`,
+      backgroundImage: `url(${require('../assets/img/documents/bg.jpg')})`,
       backgroundSize: 'cover', 
       backgroundPosition: 'center', 
       padding: '50px 0',

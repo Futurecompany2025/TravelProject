@@ -24,7 +24,6 @@ const corporateTrips = [
   { slug: 'annapurna-circuit-trek', image: Img7, title: 'Annapurna Circuit Trek', duration: '18 Days', price: 'USD 1730' },
   { slug: 'mardi-himal-trek', image: Img8, title: 'Mardi Himal Trek from Pokhara', duration: '18 Days', price: 'USD 1730' },
 ];
-
 const CorporateTravel = () => {
   return (
     <>

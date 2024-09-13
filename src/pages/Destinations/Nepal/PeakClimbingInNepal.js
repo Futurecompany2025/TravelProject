@@ -12,12 +12,12 @@ import Peak4 from '../../../assets/img/hero/Peak/4.jpeg';
 import Peak5 from '../../../assets/img/hero/Peak/5.jpeg';
 import Peak6 from '../../../assets/img/hero/Peak/6.jpeg';
 const recommendations = [
-  { slug: 'kathmandu-and-pokhara-tour', image: Peak1, title: 'Kyajo Ri Peak climbing', duration: '19 Days', price: 'USD 1790' },
-  { slug: 'all-nepal-tour', image: Peak2, title: 'Island Peak Climbing with Everest Base Camp', duration: '15 Days', price: 'USD 1390' },
-  { slug: 'best-of-nepal-tour', image: Peak3, title: 'Mera Peak and Island peak Climbing via Amphu Laptsa pass', duration: '12 Days', price: 'USD 1040' },
-  { slug: 'muktinath-tour-with-jungle-safari', image: Peak4, title: 'Island peak Climbing', duration: '13 Days', price: 'USD 5220' },
-  { slug: 'upper-mustang-motorcycle-tour', image: Peak5, title: 'Mera Peak Climbing', duration: '16 Days', price: 'USD 2395' },
-  { slug: '5-un', image: Peak6, title: 'Lobuche Peak Climbing', duration: '1 Day', price: 'USD 110' }
+  { slug: 'kyajo-ri-peak-climbing', image: Peak1, title: 'Kyajo Ri Peak climbing', duration: '19 Days', price: 'USD 1790' },
+  { slug: 'island-peak-climbing-with-everest-base-camp', image: Peak2, title: 'Island Peak Climbing with Everest Base Camp', duration: '15 Days', price: 'USD 1390' },
+  { slug: 'mera-peak-and-island-peak-climbing-via-amphu-laptsa-pass', image: Peak3, title: 'Mera Peak and Island peak Climbing via Amphu Laptsa pass', duration: '12 Days', price: 'USD 1040' },
+  { slug: 'island-peak-climbing', image: Peak4, title: 'Island peak Climbing', duration: '13 Days', price: 'USD 5220' },
+  { slug: 'mera-peak-climbing', image: Peak5, title: 'Mera Peak Climbing', duration: '16 Days', price: 'USD 2395' },
+  { slug: 'lobuche-peak-climbing', image: Peak6, title: 'Lobuche Peak Climbing', duration: '1 Day', price: 'USD 110' }
 ];
 function Nepal() {
   return (

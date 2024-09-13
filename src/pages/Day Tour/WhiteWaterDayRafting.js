@@ -14,7 +14,7 @@ import {
   Hotel,
   DateRange
 } from '@mui/icons-material'; // Imported necessary icons
-import backgroundImage from '../../assets/img/hero/3.jpg'; // Path to your background image
+import backgroundImage from '../../assets/img/hero/Luxury/8.jpeg'; // Path to your background image
 
 const whiteWaterRaftingDetails = {
   title: 'White Water Day Rafting',
@@ -139,9 +139,9 @@ const WhiteWaterDayRafting = () => {
             </div>
             <div className="contact-box">
               <h3>Speak to Expert</h3>
-              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
-              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
-              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
+              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +9779860915040</p>
+              <p><span role="img" aria-label="USA">🇺🇸</span> Netherland: +31 6 37404922</p>
+              <p><span role="img" aria-label="UK">🇬🇧</span> Australia: +61 418 768 278</p>
             </div>
           </div>
         </aside>

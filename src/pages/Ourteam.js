@@ -19,7 +19,7 @@ const OurTeam = () => {
 const HeaderSection = () => {
   return (
     <header className="team-header" style={{ 
-      backgroundImage: `url(${require('../assets/img/hero/1.jpg')})`,
+      backgroundImage: `url(${require('../assets/img/hero/highpass.jpeg')})`,
       backgroundSize: 'cover', 
       backgroundPosition: 'center', 
       textAlign: 'center', 

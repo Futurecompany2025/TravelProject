@@ -5,7 +5,7 @@ import Footer from '../../components/footer';
 import {
   AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade, Hotel, DateRange
 } from '@mui/icons-material';
-import backgroundImage from '../../assets/img/hero/Tour/12.jpg';
+import backgroundImage from '../../assets/img/hero/Luxury/2.jpeg';
 import './muktinathHelicopter.css';
 
 const muktinathTourDetails = {
@@ -28,7 +28,6 @@ const MuktinathHelicopterTour = () => {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
-
   return (
     <div>
       <Headerbar />
@@ -139,9 +138,9 @@ const MuktinathHelicopterTour = () => {
             </div>
             <div className="contact-box">
               <h3>Speak to Expert</h3>
-              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
-              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
-              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
+              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +9779860915040</p>
+              <p><span role="img" aria-label="Netherland">🇺🇸</span> Netherland: +31 6 37404922</p>
+              <p><span role="img" aria-label="Australia">🇬🇧</span> Australia: +61 418 768 278</p>
             </div>
           </div>
         </aside>

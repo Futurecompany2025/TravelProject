@@ -129,9 +129,9 @@ const TarebhirdayHike = () => {
             <button className="make-inquiry-btn">Make Inquiry</button>
             <div className="contact-box">
               <h3>Contact Us</h3>
-              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
-              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
-              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
+              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +9779860915040</p>
+              <p><span role="img" aria-label="USA">🇺🇸</span> Netherland: +31 6 37404922</p>
+              <p><span role="img" aria-label="UK">🇬🇧</span> Australia: +61 418 768 278</p>
             </div>
           </div>
         </aside>

@@ -7,7 +7,7 @@ import RecommendationTitle from '../DetailsComponent/RecommendationTitle';
 import DetailsSection from '../DetailsComponent/detailssection';
 import './RecommendationDetails.css'; // Make sure to import the CSS file
 import { AttachMoney, DirectionsWalk, CalendarToday, Height, LocationOn, Flight, Grade,Info, Hotel, DateRange } from '@mui/icons-material';
-import Hero1 from '../assets/img/hero/1.jpg';
+import Hero1 from '../assets/img/hero/highpass.jpeg';
 import Hero2 from '../assets/img/hero/2.webp';
 import Hero3 from '../assets/img/hero/3.jpg';
 import Hero4 from '../assets/img/hero/4.jpg';
@@ -574,9 +574,9 @@ const RecommendationDetails = () => {
             <button className="make-inquiry-btn">Make Inquiry</button>
             <div className="contact-box">
               <h3>Contact Us</h3>
-              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +977 9841666232</p>
-              <p><span role="img" aria-label="USA">🇺🇸</span> USA: +1 651-703-8181</p>
-              <p><span role="img" aria-label="UK">🇬🇧</span> UK: +44 7946748780</p>
+              <p><span role="img" aria-label="Nepal">🇳🇵</span> Nepal: +9779860915040</p>
+              <p><span role="img" aria-label="USA">🇺🇸</span> Netherland: +31 6 37404922</p>
+              <p><span role="img" aria-label="UK">🇬🇧</span> Australia: +61 418 768 278</p>
             </div>
           </div>
         </aside>

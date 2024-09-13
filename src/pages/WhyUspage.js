@@ -22,7 +22,7 @@ const WhyUsPage = () => {
 const HeaderSection = () => {
   return (
     <header className="whyus-header text-center text-white" style={{ 
-      backgroundImage: `url(${require('../assets/img/hero/1.jpg')})`,
+      backgroundImage: `url(${require('../assets/img/hero/highpass.jpeg')})`,
       backgroundSize: 'cover', 
       backgroundPosition: 'center', 
       padding: '50px 0',

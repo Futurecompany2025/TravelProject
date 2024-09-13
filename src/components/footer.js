@@ -14,13 +14,17 @@ function Footer() {
                                         <strong>Nepal Contact:</strong><br />
                                         Address: Thamel, Kathmandu, Nepal<br />
                                         Phone: +977 9860915040<br />
-                                        Email: info@J1TrekkingNepal.com
+                                        Email: j1trekkingpvtltd@gmail.com
                                     </p>
-                                    <h4 className="h6">USA Contact</h4>
+                                    <h4 className="h6">Netherland Contact</h4>
                                     <p className="small">
-                                        Address: ..., ....<br />
+                                        Address: Netherland<br />
                                         Phone:+31 6 37404922 <br />
-                                        Email: .....@gmail.com
+                                        </p>
+                                        <h4 className="h6">Australia Contact</h4>
+                                    <p className="small">
+                                        Address: Australia<br />
+                                        Phone:+61 418 768 278 <br />
                                     </p>
                                 </div>
                             </div>

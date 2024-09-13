@@ -44,18 +44,19 @@ const ContactDescription = () => {
                     <div className="col-md-6">
                         <h2>Nepal Contact</h2>
                         <p className="mb-4">Thamel, Kathmandu Nepal</p>
-                        <p>+977 9841666232</p>
-                        <p>info@trekwaysnepal.com</p>
-                        <p>+977 9841666232</p>
-                        <h2>USA Contact</h2>
-                        <p className="mb-4">Steven Ayers</p>
-                        <p>Stillwater, MN 55082</p>
-                        <p>+1-651-703-8181</p>
-                        <p>stevenayers10@gmail.com</p>
-                        <h2>UK Contact</h2>
-                        <p className="mb-4">Mr. Darren Thomas</p>
-                        <p>+447946748780</p>
-                        <p>darren@signpostedcymru.com</p>
+                        <p>+977 9860915040</p>
+                        <p>j1trekkingpvtltd@gmail.com</p>
+                        <p></p>
+                        <h2>Netherland Contact</h2>
+                        <p className="mb-4">NAme</p>
+                        <p>Address</p>
+                        <p>+31 6 37404922
+                         </p>
+                        <p>@gmail.com</p>
+                        <h2>Australia Contact</h2>
+                        <p className="mb-4">Mr Sharleen</p>
+                        <p>+61 418 768 278</p>
+                        <p></p>
                     </div>
                     <div className="col-md-6">
                         <h2>Contact Us</h2>

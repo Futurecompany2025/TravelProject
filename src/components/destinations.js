@@ -5,7 +5,6 @@ import service2 from '../assets/img/destinations/bhutan.jpg';
 import service3 from '../assets/img/destinations/tibet.jpg';
 import service4 from '../assets/img/destinations/india.jpg';
 import './Destinations.css'; // Import the CSS file
-
 function Destinations() {
   return (
     <div className="favourite-place place-padding" style={{ backgroundColor: '#e8ebf3' }}>
