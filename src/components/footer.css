@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Updated footer.css */
 .site-footer {
     position: relative;
@@ -50,4 +51,89 @@
 
 .footer-social {
     text-align: right; /* Align icons to the right */
+=======
+/* Footer container styles */
+.footer-area {
+    padding: 1rem 0; /* Decreased padding to reduce height */
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.footer-bg {
+    background: #222; /* Darker background color */
+    color: #fff;
+}
+
+/* Footer title styles */
+.footer-tittle h4 {
+    font-size: 2rem; /* Slightly increased font size */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #f1f1f1;
+}
+
+/* Footer paragraph styles */
+.footer-pera p,
+.footer-tittle p,
+.footer-copy-right p {
+    font-size: 2rem; /* Increased font size */
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Footer link styles */
+.footer-tittle ul li a {
+    color: #ddd;
+    font-size: 2rem; /* Adjusted font size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-tittle ul li a:hover {
+    color: #00aaff; /* Hover color */
+}
+
+/* Input and button styles for newsletter */
+.form-control-sm {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.btn-sm {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+}
+
+/* Footer social icons */
+.footer-social a {
+    color: #ddd;
+    font-size: 1rem; /* Slightly larger icon size */
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #00aaff;
+}
+
+/* Reduced padding and margins */
+.single-footer-caption {
+    margin-bottom: 1rem;
+}
+
+.footer-copy-right p {
+    font-size: 0.85rem;
+}
+
+/* Footer responsiveness */
+@media (max-width: 700px) {
+    .footer-area {
+        padding: 0.5rem 0;
+    }
+    .footer-tittle h4, 
+    .footer-tittle p, 
+    .footer-copy-right p {
+        font-size: 0.9rem;
+    }
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
 }

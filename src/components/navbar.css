@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /* Add your custom CSS styles here */
 
+=======
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -7,9 +10,15 @@
 
 /* Navbar link styles */
 .navbar-nav .nav-link {
+<<<<<<< HEAD
   font-weight: 400; /* Decrease font weight */
   font-size: 0.9rem; /* Decrease font size */
   padding: 0.5rem 0.75rem; /* Adjust padding for height */
+=======
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.75rem 0.75rem;
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
 }
 
 /* Navbar logo styles */
@@ -19,9 +28,16 @@
 
 /* Navbar container styles */
 .navbar {
+<<<<<<< HEAD
   max-width: 100%; /* Set your desired maximum width */
   margin: 0 auto; /* Center the navbar horizontally */
   padding: 0.5rem 1rem; /* Adjust padding for height */
+=======
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for larger screens */
+  margin: 0 auto;
+  padding: 1rem;
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
 }
 
 /* Sidebar styles */
@@ -53,9 +69,16 @@
   background-color: #e9ecef;
 }
 
+<<<<<<< HEAD
 .dropdown-menu {
   position: absolute;
   left: -9999px;
+=======
+/* Dropdown menu adjustments */
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
   top: 100%;
   display: none;
   min-width: 10rem;
@@ -69,6 +92,7 @@
   top: 0;
 }
 
+<<<<<<< HEAD
 .navbar-logo-text {
   font-family: 'Pacifico', cursive; /* Use the Pacifico font or generic cursive */
   font-size: 1rem; /* Adjust the font size */
@@ -79,11 +103,37 @@
 }
 
 /* Adjust the spacing between navigation items */
+=======
+/* Navbar logo text styles */
+.navbar-logo-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  color: skyblue;
+  margin-left: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar item spacing and padding */
+.nav-item .nav-link {
+  padding-left: 0.5rem;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Spacing between navigation items */
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
 .navbar-nav .nav-item {
   margin-right: 8px;
 }
 
+<<<<<<< HEAD
 /* Ensure proper alignment and responsive behavior */
+=======
+/* Responsive styles for navbar collapse */
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
 @media (max-width: 991px) {
   .navbar-nav {
     flex-direction: column;
@@ -98,7 +148,10 @@
     z-index: 999;
     padding: 10px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
     display: none;
+=======
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
   }
   .navbar-nav .nav-item {
     margin-right: 0;
@@ -111,3 +164,12 @@
     display: block !important;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* Ensure Contact link stays within the navbar on all screen sizes */
+.navbar-nav .nav-item:last-child {
+  margin-right: auto;
+  margin-left: 8px;
+}
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)

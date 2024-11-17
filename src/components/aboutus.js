@@ -13,7 +13,10 @@ function AboutUs() {
     { title: "Exquisite Nepal Luxury Tour", price: "USD 19800", image: "/src/assets/img/hero/9.jpg", route: "/exquisite-nepal-luxury-tour" },
     { title: "Upper Mustang Motorcycle Tour", price: "USD 2950", image: "/src/assets/img/hero/10.jpg", route: "/upper-mustang-motorcycle-tour" }
   ];
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
   return (
     <div className="support-company-area support-padding fix">
       <div className="container">

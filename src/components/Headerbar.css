@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .headerbar {
   padding: 10px 0;
 }
@@ -46,3 +47,29 @@
     width: 100%;
   }
 }
+=======
+.headerbar-item {
+  margin-right: 1rem;
+}
+
+.contact-info .talk-to-expert {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.flag-icon {
+  width: 20px; /* Adjust flag size */
+  height: auto;
+}
+
+.headerbar-cta .make-inquiry-btn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 767px) {
+  .headerbar .col-md-6 {
+    margin-bottom: 1rem;
+  }
+}
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)

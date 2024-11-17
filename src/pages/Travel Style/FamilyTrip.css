@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .family-trip {
     text-align: center;
   }
@@ -39,4 +40,47 @@
     color: #fff;
     background-repeat: no-repeat;
   }
+=======
+.family-trip {
+    text-align: center;
+  }
+  
+  .title-section {
+    background-image: url('../../../src/assets/img/gallery/img.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 0;
+  }
+  .title-section h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  .grid-item {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .family-trip-section {
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust the height as per your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+  }
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
   

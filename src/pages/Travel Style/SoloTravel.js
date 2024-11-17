@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -83,3 +84,73 @@ const SoloTravel = () => {
 };
 
 export default SoloTravel;
+=======
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar } from '@fortawesome/free-solid-svg-icons';
+import { Breadcrumb } from 'react-bootstrap';
+import Headerbar from '../../components/Headbar';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
+import Img1 from '../../../src/assets/img/gallery/sanctuary.jpeg';
+import Img2 from '../../../src/assets/img/gallery/img.jpeg';
+import Img3 from '../../../src/assets/img/gallery/img.jpeg';
+import Img4 from '../../../src/assets/img/gallery/img.jpeg';
+import Img5 from '../../../src/assets/img/gallery/img.jpeg';
+
+
+const soloTrips = [
+  { slug: 'annapurna-sanctuary-trek', image: Img1, title: 'Annapurna Sanctuary Trek', duration: '15 Days', price: 'USD 1890' },
+  { slug: 'langtang-valley-trek', image: Img1, title: 'Langtang Valley Trek', duration: '12 Days', price: 'USD 1390' },
+  { slug: 'everest-base-camp-trek', image: Img2, title: 'Everest Base Camp Trek', duration: '16 Days', price: 'USD 2395' },
+  { slug: 'upper-mustang-trek', image: Img3, title: 'Upper Mustang Trek', duration: '18 Days', price: 'USD 1730' },
+];
+
+const SoloTravel = () => {
+  return (
+    <>
+      <Headerbar />
+      <Navbar />
+      <div className="family-trip-section" style={{ backgroundImage: `url(${Img1})` }}>
+        <div className="overlay"></div>
+        <div className="container text-center" style={{ position: 'relative', zIndex: 2, color: 'white', padding: '20px' }}>
+          <h1>Solo Travel</h1>
+
+          {/* Breadcrumb */}
+          <Breadcrumb className="d-flex justify-content-center mt-2" style={{ color: 'white' }}>
+            <Breadcrumb.Item linkAs={Link} linkProps={{ to: "/" }} style={{ color: 'white' }}>Home</Breadcrumb.Item>
+            <Breadcrumb.Item active style={{ color: 'white' }}>Solo Travel</Breadcrumb.Item>
+          </Breadcrumb>
+        </div>
+      </div>
+      <div className="content-section" style={{ backgroundColor: '#e8ebf3', padding: '20px' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Explore Solo Trips</h2>
+        <div className="container">
+          <div className="row mt-4">
+            {soloTrips.map((item) => (
+              <div key={item.slug} className="col-lg-4 col-md-6 mb-4">
+                <Link to={`/${item.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <div className="card">
+                    <img src={item.image} className="card-img-top img-fluid" alt={item.title} />
+                    <div className="card-body">
+                      <h5 className="card-title">{item.title}</h5>
+                      <p className="card-text">
+                        <FontAwesomeIcon icon={faCalendar} className="me-2" /> Duration: {item.duration}
+                      </p>
+                      <p style={{ fontSize: '1.1em', fontWeight: 'bold' }}>USD <span style={{ color: '#007bff' }}>{item.price.split(' ')[1]}</span></p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default SoloTravel;
+>>>>>>> e8a3bcc (Initial commit on shikhar branch)
